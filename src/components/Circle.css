@@ -1,0 +1,459 @@
+
+.circlebody1{
+    padding-bottom: 128px;
+    padding: 64px 59px 64px 50px;
+    background-color: #000;
+}
+
+
+.desktop-circle {
+  display: block;
+}
+.mobile-circle {
+  display: none;
+}
+/* Tablet + Mobile */
+@media (max-width: 1024px) {
+  .desktop-circle {
+    display: none !important;
+  }
+  .mobile-circle {
+    display: block !important;
+    max-width: 100%;
+    padding: 36px 16px;
+    text-align: center;
+  }
+  .mobile-circle img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+.circle-section {
+  padding: 30px 20px 40px 20px;
+  background-size: cover;
+  border-radius: 16px;
+  background-position: center;
+  color: white;
+  width: 100%;
+  height: 580px;
+  max-width: 1085px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../assets/circlebg1.png');
+  
+}
+.circle-heading {
+  text-align: center;
+  font-size: 38px;
+  font-family: Playfair Display;
+  margin-bottom: 40px;
+}
+
+.highlightc {
+  background: linear-gradient(to right, #FE8324, #ff4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Playfair Display;
+  
+
+
+}
+
+.circle-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.circle-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: -58px;
+}
+
+.circle-item p{
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: -15px;
+}
+.circle-item {
+  width: fit-content;
+  align-items: center;
+  background: #2B2A2A;
+  border-radius: 6px;
+  padding: 12px 12px;
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: -4px;
+  margin-bottom: 48px;
+  display: flex;
+}
+
+
+.circle-item1 {
+  width: fit-content;
+  align-items: center;
+  background: #2B2A2A;
+  border-radius: 6px;
+  padding: 11px 12px;
+  font-size: 15px;
+  margin-left: 30px;
+  display: flex;
+  margin-bottom: 13px;
+  margin-top: 80px;
+}
+.circle-item1 p{
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: -15px;
+}
+
+.circle-icon1{
+    width: 19px;
+    height: 22px;
+    margin-right: 12px;
+}
+
+
+
+.circle-item2 {
+  width: fit-content;
+  align-items: center;
+  background: #2B2A2A;
+  border-radius: 6px;
+  padding: 11px 12px;
+  font-size: 15px;
+  margin-left: 30px;
+  display: flex;
+  margin-bottom: 22px;
+  margin-top: 14px;
+}
+.circle-item2 p{
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: -15px;
+}
+.circle-icon2{
+    width: 25px;
+    height: 22px;
+    margin-right: 12px;
+}
+
+.circle-icon3{
+    width: 28px;
+    height: 22px;
+    margin-right: 12px;
+}
+
+
+.circle-item4 {
+  width: fit-content;
+  align-items: center;
+  background: #2B2A2A;
+  border-radius: 6px;
+  padding: 13px 16px;
+  font-size: 15px;
+  margin-left: 30px;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: -8px;
+}
+.circle-item4 p{
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: -15px;
+}
+.circle-icon4{
+    width: 30px;
+    height: 22px;
+    margin-right: 12px;
+}
+
+
+
+
+
+
+.circle-container {
+  position: relative;
+  flex: 1;
+  max-width: 55%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.circle-label {
+  position: absolute;
+  left: 270px; 
+  width: 150px; 
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: poppins;
+}
+
+.label-11 {
+  top: 18px;
+  left: 260px;
+}
+
+.label-22 {
+  top: 111px;
+  left: 240px;
+}
+
+.label-33 {
+  top: 200px;
+  left: 250px;
+}
+
+.label-44 {
+  top: 309px;
+  left: 245px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+  .circlebody1{
+    padding: 40px 120px 100px 120px;
+
+  .circlebody {
+    padding: 40px 60px
+
+  }
+
+  .circle-section {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .circle-container {
+    max-width: 100%;
+  }
+
+  .circle-label {
+    font-size: 13px;
+    width: 120px;
+    left: 220px;
+  }
+
+  .label-11 {
+    top: 14px;
+    left: 220px;
+  }
+
+  .label-22 {
+    top: 95px;
+    left: 200px;
+  }
+
+  .label-33 {
+    top: 180px;
+    left: 210px;
+  }
+
+  .label-44 {
+    top: 280px;
+    left: 200px;
+  }
+}
+
+/* Tablets & large phones */
+@media (max-width: 768px) {
+  .circlebody {
+    padding: 40px 30px 80px 30px;
+  }
+
+  .circle-section {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .circle-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .circle-left {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .circle-item,
+  .circle-item1,
+  .circle-item2,
+  .circle-item4 {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .circle-container {
+    max-width: 100%;
+    padding-top: 20px;
+  }
+
+  .circle-label {
+    font-size: 12px;
+    width: 100px;
+    left: 180px;
+  }
+
+  .label-11 {
+    top: 12px;
+    left: 180px;
+  }
+
+  .label-22 {
+    top: 90px;
+    left: 165px;
+  }
+
+  .label-33 {
+    top: 170px;
+    left: 170px;
+  }
+
+  .label-44 {
+    top: 260px;
+    left: 165px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .circlebody {
+    padding: 30px 20px 60px 20px;
+  }
+
+  .circle-heading {
+    font-size: 22px;
+  }
+
+  .circle-item p,
+  .circle-item1 p,
+  .circle-item2 p,
+  .circle-item4 p {
+    font-size: 13px;
+  }
+
+  .circle-item,
+  .circle-item1,
+  .circle-item2,
+  .circle-item4 {
+    padding: 10px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .circle-icon1,
+  .circle-icon2,
+  .circle-icon3,
+  .circle-icon4 {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  .circle-label {
+    font-size: 11px;
+    width: 90px;
+    left: 140px;
+  }
+
+  .label-11 {
+    top: 10px;
+    left: 140px;
+  }
+
+  .label-22 {
+    top: 80px;
+    left: 130px;
+  }
+
+  .label-33 {
+    top: 150px;
+    left: 135px;
+  }
+
+  .label-44 {
+    top: 230px;
+    left: 125px;
+  }
+}
+
+/* Extra-small devices */
+@media (max-width: 360px) {
+  .circlebody {
+    padding: 20px 15px 40px 15px;
+  }
+
+  .circle-heading {
+    font-size: 20px;
+  }
+
+  .circle-item,
+  .circle-item1,
+  .circle-item2,
+  .circle-item4 {
+    font-size: 13px;
+    padding: 8px 8px;
+  }
+
+  .circle-label {
+    font-size: 10px;
+    width: 80px;
+    left: 110px;
+  }
+
+  .label-11 {
+    top: 8px;
+    left: 110px;
+  }
+
+  .label-22 {
+    top: 70px;
+    left: 100px;
+  }
+
+  .label-33 {
+    top: 135px;
+    left: 105px;
+  }
+
+  .label-44 {
+    top: 200px;
+    left: 100px;
+  }
+}
+}

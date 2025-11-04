@@ -1,0 +1,228 @@
+.skippers-sectioned {
+  padding: 64px 20px 64px 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.header-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.header-line .line {
+  flex: 1;
+  max-width: 120px;
+  height: 1px;
+  background: #666;
+  opacity: 0.4;
+}
+
+.header-line h2 {
+  font-size: 38px;
+  font-weight: 600;
+  font-family: playfair display;
+}
+
+.header-line .highlightu {
+  background: linear-gradient(to right, #FE8324, #ff4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  padding-right: 2px;
+}
+
+.subtitle2 {
+  color: #aaa;
+  font-size: 20px;
+  margin-bottom: 56px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.advantage-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-bg {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  
+  height: 100%;
+  z-index: 0;
+}
+
+.rig {
+  flex: 1 1;
+  height: 1.5px;
+  background: linear-gradient(to right,  #fffdfd 20%,#ede7e7 20%, #313030 70%);
+  border: none;
+  opacity: 0.4;
+  max-width: 285px;
+  margin-top: 30px;
+}
+
+.le {
+  flex: 1 1;
+  height: 1.5px;
+  background: linear-gradient(to left,  #fffdfd 20%,#ede7e7 20%, #313030 70%);
+  border: none;
+  opacity: 0.4;
+  max-width: 285px;
+  margin-top: 25px;
+}
+.overlayy {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+  z-index: 1;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #07024f;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-family: Poppins;
+  border-radius: 6px;
+  z-index: 2;
+  color: #d8d8d8;
+  font-weight: 500;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Playfair Display;
+  line-height: 120%;
+  margin-bottom: 6px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-style: Poppins;
+}
+
+/* 🎯 Custom sizes */
+.card-1 {
+  height: 321px;
+  width: 550px;
+  margin-left: -2px;
+}
+.card-2 {
+  height: 321px;
+  width: 530px;
+  margin-left: -11px;
+}
+.card-3 {
+  height: 352px;
+  width: 438px;
+  margin-left: 1px;
+  margin-top: -10px;
+}
+.card-4 {
+  height: 352px;
+  width: 641px;
+  margin-left: -120px;
+  margin-top: -10px;
+}
+
+/* 📱 Responsive */
+/* Base Grid - Desktop */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: (4,1fr); /* stack cards */
+    gap: 16px;
+  }
+
+  .header-line h2 {
+    font-size: 24px;
+  }
+
+  .subtitle2 {
+    font-size: 13px;
+    margin-bottom: 34px;
+    width: 379px;
+    padding-right: 0px;
+  }
+  .skippers-sectioned{
+    padding: 36px 1px 36px 16px;
+  }
+
+  .advantage-card {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; 
+  }
+
+  .card-content h3 {
+    font-size: 11px;
+    width: 200px;
+    margin-left: -15px;
+  }
+
+  .card-content p {
+    font-size: 8px;
+    margin-bottom: -10px;
+    margin-left: -13px;
+  }
+
+  .badge {
+    font-size: 7px;
+    padding: 4px 6px;
+    margin-top: -7px;
+  }
+  .card-4 {
+    margin-left: -40px;
+    margin-top: -10px;
+    height: 129px;
+    width: 208px;
+    padding: 0 1px;
+  }
+  .card-3{
+    width: 151px;
+    height: 129px;
+    
+  }
+
+}
+

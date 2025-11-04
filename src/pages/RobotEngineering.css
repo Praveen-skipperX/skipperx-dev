@@ -1,0 +1,381 @@
+@media (max-width: 1024px) {
+  .arvr2-dronebody {
+    padding: 30px 0px 40px 0px;
+  }
+  .arvr2-drone-engineering-section{
+    padding: 64px 40px;
+  }
+  
+  .arvr2-drone-tag {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .arvr2-arvr-title1 {
+    font-size: 32px;
+    padding-left: 0;
+    max-width: 60%;
+  }
+
+  .arvr2-drone-description {
+    font-size: 18px;
+  }
+
+  .arvr2-drone-cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .arvr2-drone-outline-btn {
+    width: 100%;
+  }
+
+  .arvr2-drone-start-btn {
+    width: 100%;
+  }
+
+  .arvr2-drone-scroll-wrapper1 {
+    width: 100%;
+  }
+  .arvr2-drone-scroll-item1 {
+  display: inline-block;
+  }
+  .arvr2-drone-scroll-wrapper1 {
+    width: 50%;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+  .arvr2-drone-engineering-section {
+    background-image: url('../assets/robot-mobile1.png')!important;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 400px;
+    height: 600px !important;
+  }
+
+  .arvr2-dronebody {
+    padding: 0px 20px 6px;
+    margin-top: -79px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .arvr2-arvr-title1 {
+    text-align: center !important;
+    padding: 0 15px;
+  }
+  
+  .arvr2-arvr-title1 h1 {
+    font-size: 31px !important;
+    width: 475px ;
+    margin-left: -143px;
+  }
+
+  
+
+  .arvr2-drone-description {
+    font-size: 14px !important;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .arvr2-drone-cta-buttons {
+    flex-direction: row;
+    gap: 6px;
+    width: 120%;
+    align-items: center;
+    padding: 10px 10px;
+    margin-left: -30px !important;
+  }
+  
+  .arvr2-drone-outline-btn{
+    padding: 8px 6px !important;
+    
+  }
+  .arvr2-drone-start-btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 16px;
+    margin-top: -15px !important;
+    margin-bottom: 25px !important;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .arvr2-drone-tag {
+    font-size: 12px;
+    padding: 6px 10px;
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .arvr2-drone-scroll-wrapper1 {
+    font-size: 14px;
+    padding: 6px 10px;
+    width: 399px !important;
+    margin-left: -40px !important;
+  }
+  .arvr2-drone-tag{
+    margin-top: 20px !important;
+    font-size: 14px !important;
+    padding-left: 70px !important;
+    margin-bottom: 20px !important;
+    
+  }
+}
+
+
+
+
+
+
+
+.arvr2-dronebody {
+  background: linear-gradient(to bottom , #0d0d0d , #000 100%);
+  padding: 44px 120px 64px 120px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.arvr2-accredit{
+  background-color: #1C1C1C;
+}
+.arvr2-drone-engineering-section {
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  width: 1180px;
+  height: 565px;
+  margin-top: 0px;
+  background-color: rgb(30, 30, 30);
+  margin-bottom: 0px;
+  box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+.arvr2-drone-tag {
+  background: black;
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+  padding: 12px 22px 12px 50px;
+  border-radius: 20px;
+  font-weight: 500;
+  width: 278px;
+  height: 37px;
+  margin-bottom: 39px;
+  margin-top: 35px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.arvr2-drone-tag::before,
+.arvr2-drone-tag::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 278px;
+  height: 1.4px;
+  background: linear-gradient(to right, #222222, #c4c3c3, #222222);
+  z-index: 1;
+}
+
+.arvr2-drone-tag::before {
+  top: 0px;
+}
+
+.arvr2-drone-tag::after {
+  bottom: 0;
+}
+
+.arvr2-drone-tag-icon {
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+}
+
+.arvr2-arvr-title1 h1{
+  font-size: 45px;
+  font-weight: 700;
+  max-width: 1040px;
+  text-align: center;
+  padding-left:105px;
+  font-family: 'Playfair Display', serif;
+  line-height: 120%;
+}
+
+.arvr2-drone-title .highlight {
+  font-style: italic;
+  color: #ff5c5c;
+}
+.arvr2-highlight{
+    background: linear-gradient(to right, #FE8324, #ff4101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Playfair Display;
+    font-style: italic;
+}
+.arvr2-drone-description {
+  margin: 10px 0;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #ccc;
+}
+
+.arvr2-drone-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin: 10px 0 36px 0;
+  flex-wrap: wrap;
+}
+
+.arvr2-drone-outline-btn {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  width: 113px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.arvr2-drone-start-btn {
+  padding: 16px 32px;
+  font-size: 16px;
+  color: white;
+  font-style: bold poppins;
+  margin-top: 20px;  
+  border: 1px solid #000;
+  border-radius: 8px;
+  background:linear-gradient(to bottom right, #FE8324 10% ,#FF4101 100%);
+  font-weight: 600;
+  font-size: 16px;
+  width: 216px;
+  height: 58px;
+  margin-bottom: 21px;
+}
+
+
+
+.arvr2-drone-scroll-wrapper1 {
+  width: 100%;
+  max-width: 1250px;
+  height: 36px;
+  overflow: hidden;
+  background: #000000;
+  padding: 6px 10px;
+  color: #ccc;
+  font-size: 16px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  -webkit-mask-image: linear-gradient(to right, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 94%);
+  mask-image: linear-gradient(to right, transparent, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 94%, transparent);
+
+}
+
+.arvr2-drone-scroll-track1 {
+  display: flex;
+  width: max-content;
+  animation: drone-scroll-loop 20s linear infinite;
+  
+}
+
+.arvr2-drone-scroll-content1 {
+  display: flex;
+  white-space: nowrap;
+  padding-right: 3px;
+}
+
+.arvr2-drone-scroll-item1 {
+  display: inline-block;
+}
+
+
+@keyframes drone-scroll-loop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+
+
+
+
+
+.arvr-stat-card2 {
+  background: linear-gradient(to top, #181320,#152332);
+  padding: 26px 10px;
+  border-radius: 15px;
+  text-align: left;
+  width: 167px;
+  height: 155px;
+  color: white;
+}
+
+.arvr-stat-card2 h4 {
+  font-size: 32px;
+  margin-bottom: 4px;
+  font-family: Playfair Display;
+  font: bold;
+}
+
+.arvr-stat-card2 p {
+  color: #ccc;
+  font-size: 16px;
+  font-style: poppins;
+  margin-bottom: -10px;
+}
+
+
+.arvr-state-icon span {
+  font-size: 20px;
+  color: #fb4b4b;
+  margin-bottom: 10px;
+  background-color: #000;
+  border-radius: 30px;
+  margin-top: -20px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 480px){
+  .arvr-stat-card2 {
+      padding: 19px 10px 26px;
+      max-width: 106px;
+      height: 121px;
+      color: white;
+    }
+    .arvr-stat-card2 h4{
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .arvr-stat-card2 p{
+      font-size: 10px;
+    }
+  }
