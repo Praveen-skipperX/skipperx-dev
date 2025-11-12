@@ -3,26 +3,26 @@ import './About.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import heroBg from "../assets/about-hero.png";
-import bgImage from "../assets/about-x.png";
-import founder1 from "../assets/scf.png";
+//import bgImage from "../assets/about-x.png";
+//import founder1 from "../assets/scf.png";
 import founder2 from "../assets/hcf.png";
-import founder3 from "../assets/vcf.png";
-import founder4 from "../assets/cf4.png";
+//import founder3 from "../assets/vcf.png";
+//import founder4 from "../assets/cf4.png";
 import img1 from "../assets/ab1.png";
 import img2 from "../assets/ab22.png";
-import img3 from "../assets/ab21.png";
-import img4 from "../assets/ab23.png";
-import img5 from "../assets/ab24.png";
+//import img3 from "../assets/ab21.png";
+//import img4 from "../assets/ab23.png";
+//import img5 from "../assets/ab24.png";
 import missionImg from "../assets/missionImg.png";
 import visionImg from "../assets/visionImg.png";
 import image1 from "../assets/co-founder.png";
 import image2 from "../assets/vice-president.png";
 import image3 from "../assets/designer.png";
-import image4 from "../assets/product.png";
+//import image4 from "../assets/product.png";
 import image5 from "../assets/harisha.jpg";
 
 
-import bgImagemobile from '../assets/landing-mobile.png';
+//import bgImagemobile from '../assets/landing-mobile.png';
 
 
 
