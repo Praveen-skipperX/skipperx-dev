@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./otp.css";
 import loginImage from "../assets/login-bg1.png"; 
-import googleLogo from "../assets/login-google.png";
 import harish from '../assets/harisha.jpg'
 import sai from '../assets/saisai.png'
 import hari from '../assets/harih.jpg'
@@ -76,7 +75,7 @@ const OtpVerification = () => {
           
        <div className="otp-container">
         <img src={logo} alt="Skipper Logo" className="otp-title"/>
-        <div className="otp-icon1"><img src={text} className="otp-icon"/></div>
+        <div className="otp-icon1"><img src={text} className="otp-icon" alt="iconotp"/></div>
         <h2>Check Your Inbox</h2>
         <p>
             We have sent 4 digit verification code to your{" "}
