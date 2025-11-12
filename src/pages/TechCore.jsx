@@ -61,7 +61,7 @@ const TechCore = () => {
 
 
   const [isFixed, setIsFixed] = useState(false);
-  const [offsetTop, setOffsetTop] = useState(0);
+  //const [offsetTop, setOffsetTop] = useState(0);
 
   const toggleAccordion = (index) => {
     setActiveIndex(index === activeIndex ? null : index);

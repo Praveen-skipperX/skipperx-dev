@@ -76,7 +76,7 @@ const Blog = () => {
           <div key={blog.id} className="blog-card">
             <div className="blog-card-top">
               <span className="blog-date">{blog.date}</span>
-              <span className="blog-brand"><img src={logo} className="blog-logo-img" /></span>
+              <span className="blog-brand"><img src={logo} className="blog-logo-img" alt="blog-logo-img"/></span>
             </div>
 
             <div className="blog-tag">{blog.tag}</div>

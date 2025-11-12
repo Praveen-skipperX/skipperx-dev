@@ -56,7 +56,7 @@ const Contact = () => {
           <div className="contact-us">
                 <div className="contact-1">
                         <div>
-                            <img src={call} className="contact-call" />
+                            <img src={call} className="contact-call" alt="contact-call" />
                         </div> 
                         <div>  
                             <p>Call us - +916366953507  </p>
@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-1">
                     <div>
-                        <img src={mail} className="contact-mail" />
+                        <img src={mail} className="contact-mail" alt="contact-mail"/>
                     </div>
                     <div>    
                       <p>E-mail us - Support@skipperx.io </p>
@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-1">
                     <div>
-                        <img src={chat} className="contact-chat" />
+                        <img src={chat} className="contact-chat" alt="contact-chat" />
                     </div>
                     <div>    
                         <p>Chat with us   </p>
