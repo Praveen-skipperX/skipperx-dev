@@ -32,6 +32,10 @@
   justify-content: center;
 }
 
+#lefstack{
+  margin-top: 5px;
+  max-width: 420px ;
+}
 .stack-box {
   position: relative;
   width: 358px;

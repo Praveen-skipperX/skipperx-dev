@@ -34,11 +34,11 @@ const SuperStack = () => {
   return (
     <section className="stack-wrapper" id="stack-navigate">
       <div className="best-heading-section">
-        <hr className="l" />
+        <hr className="lef" id="lefstack" />
         <h1>
           Super <span className="proo">Stack </span>
         </h1>
-        <hr className="r" />
+        <hr className="rig" id="lefstack" />
       </div>
       <p className="stackland-subheading">All-in-one bundles to grow and create</p>
       <div className="stack-card-container">
