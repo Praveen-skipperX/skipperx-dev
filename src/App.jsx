@@ -9,9 +9,9 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import About from './pages/About';
 import Blog from './pages/blog';
-import DroneEngineering from './pages/DroneEngineering';
-import RobotEngineering from './pages/RobotEngineering';
-import ArVr from './pages/Ar-Vr';
+//import DroneEngineering from './pages/DroneEngineering';
+//import RobotEngineering from './pages/RobotEngineering';
+//import ArVr from './pages/Ar-Vr';
 import StartupStack from './pages/StartupStack';
 import TechCore from './pages/TechCore';
 import CreatorsHub from './pages/CreatorsHub';
@@ -21,6 +21,7 @@ import Contact from './pages/contact';
 import Otp from './pages/otp';
 import Cooking from './pages/cooking';
 //import Forget from './pages/forget';
+import Psychology from './pages/Psychology';
 
 
 import ProductManagement from './pages/ProductManagement';
@@ -28,6 +29,8 @@ import CreatorPreneur from './pages/Creatorpreneur';
 
 import Dashboard from './components/dashboard/Dashboard';
 import ScrollToTop from './components/ScrollToTop';
+
+
 
 
 
@@ -43,9 +46,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/t & c" element={<TermsAndConditions />} />
-        <Route path="/Drone-Engineering" element={<DroneEngineering />} />
-        <Route path="/Robot-Engineering" element={<RobotEngineering />} />
-        <Route path="/ar-vr" element={<ArVr />} />
+        {/*<Route path="/Drone-Engineering" element={<DroneEngineering />} />*/}
+        {/*<Route path="/Robot-Engineering" element={<RobotEngineering />} />*/}
+        {/*<Route path="/ar-vr" element={<ArVr />} />*/}
         <Route path="/Startup-Stack" element={<StartupStack />} />
         <Route path="/Core-Tech" element={<TechCore />} />
         <Route path="/creators-hub" element={<CreatorsHub />} />
@@ -58,6 +61,8 @@ function App() {
 
         <Route path="/product" element={<ProductManagement />} />
         <Route path="/creator" element={<CreatorPreneur />} />
+
+        <Route path="/psychology" element={<Psychology />} />
         
 
       </Routes>

@@ -30,7 +30,7 @@ const teamMembers = [
   { name: "Himanshu Singh", position: "Co-Founder & CMO", image: image1, className: "member-card1",quote: "Building scalable web solutions" },
   { name: "Praveen Kittur", position: "Vice President", image: image2, className: "member-card2" ,quote: "Building scalable web solutions"},
   { name: "Sakshi Gupta", position: "Sr.Product Designer", image: image3, className: "member-card3" ,quote: "Building scalable web solutions"},
-  { name: "Amit Biswas", position: "Product Manager", image: image4, className: "member-card4" ,quote: "Building scalable web solutions"},
+  //{ name: "Amit Biswas", position: "Product Manager", image: image4, className: "member-card4" ,quote: "Building scalable web solutions"},
   { name: "Harisha Ediga", position: "Full Stack Developer", image: image5, className: "member-card5" ,quote: "Building scalable web solutions"},
 
   

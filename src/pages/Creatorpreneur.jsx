@@ -42,10 +42,66 @@ import piyushNamdevImg from '../assets/piyush_namdev.jpeg'; // Replace with actu
 import shantanuSinghImg from '../assets/shantanu_singh.jpeg'; // Replace with actual path
 import soheliSharmaImg from '../assets/riya_sharma.jpeg'; // Replace with actual path
 
-
+// 🆕 NEW: Imports for the Impact Dashboard Section
+import mentorPreranaSaha from '../assets/prerana-saha.png'; // Replace with actual path to Prerana Saha's image
+import brandFortis from '../assets/fortis.png';          // Replace with actual path to Fortis logo
+import brandCafoco from '../assets/cafoco.png';          // Replace with actual path to Cafoco logo
+import brandTcAcademy from '../assets/tc-academy.png';   // Replace with actual path to TC Academy logo
+import brandFibr from '../assets/fibr.png';              // Replace with actual path to Fibr logo
+import brandPlaceholder from '../assets/placeholder-brand.png';
 
 import ordiamond from '../assets/or-diamond.png'; // Replace with actual path
 import upgradeBg from '../assets/cta-upgrade-bg.jpg';
+
+
+// 🆕 NEW: Data for the Impact Dashboard Section
+const impactStats = [
+    {
+        id: 1,
+        percentage: "87%",
+        description: "Our learners launched their first paid project within <span class='highlight-text'>30 days</span>.",
+    },
+    {
+        id: 2,
+        percentage: "95%",
+        description: "Rated mentor feedback sessions as <span class='highlight-text'>career-changing</span>.",
+    },
+    {
+        id: 3,
+        percentage: "60%",
+        description: "Graduates started a <span class='highlight-text'>creator community or side hustle</span>.",
+    },
+    {
+        id: 4,
+        percentage: "400+",
+        description: "Real brand campaigns created through <span class='highlight-text'>weekly challenges</span>.",
+    },
+    {
+        id: 5,
+        percentage: "230%",
+        description: "Average <span class='highlight-text'>engagement rise</span> after Week 4 content sprint.",
+    },
+];
+
+const mentorDetails = {
+    name: "PRERANA SAHA",
+    role: "Ex-founder and psychology-marketing strategist",
+    image: mentorPreranaSaha,
+    workedWithBrands: [
+        { src: brandPlaceholder, alt: "Placeholder Brand 1" }, // You might have a specific one for the egg-like logo
+        { src: brandFortis, alt: "Fortis" },
+        { src: brandCafoco, alt: "Cafoco" },
+        { src: brandTcAcademy, alt: "TC Academy" },
+        { src: brandFibr, alt: "Fibr" },
+    ],
+    expertiseAreas: [
+        "Behaviour-Driven Marketing Mentor",
+        "Built 4 businesses",
+        "Now leading research at a unicorn and helping marketers blend behaviour",
+        "Storytelling & strategy for people-first growth.",
+    ],
+};
+
 
 const testimonialsData = [
     {
@@ -757,6 +813,77 @@ const CreatorPreneur = () => {
                     ))}
                 </div>
             </section>
+
+                {/* 🆕 FINAL IMPACT DASHBOARD SECTION */}
+<section className="doers-impact-dashboard-section">
+  <div className="doers-impact-header">
+    <p className="doers-impact-overline">IMPACT DASHBOARD</p>
+    <h2 className="doers-impact-title">
+      Numbers That <span className="doers-impact-highlight">Redefine</span> Learning
+    </h2>
+    <p className="doers-impact-subtitle">
+      Creatorpreneur isn’t theory — it’s traction. See what happens when creators learn by doing
+    </p>
+  </div>
+
+  <div className="doers-impact-content-wrapper">
+    {/* Stat Cards */}
+    {impactStats.map((stat, index) => (
+      <div key={stat.id} className={`doers-impact-stat-card doers-stat-card-${index + 1}`}>
+        <p className="doers-stat-percentage">{stat.percentage}</p>
+        <p
+          className="doers-stat-description"
+          dangerouslySetInnerHTML={{ __html: stat.description }}
+        ></p>
+      </div>
+    ))}
+
+    {/* Mentor Section */}
+    <div className="doers-impact-mentor-section">
+      <p className="doers-mentor-overline">Mentored By :</p>
+      <h3 className="doers-mentor-name">{mentorDetails.name}</h3>
+      <p className="doers-mentor-role">{mentorDetails.role}</p>
+      <div className="doers-mentor-image-wrapper">
+        <img
+          src={mentorDetails.image}
+          alt={mentorDetails.name}
+          className="doers-mentor-image"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+
+  {/* Footer Single Block */}
+  <div className="doers-impact-footer-bar">
+    <div className="doers-footer-top">
+      <p className="doers-footer-label">Worked with 10+ brands</p>
+      <div className="doers-brand-logos">
+        {mentorDetails.workedWithBrands.map((brand, index) => (
+          <img
+            key={index}
+            src={brand.src}
+            alt={brand.alt}
+            className="doers-footer-brand-logo"
+            loading="lazy"
+          />
+        ))}
+      </div>
+    </div>
+
+    <div className="doers-footer-bottom">
+      {mentorDetails.expertiseAreas.map((area, index) => (
+        <React.Fragment key={index}>
+          <span className="doers-expertise-item">{area}</span>
+          {index < mentorDetails.expertiseAreas.length - 1 && (
+            <span className="doers-expertise-divider">|</span>
+          )}
+        </React.Fragment>
+      ))}
+    </div>
+  </div>
+</section>
+
 
 
 
