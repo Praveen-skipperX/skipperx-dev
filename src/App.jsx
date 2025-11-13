@@ -9,12 +9,12 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import About from './pages/About';
 import Blog from './pages/blog';
-//import DroneEngineering from './pages/DroneEngineering';
-//import RobotEngineering from './pages/RobotEngineering';
-//import ArVr from './pages/Ar-Vr';
-import StartupStack from './pages/StartupStack';
+import DroneEngineering from './pages/DroneEngineering';
+import RobotEngineering from './pages/RobotEngineering';
+import ArVr from './pages/Ar-Vr';
+//import StartupStack from './pages/StartupStack';
 import TechCore from './pages/TechCore';
-import CreatorsHub from './pages/CreatorsHub';
+import Medical from './pages/Medical-edition';
 import Login from './pages/login';
 import Email from './pages/email';
 import Contact from './pages/contact';
@@ -46,12 +46,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/t & c" element={<TermsAndConditions />} />
-        {/*<Route path="/Drone-Engineering" element={<DroneEngineering />} />*/}
-        {/*<Route path="/Robot-Engineering" element={<RobotEngineering />} />*/}
-        {/*<Route path="/ar-vr" element={<ArVr />} />*/}
-        <Route path="/Startup-Stack" element={<StartupStack />} />
+        <Route path="/Drone-Engineering" element={<DroneEngineering />} />
+        <Route path="/Robot-Engineering" element={<RobotEngineering />} />
+        <Route path="/ar-vr" element={<ArVr />} />
+        {/*<Route path="/Startup-Stack" element={<StartupStack />} />*/}
         <Route path="/Core-Tech" element={<TechCore />} />
-        <Route path="/creators-hub" element={<CreatorsHub />} />
+        <Route path="/Medical-edition" element={<Medical />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/email" element={<Email />} />

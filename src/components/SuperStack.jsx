@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 
 const stackData = [
-  {
+  /*{
     title: "Startup Stack",
     subtitle: "7+ Diverse Program",
     successRate: "93% land biz roles or launch ventures",
     tag: "Business",
     footer: "Business Analytics · Human Resource · Finance · Fashion Design",
     bgImage: require("../assets/1sttt.png"),
-  },
+  },*/
   {
     title: "Core Tech",
     subtitle: "6+ Diverse Program",
@@ -21,11 +21,11 @@ const stackData = [
     bgImage: require("../assets/2nd.png"),
   },
   {
-    title: "Creators hub",
-    subtitle: "7+ Diverse Program",
-    successRate: "88% grow brands or start freelancing.",
-    tag: "Creative",
-    footer: "Graphic Design · Photography · Content creation · UIUX · Digital media",
+    title: "Medical Edition",
+    subtitle: "2+ Diverse Program",
+    successRate: "84% gain  confidence to pursue future careers in medical.",
+    tag: "Medical",
+    footer: "Nanotechnology · Biotech · psychology · Nanotechnology · Biotech · psychology  ",
     bgImage: require("../assets/3rdd.png"),
   },
 ];

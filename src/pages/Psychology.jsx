@@ -3,7 +3,7 @@ import eightseven from "../assets/psy89.png";
 import nineseven from "../assets/psy98.png";
 import nineeight from "../assets/psy89.png";
 import bgImage from '../assets/psycobg.png';
-import arvrreviewlogo from "../assets/arvr-r-logo.png";
+import arvrreviewlogo from "../assets/PsychologyStudent.png";
 import certificateDisplay from "../assets/new-cer.jpg";
 import brochureImage from "../assets/doers-brochure.png";
 import faqarrow from "../assets/faqarrow.png";
@@ -80,7 +80,7 @@ const engagementElements = [
 ];
 
 const modules = [
-  { title: " Week 1: Introduction to Unity and 3D Basics", content: [
+  { title: " Module 1: Introduction to Psychology", content: [
       "1. Unity Game Engine Overview.",
       "2. Introduction to Unity.",
       "3. Unity interface: Tools, View, and Windows.",
@@ -94,7 +94,7 @@ const modules = [
 
 
 
-  { title: " Week 2: Unity Basics and C# Scripting", content: [
+  { title: " Module 2: Self Concept & Intelligence", content: [
       "1. C# Scripting in Unity.",
       "2. Introduction to MonoBehaviour and Unity Callbacks.",
       "3. Basics of C#: Variables, loops, conditions, and methods.",
@@ -106,7 +106,7 @@ const modules = [
 
 
 
-  { title: "Week 3: Physics, UI, and Effects", content: [
+  { title: "Module 3: Mental Health & Emotions", content: [
       "1. Physics in Unity.",
       "2. Rigidbody and collision detection.",
       "3. Using triggers and tags for interaction.",
@@ -116,47 +116,13 @@ const modules = [
       "7. Particle effects for visual enhancements."
     ]  },
 
-  { title: "Week 4: Lighting and Advanced Unity Features", content: [
+  { title: "Module 4: Career in Psychology", content: [
       "1. Lighting in Unity.",
       "2. Basics of lighting and shadows.",
       "3. Configuring different types of lights for mood and environment.",
       "4. Advanced Unity Concepts.",
       "5. Combining multiple features for a polished Unity project."
-    ]  },
-
-
-      { title: "Week 5: Introduction to Vuforia Engine", content: [
-      "1. Getting Started with Vuforia.",
-      "2. Setting up the Vuforia engine in Unity.",
-      "3. Creating and managing an image database.",
-      "4. AR Features in Vuforia.",
-      "5. Working with image targets and multi-targets.",
-      "6. Ground plane detection for placing objects on real-world surfaces."
-    ]  },
-
-      { title: "Week 6: Advanced Vuforia Features", content: [
-      "1. Mid-Air and Object Detection.",
-      "2. Creating mid-air AR experiences.",
-      "3. Setting up object detection for AR applications.",
-      "4. Device Tracking.",
-      "5. Introduction to device tracking for enhanced AR stability."
-    ]  },   
-    
-      { title: "Week 7: Introduction to WebXR and A-Frame", content: [
-      "1. Getting Started with WebXR.",
-      "2. Introduction to WebXR concepts and applications.",
-      "3. Tools and libraries for WebXR development.",
-      "4. A-Frame Basics.",
-      "5. Building a simple A-Frame AR and VR project."
-    ]  },  
-    
-      { title: "Week 8: Advanced WebXR and Capstone Project", content: [
-      "1. Advanced A-Frame.",
-      "2. A-Frame AR and VR customizations.",
-      "3. Integrating WebXR applications with other tools.",
-      "4. Capstone Project.",
-      "5. Creating an AR/VR application using learned concepts."
-    ]  }   
+    ]  }  
 
   ];
 
@@ -359,21 +325,21 @@ const Psychology = () => {
 
 
 
-          <div className="arvr1-stat-section">
-            <div className="arvr1-stat-card">
+          <div className="psy-stat-section">
+            <div className="psy-stat-card">
               <h2>89<span>%</span></h2>
               <p>Completion rate <br />for our 1:1 Program.</p>
-              <img src={nineeight} className="arvr1-nineseven"/>
+              <img src={nineeight} className="psy-nineseven"/>
             </div>
-            <div className="arvr1-stat-card">
+            <div className="psy-stat-card">
               <h2>98<span>%</span></h2>
               <p>Of participants report<br /> high engagement</p>
-              <img src={nineseven} className="arvr1-nineone"/>
+              <img src={nineseven} className="psy-nineone"/>
             </div>
-            <div className="arvr1-stat-card">
+            <div className="psy-stat-card">
               <h2>89<span>%</span></h2>
               <p>Of participants stay <br />with their company.</p>
-              <img src={eightseven} className="arvr1-eight"/>
+              <img src={eightseven} className="psy-eight"/>
             </div>
           </div>
 
@@ -386,45 +352,28 @@ const Psychology = () => {
         <section className="drone-info-section" ref={sectionRef} >
           <div className="drone-info-left">
 
-
+            <p className="psy-headmodule1">
+                WHAT THIS PROGRAM IS ABOUT
+              </p>
 
             <div>
-            <h2 className="arvr-info-heading">
-              Advanced <span>Growth</span> Strategy
+            <h2 className="arvr-info-heading" id="arvr-info-heading">
+              From Understanding People to <span>Shaping Lives</span>
             </h2>
-
-            <p className="arvr-info-para" >
-              Skipper’s AR/VR Program helps you master 3D designs, spatial computing, immersive storytelling,and interaction design.
+             <p className="arvr-info-para" id="psy-first">
+              A human-centered psychology journey built around self-awareness, behavior, and emotional intelligence
             </p>
-            <p className="arvr-info-para1">
-              You’ll gain practical skills in building virtual environments and augmented 
-              experiences—preparing you for careers in gaming, education, healthcare, and emerging tech industries.
+            <p className="arvr-info-para" id="psy-second">
+              At SkipperX Psychology, you don’t just study the mind — <span id="psy-second-span">you experience it.</span>
             </p>
+            <p className="arvr-info-para1" id="psy-third">
+              Through real-world reflections, personality explorations and mental health projects, you’ll uncover how psychology drives personal growth, relationships, and professional impact.
+              </p>
           </div>
 
            
 
-           <div className="arvr-skill-section" >
-            <h3>Skills you will gain with this path</h3>
-            <div className="arvr-skills-tags">
-              <span>Rendering</span>
-              <span>Modeling</span>
-              <span>Visualization</span>
-              <span>Optimization</span>
-              <span>Prototyping</span>
-              <span>Immersion</span>
-              <span>Scripting</span>
-              <span>Calibration</span>
-              <span>Debugging</span>
-              <span>Tracking</span>
-              <span>Animation</span>
-              <span>Projection</span>
-              <span>Automation</span>
-              <span>Mapping</span>
-              <span>Experience</span>
-              <span>Calibration</span>
-            </div>
-          </div>   
+          
 
 
 
@@ -434,8 +383,8 @@ const Psychology = () => {
 
 
 
-            <div className="arvr-info-stats">
-              <h2 className="arvr-head-ing">
+            <div className="psyc-info-stats">
+              <h2 className="psyc-head-ing">
                     Mentors
               </h2>
               {[
@@ -443,8 +392,8 @@ const Psychology = () => {
                 { count: '2 Months', label: 'Duration' },
                 { count: '7+', label: 'Industry Experts' }
               ].map((item, index) => (
-                <div className="arvr-stat-card" key={index}>
-                  <div className="arvr-state-icon">
+                <div className="psyc-stat-card" key={index}>
+                  <div className="psyc-state-icon">
                     <span>⚡</span>
                   </div>
                   <h4>{item.count}</h4>
@@ -463,19 +412,19 @@ const Psychology = () => {
             <div className="arvr-drone-testimonial-box">
               <h2 className="arvr-robot-heading">Learning That<span className="arvr-highlight"> Works </span> - Proven by People</h2>
               <div className="arvr-drone-testimonial-person">
-                <img src={require('../assets/singh-arvr.png')} alt="Ashish Singhal" />
+                <img src={require('../assets/psy-image.png')} alt="Ashish Singhal" />
                 <div className="arvr-drone-testimonial-name">
-                  Shreyansh Singh <br />
-                  <img src={arvrreviewlogo}  className="arvr-arvr-review-img" />
+                  Ananya Nag <br />
+                  <h3>Psychology Student </h3>
                 </div>
               </div>
 
               <div className="arvr-arvr-testimonial-quote">
                 <p>
                   <em>
-                    "I was really impressed by Skipper’s AR/VR Engineering Program. The modules were well-organized, and mentors were always available to help and guied us in each and every step. Building interactive virtual spaces and learning about spatial computing opened up so many creative possibilities for me.
+                    "I joined out of curiosity and left with purpose — understanding human behavior changed how I lead my team and applied psychology to your daily choices, relationships, and work.
                     <br /><br />
-                    This program is perfect if you want to break into immersive tech."
+                    The module on Emotional Intelligence helped me see patterns in how people think and react, and now I communicate with more empathy ."
                   </em>
                 </p>
               </div>
@@ -489,39 +438,20 @@ const Psychology = () => {
 
 
 
-            <div className="arvr-built-section">
-              <h2>This is <span className="highlight">built </span> for</h2>
-              <div className="arvr-built-carousel">
-                <div className="arvr-built-track">
-                  {[
-                    { tag: 'Entertainment', title: 'Interactive worlds', desc: 'Creating immersive play and storytelling experiences.' },
-                    { tag: 'Education', title: 'Learning simulations', desc: 'Enabling realistic and engaging skill-building environments.' },
-                    { tag: 'Healthcare', title: 'Medical visualization ', desc: 'aiding surgery planning and therapeutic treatments.' },
-                    { tag: 'Retail ', title: 'Virtual try-ons ', desc: 'Helping customers preview products before purchasing.' },
-                    { tag: 'Real Estate', title: ' Virtual walkthroughs  ', desc: 'Showcasing properties and designs remotely as user wants.' },
-                    { tag: 'Automotive', title: 'Prototyping ', desc: 'improving design and maintenance processes included.' },
-                    { tag: 'Tourism', title: 'Virtual tours  ', desc: 'bringing cultural and historic sites to life digitally' }
-                    
-                  ].map((item, i) => (
-                    <div className="arvr-built-card" key={i}>
-                      <span className="arvr-built-tag">{item.tag}</span>
-                      <h4>{item.title}</h4>
-                      <p>{item.desc}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            
 
 
 
 
 
           <div className="arvr-module-section">
-            <div className="arvr-module-heading-wrapper">
+            <p className="psy-headmodule">
+                CURRICULUM 
+              </p>
+            <div className="arvr-module-heading-wrapper" id="arvr-module-heading-wrapper">
               <div className="arvr-module-line-left" />
               <h2>
-                What will you<span className="arvr-module-highlight"> learn?</span> 
+                How You’ll Grow<span className="arvr-module-highlight">— Module by Module</span> 
               </h2>
               <div className="arvr-module-line-right" />
             </div>

@@ -37,7 +37,7 @@ import Footer from '../components/Footer';
 import GoogleSheetForm from '../components/GoogleSheetForm';
 import Navbar from '../components/Navbar';
 import '../components/responsiveUtils.css';
-import "./CreatorsHub.css";
+import "./Medical.css";
 
 import p1l from '../assets/p1l.png';
 import p2l from '../assets/velocity8.png';
@@ -50,7 +50,7 @@ import p8l from '../assets/p8l.png';
 import p9l from '../assets/p9l.png';
 
 
-const CreatorsHub = () => {
+const Medical = () => {
 
   const [activeIndex, setActiveIndex] = useState(null);
   const cardRef = useRef(null);
@@ -126,23 +126,23 @@ const CreatorsHub = () => {
         
         <div className="startup-label">
           <img src={bulbIcon} alt="Bulb Icon" className="startup-tag-icon" />
-          Super Stack
+          Medical
         </div>
 
        
         <h1 className="startup-title">
-          All You Need to Bring Your Ideas to Life with<br></br> <span className="highlightstack">Creators Hub  </span>
+          Everything to Shape Your Medical Path —<br></br> <span className="highlightstack">Medical Edition   </span>
         </h1>
 
         
         <p className="startup-subtitle">
-          5+ Creator Courses Packed to Help You Learn and Grow
+          2+ Creator Courses Packed to Help You Learn and Grow
         </p>
 
         
         <div className="startup-buttons">
-          <button className="category-btn">Imagine</button>
-          <button className="category-btn">Create</button>
+          <button className="category-btn">Study</button>
+          <button className="category-btn">Practice</button>
           <button className="category-btn">Grow</button>
         </div>
 
@@ -202,18 +202,13 @@ const CreatorsHub = () => {
 
             <div>
             <h2 className="startup-info-heading">
-              Overview
+              Advanced <span className="highlightstack">Growth</span> Strategy
             </h2>
 
-            <p className="startup-info-para">
-              Build intelligent solutions with Artificial Intelligence and Machine Learning.
+            <p className="startup-info-para" id="startup-info-para">
+              Explore the science of both mind and matter. From understanding human behavior to engineering solutions at the genetic level, this program gives you a powerful blend of psychological insight and cutting-edge technology to shape the future.
             </p> 
-            <p className="startup-info-para">
-                Bring your ideas to life through design and storytelling.
-            </p> 
-            <p className="startup-info-para">
-                Master the tools and techniques to build brands, engage audiences, and create content that resonates.
-            </p> 
+            
 
 
 
@@ -222,16 +217,16 @@ const CreatorsHub = () => {
               What you’ll explore:
             </h2>
             <p className="startup-info-para-poins">
-               • Craft intuitive user experiences with UI/UX Design.
+               • Decode human behaviour and emotions with Psychology.
             </p>
             <p className="startup-info-para-poins">
-               • Design seamless digital products through UI/UX.
+               • Explore the building blocks of life through Genetic Engineering.
             </p>
             <p className="startup-info-para-poins">
-               • Design visuals that capture attention through Graphic Design.
+               •  Innovate at the smallest scale with Nanotechnology.
             </p>
             <p className="startup-info-para-poins">
-               • Tell stories that connect through Content Creation and Photography.
+               • Understand how mind and matter shape the future of science.
             </p>
             
             
@@ -356,7 +351,7 @@ const CreatorsHub = () => {
                   zIndex: 10,
                 }}
               >
-                <h2>Master Creators Hub Program</h2>
+                <h2>Master Medical Edition Program</h2>
                 <ul className="startup-features-list">
                   <li><span className="startup-tickmark">&#10004;</span> Innovation for professional growth</li>
                   <li><span className="startup-tickmark">&#10004;</span> Certification included</li>
@@ -391,7 +386,7 @@ const CreatorsHub = () => {
                       zIndex: 10,
                     }}
                   >
-                    <h3 className="startup-form-title">Master Creators Hub Program</h3>
+                    <h3 className="startup-form-title">Master Medical Edition Program</h3>
                     <GoogleSheetForm formName="CreatorsHub" />
                   </div>
                 </div>
@@ -404,7 +399,7 @@ const CreatorsHub = () => {
           <div className="startup-info-right" style={{position: 'static'}}>
             {!showForm ? (
               <div className="startup-pricing-card">
-                <h2>Master Creators Hub Program</h2>
+                <h2>Master Medical Edition Program</h2>
                 <ul className="startup-features-list">
                   <li><span className="startup-tickmark">&#10004;</span> Innovation for professional growth</li>
                   <li><span className="startup-tickmark">&#10004;</span> Certification included</li>
@@ -431,7 +426,7 @@ const CreatorsHub = () => {
               <div className={`startup-form-wrapper visible`}>
                 <div className="startup-form">
                   <div className="startup-pricing-card">
-                    <h3 className="startup-form-title">Master Creators Hub Program</h3>
+                    <h3 className="startup-form-title">Master Medical Edition Program</h3>
                     <GoogleSheetForm formName="CreatorsHub" />
                   </div>
                 </div>
@@ -481,22 +476,22 @@ const CreatorsHub = () => {
           <div class="startup-walk-away-cards">
             <div class="startup-walk-card">
               <div class="startup-icon">⚡</div>
-              <p>Build real project in  <b>branding, design, and content creation </b></p>
+              <p>Understand how the  <b>mind works </b>— from behaviour to decision-making.</p>
             </div>
 
             <div class="startup-walk-card">
               <div class="startup-icon">⚡</div>
-              <p>Learn top tools like   <b>Adobe Suite, Figma, and social media platforms</b></p>
+              <p>Learn   <b>core genetics</b>and nanotech concepts for future-ready innovation.</p>
             </div>
 
             <div class="startup-walk-card">
               <div class="startup-icon">⚡</div>
-              <p>Explore   <b>visual storytelling, photography, and digital marketing strategies</b></p>
+              <p>Gain scientific thinking and analysis skills across mind and biotech.<b></b></p>
             </div>
 
             <div class="startup-walk-card">
               <div class="startup-icon">⚡</div>
-              <p>Train for creative careers with   <b>portfolio-ready work and mentor guidance </b></p>
+              <p>Discover clear career pathways in   <b>psychology, biotech, and research. </b></p>
             </div>
           </div>
         </section>
@@ -590,4 +585,4 @@ const CreatorsHub = () => {
   );
 };
 
-export default CreatorsHub;
+export default Medical;
