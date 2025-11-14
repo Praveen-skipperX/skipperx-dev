@@ -5,7 +5,7 @@ import eightseven from "../assets/88.png";
 import nineseven from "../assets/91.png";
 import nineeight from "../assets/97.png";
 import hubroadmap from '../assets/creative.png';
-import hubroadmapmobile from '../assets/creative-mobile.png';
+import hubroadmapmobile from '../assets/medical-mobile.png';
 import css from '../assets/css.png';
 import brochureImage from "../assets/drone-brochure.png";
 import faqarrow from "../assets/faqarrow.png";
@@ -361,7 +361,7 @@ const Medical = () => {
                 <div className="startup-price">Price</div>
                 <div className="startup-price-section">
                   {/*<div className="startup-original-price">₹24,999</div>*/}
-                  <div className="startup-current-price">₹9,000</div>
+                  <div className="startup-current-price">₹10,000</div>
                 </div>
                 <div className="startup-trust-footer-drone">
                   <div className="startup-avatarsdrone">
@@ -409,7 +409,7 @@ const Medical = () => {
                 <div className="startup-price">Price</div>
                 <div className="startup-price-section">
                   {/*<div className="startup-original-price">₹24,999</div>*/}
-                  <div className="startup-current-price">₹9,000</div>
+                  <div className="startup-current-price">₹10,000</div>
                 </div>
                 <div className="startup-trust-footer-drone">
                   <div className="startup-avatarsdrone">
