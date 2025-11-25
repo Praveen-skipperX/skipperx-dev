@@ -252,7 +252,7 @@ const TechCore = () => {
                 <div className="startup-mentor-info">
                   <h4>Heena Suresh</h4>
                   <p>Human Resource</p>
-                  <img src={p5l}  />
+                  <img src={p5l} />
                 </div>
               </div>
 

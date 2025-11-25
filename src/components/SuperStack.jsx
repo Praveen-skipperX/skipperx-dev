@@ -14,15 +14,15 @@ const stackData = [
   },*/
   {
     title: "Core Tech",
-    subtitle: "6+ Diverse Program",
+    subtitle: "5 Diverse Program",
     successRate: "90% land tech roles or launch products",
     tag: "Tech",
-    footer: "Cybersecurity · Data Science · UI/UX Design · Web Development",
+    footer: "Artificial Intelligence · Data Science · Digital Marketing · Machine Learning · Web Development",
     bgImage: require("../assets/2nd.png"),
   },
   {
     title: "Medical Edition",
-    subtitle: "2+ Diverse Program",
+    subtitle: "2 Diverse Program",
     successRate: "84% gain  confidence to pursue future careers in medical.",
     tag: "Medical",
     footer: "Nanotechnology · Biotech · psychology · Nanotechnology · Biotech · psychology  ",
@@ -34,7 +34,7 @@ const SuperStack = () => {
   return (
     <section className="stack-wrapper" id="stack-navigate">
       <div className="best-heading-section">
-        <hr className="lef" id="lefstack" />
+        <hr className="lefst" id="lefstack" />
         <h1>
           Super <span className="proo">Stack </span>
         </h1>

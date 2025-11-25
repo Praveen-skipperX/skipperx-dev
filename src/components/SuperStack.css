@@ -157,6 +157,21 @@
   }
 }
 
+
+
+.lefst {
+  flex: 1 1;
+  height: 1.5px;
+  background: linear-gradient(to left,  #fffdfd 20%,#ede7e7 20%, #313030 70%);
+  border: none;
+  opacity: 0.4;
+  max-width: 260px;
+  margin-top: 25px;
+}
+select:invalid {
+  color: rgb(129, 129, 129);
+}
+
 @media (max-width: 768px) {
   .stack-wrapper{
     padding: 36px 16px 36px 26px;

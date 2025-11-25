@@ -262,9 +262,9 @@ const Psychology = () => {
 
 
       
-      <div className='arvr-dronebody'>
+      <div className='arvr-dronebody' id="arvr-dronebody">
         <div
-          className="arvr-drone-engineering-section"
+          className="arvr-drone-engineering-section" id="arvr-drone-engineering-section"
           style={{
             backgroundImage: `linear-gradient(to right,rgba(35, 33, 33, -0.6),rgba(51, 28, 90, -0.6)), url(${bgImage})`,
             backgroundSize: 'cover',
@@ -273,12 +273,12 @@ const Psychology = () => {
             
           }}
         >
-          <div className="arvr-drone-tag">
-            <img src={bulbIcon} alt="Bulb Icon" className="arvr-drone-tag-icon" />
-            For doers
+          <div className="arvr-drone-tag" id="psy-tag">
+            <img src={bulbIcon} alt="Bulb Icon" className="arvr-drone-tag-icon" id="psy-buld"/>
+            Psychology
           </div>
           
-          <div className="arvr-arvr-title1">
+          <div className="arvr-arvr-title1" id="arvr-arvr-title1">
             <h1 className="arvr--title"><span className="arvr-highlight">Psychology </span> That Helps You Understand the Mind — and the Human Behind It</h1>
           </div>
           
@@ -287,20 +287,20 @@ const Psychology = () => {
             Learn how emotions, behavior, and relationships shape the stories we live every day.
           </p>
 
-          <div className="arvr-drone-cta-buttons">
-            <button className="arvr-drone-outline-btn">Mind</button>
-            <button className="arvr-drone-outline-btn">Emotion</button>
-            <button className="arvr-drone-outline-btn">Bond</button>
+          <div className="arvr-drone-cta-buttons" id="arvr-drone-cta-buttons">
+            <button className="arvr-drone-outline-btn" id="arvr-drone-outline-btn">Mind</button>
+            <button className="arvr-drone-outline-btn" id="arvr-drone-outline-btn">Emotion</button>
+            <button className="arvr-drone-outline-btn" id="arvr-drone-outline-btn">Bond</button>
           </div>
 
-          <button className="arvr-drone-start-btn" onClick={scrollToForm}>Begin Your Mind Journey</button>
+          <button className="arvr-drone-start-btn" id="arvr-drone-start-btn" onClick={scrollToForm}>Begin Your Mind Journey</button>
 
           <div className="arvr-drone-scroll-wrapper1">
             <div className="arvr-drone-scroll-track1">
               {[...Array(4)].map((_, index) => (
                 <div key={index} className="arvr-drone-scroll-content1">
                   {scrollItems.map((item, i) => (
-                    <span key={`${index}-${i}`} className="arvr-drone-scroll-item1">
+                    <span key={`${index}-${i}`} className="arvr-drone-scroll-item1" id="psy-hero-scroll">
                       {item} •&nbsp;
                     </span>
                   ))}
@@ -358,7 +358,7 @@ const Psychology = () => {
 
             <div>
             <h2 className="arvr-info-heading" id="arvr-info-heading">
-              From Understanding People to <span>Shaping Lives</span>
+              From Understanding People to <span id="arvr-info-heading-high">Shaping Lives</span>
             </h2>
              <p className="arvr-info-para" id="psy-first">
               A human-centered psychology journey built around self-awareness, behavior, and emotional intelligence
@@ -384,9 +384,7 @@ const Psychology = () => {
 
 
             <div className="psyc-info-stats">
-              <h2 className="psyc-head-ing">
-                    Mentors
-              </h2>
+              
               {[
                 { count: '42,000+', label: 'Mentees trained' },
                 { count: '2 Months', label: 'Duration' },
@@ -409,17 +407,17 @@ const Psychology = () => {
 
 
 
-            <div className="arvr-drone-testimonial-box">
-              <h2 className="arvr-robot-heading">Learning That<span className="arvr-highlight"> Works </span> - Proven by People</h2>
-              <div className="arvr-drone-testimonial-person">
+            <div className="psy-drone-testimonial-box">
+              <h2 className="psy-robot-heading">Learning That<span className="psy-highlight"> Works </span> - Proven by People</h2>
+              <div className="psy-drone-testimonial-person">
                 <img src={require('../assets/psy-image.png')} alt="Ashish Singhal" />
-                <div className="arvr-drone-testimonial-name">
+                <div className="psy-drone-testimonial-name">
                   Ananya Nag <br />
                   <h3>Psychology Student </h3>
                 </div>
               </div>
 
-              <div className="arvr-arvr-testimonial-quote">
+              <div className="psy-arvr-testimonial-quote">
                 <p>
                   <em>
                     "I joined out of curiosity and left with purpose — understanding human behavior changed how I lead my team and applied psychology to your daily choices, relationships, and work.
@@ -444,32 +442,32 @@ const Psychology = () => {
 
 
 
-          <div className="arvr-module-section">
+          <div className="psy-module-section">
             <p className="psy-headmodule">
                 CURRICULUM 
               </p>
-            <div className="arvr-module-heading-wrapper" id="arvr-module-heading-wrapper">
-              <div className="arvr-module-line-left" />
+            <div className="psy-module-heading-wrapper" id="psy-module-heading-wrapper">
+              <div className="psy-module-line-left" />
               <h2>
-                How You’ll Grow<span className="arvr-module-highlight">— Module by Module</span> 
+                How You’ll Grow<span className="psy-module-highlight">- Module by Module</span> 
               </h2>
-              <div className="arvr-module-line-right" />
+              <div className="psy-module-line-right" />
             </div>
             
-            <div className="arvr-module-list">
+            <div className="psy-module-list">
               {modules.map((module, index) => (
-                <div className="arvr-module-box" key={index}>
-                  <div className="arvr-module-toggle" onClick={() => toggleAccordion(index)}>
+                <div className="psy-module-box" key={index}>
+                  <div className="psy-module-toggle" onClick={() => toggleAccordion(index)}>
                     <div>
                       <h4>MODULE {index + 1}</h4>
                       <p>{module.title}</p>
                     </div>
                     <span className={`toggle-icon ${activeIndex === index ? 'expanded' : ''}`}>
-                      <img src={faqarrow} alt="toggle" className="arvr-toggle-img" />
+                      <img src={faqarrow} alt="toggle" className="psy-toggle-img" />
                     </span>
                   </div>
                   {activeIndex === index && (
-                    <div className="arvr-module-details">
+                    <div className="psy-module-details">
                       <ul>
                         {module.content.map((point, i) => (
                           <p key={i}>{point}</p>
@@ -730,7 +728,7 @@ const Psychology = () => {
 
          <section class="psy-walk-away">
           <h2>
-            Here’s What You’ll Walk <span>Away</span> With
+            More Reasons to  <span>Enroll</span> 
           </h2>
 
           <div class="psy-walk-away-cards">
