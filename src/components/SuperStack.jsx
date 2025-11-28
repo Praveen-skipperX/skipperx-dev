@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 
 const stackData = [
-  /*{
-    title: "Startup Stack",
-    subtitle: "7+ Diverse Program",
+  {
+    title: "Creator Hub",
+    subtitle: "5 Diverse Program",
     successRate: "93% land biz roles or launch ventures",
     tag: "Business",
     footer: "Business Analytics · Human Resource · Finance · Fashion Design",
     bgImage: require("../assets/1sttt.png"),
-  },*/
+  },
   {
     title: "Core Tech",
     subtitle: "5 Diverse Program",

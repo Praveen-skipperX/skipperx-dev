@@ -13,6 +13,7 @@ import DroneEngineering from './pages/DroneEngineering';
 import RobotEngineering from './pages/RobotEngineering';
 import ArVr from './pages/Ar-Vr';
 //import StartupStack from './pages/StartupStack';
+import CreatorHub from './pages/creator-hub';
 import TechCore from './pages/TechCore';
 import Medical from './pages/Medical-edition';
 import Login from './pages/login';
@@ -50,6 +51,9 @@ function App() {
         <Route path="/Robot-Engineering" element={<RobotEngineering />} />
         <Route path="/ar-vr" element={<ArVr />} />
         {/*<Route path="/Startup-Stack" element={<StartupStack />} />*/}
+        <Route path="/creator-hub" element={<CreatorHub />} />
+
+
         <Route path="/Core-Tech" element={<TechCore />} />
         <Route path="/Medical-edition" element={<Medical />} />
         <Route path="/login" element={<Login />} />

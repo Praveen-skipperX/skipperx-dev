@@ -70,15 +70,15 @@ const Navbar = () => {
               <h3>Super Stack</h3>
               <p>All-in-one bundles to grow and create</p>
 
-              {/*<div className="mega-card">
-                <Link to="/startup-stack" className="card-link">
+              <div className="mega-card">
+                <Link to="/creator-hub" className="card-link">
                   <img src={startupImg} alt="Startup Stack" />
                   <div className="card-text">
-                    <h4>Startup Stack</h4>
-                    <span>7+ Program</span>
+                    <h4>Creators Hub</h4>
+                    <span>5+ Program</span>
                   </div>
                 </Link>
-              </div>*/}
+              </div>
 
               <div className="mega-card">
                 <Link to="/core-tech" className="card-link">
