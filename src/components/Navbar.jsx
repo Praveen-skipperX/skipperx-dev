@@ -70,7 +70,7 @@ const Navbar = () => {
               <h3>Super Stack</h3>
               <p>All-in-one bundles to grow and create</p>
 
-              <div className="mega-card">
+              {/*<div className="mega-card">
                 <Link to="/startup-stack" className="card-link">
                   <img src={startupImg} alt="Startup Stack" />
                   <div className="card-text">
@@ -78,24 +78,24 @@ const Navbar = () => {
                     <span>7+ Program</span>
                   </div>
                 </Link>
-              </div>
+              </div>*/}
 
               <div className="mega-card">
                 <Link to="/core-tech" className="card-link">
                   <img src={coretechImg} alt="Core Tech" />
                   <div className="card-text">
                     <h4>Core Tech</h4>
-                    <span>6+ Programs</span>
+                    <span>5 Programs</span>
                   </div>
                 </Link>
               </div>
 
               <div className="mega-card">
-                <Link to="/creators-hub" className="card-link">
+                <Link to="/medical-edition" className="card-link">
                   <img src={creatorsImg} alt="Creators Hub" />
                   <div className="card-text">
-                    <h4>Creators Hub</h4>
-                    <span>7+ Program</span>
+                    <h4>Medical Edition</h4>
+                    <span>2 Program</span>
                   </div>
                 </Link>
               </div>

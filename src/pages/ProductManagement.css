@@ -78,7 +78,43 @@
     }
 }
 
-
+@media (max-width: 480px) {
+    .doers-hero-title {
+        font-size: 32px;
+        
+    }
+    .doers-hero-subtitle {
+        font-size: 14px;
+        padding: 0 !important;
+        margin: -3px 0 1px;
+    }
+    .doers-hero-container {
+    background-color: #000;
+    color: #fff;
+    flex-grow: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+.doers-hero-button {
+    background: linear-gradient(to right, #FE8324, #ff4101);
+    color: #fff;
+    border: none;
+    padding: 15px 45px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+}
+}
 
 
 
@@ -254,14 +290,14 @@
 
 
 .card-style-black #diffp1{  
-    font-size: 16px;
+    font-size: 15px;
     color: #000000;
     margin-bottom: 10px;
     letter-spacing: 4px;
 }
 .card-style-black #diffp2{  
-    font-size: 18px;
-    width: 230px;
+    font-size: 15px;
+    max-width: 250px;
     font-family: 'poppins', serif;
     font-weight: 500 !important;
     line-height: 1.6;
@@ -289,14 +325,14 @@
 }
 
 .card-style-white #diffp1{  
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
     margin-bottom: 10px;
     letter-spacing: 4px;
 }
 .card-style-white #diffp2{  
-    font-size: 18px;
-    width: 260px;
+    font-size: 14px;
+    max-width: 290px;
     font-family: 'poppins', serif;
     font-weight: 500 !important;
     line-height: 1.6;
@@ -1057,15 +1093,14 @@
     flex-grow: 1;
     max-width: 700px;
     padding-left: 20px;
-
     align-items: baseline;
     margin-right: 0px;
 }
 
-/* Specific overrides for Case Study text to force inline display */
+
 .doers-module-case-study .doers-module-detail-title {
     display: inline;
-    margin: 0 0px 0 0; /* Tight inline spacing */
+    margin: 0 0px 0 0; 
 }
 .doers-module-case-study .doers-module-detail-content {
     display: inline;
@@ -1098,8 +1133,6 @@
     max-height: 100%;
     height: auto;
     object-fit: contain;
-    /* Key filter: makes colored logos look white/light gray */
-   
 }
 
 /* Responsive adjustments */
@@ -1132,6 +1165,9 @@
         justify-content: flex-start;
     }
 }
+
+
+
 
 
 
@@ -1423,6 +1459,79 @@
     }
 }
 
+@media (max-width: 480px) {
+    .doers-pricing-main-title {
+        font-size: 20px !important;
+    }
+    .doers-pricing-subtext {
+      font-size: 12px !important;
+      margin-top: 7px;
+      
+      }
+  .doers-pricing-header {
+      text-align: center;
+      max-width: 1100px;
+      margin-bottom: 40px;
+  }   
+  .doers-card-mode-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      margin: 0;
+  } 
+  .doers-card-subtitle {
+    font-size: 13px !important;
+    font-weight: 600;
+    font-family: poppins;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 6px;
+    padding-left: 16px;
+}
+.doers-feature-list li {
+    font-size: 13px !important;
+    color: #f5f7f9;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    font-family: poppins;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.33;
+}
+.doers-offer-button-wrapper {
+        display: none;
+    }
+
+    .doers-card-footer {
+    background: #2B2A2A;
+    padding: 10px 30px 15px;
+    margin-top: 0px;
+    border-radius: 0 0 12px 12px;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start !important;
+}
+
+#doers-tag {
+    margin-top: 11px !important;
+    margin-bottom: 2px !important;
+}
+.doers-pricing-cards-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1020px;
+    width: 100%;
+    justify-content: center;
+}
+.doers-card-footer{
+  margin-bottom: -14.8px;
+}
+
+}
+
 
 
 
@@ -1621,6 +1730,37 @@
     flex: 0 0 280px;
     padding: 20px;
   }
+  .doers-tag-item {
+    display: inline-block;
+    font-size: 12px !important;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #BDC5D1;
+    margin-right: 0px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-style: italic;
+}
+.doers-tag-diamond {
+    width: 13px !important;
+    height: 13px !important;
+    font-style: normal;
+    
+    padding-right: 2px;
+    padding-left: 1px;
+    font-size: 24px !important;
+}
+}
+
+@media (max-width: 480px) {
+    .doers-testimonials-main-title {
+        font-size: 20px !important;
+    }
+    .doers-testimonials-subtext {
+        font-size: 12px !important;
+        color: #9A9A9A;
+        margin-top: 15px;
+    }
 }
 
 
@@ -1635,6 +1775,44 @@
 
 
 
+
+
+
+
+
+
+@media (max-width: 480px){
+  .doers-faq-section{
+    padding: 20px !important;
+  }
+  .doers-faq-main-title {
+    font-size: 20px !important;
+    font-weight: 900;
+    font-family: 'Playfair Display';
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: -20px !important;
+  }
+  .doers-faq-subtext {
+    display: none;
+  }
+  .doers-faq-question{
+    font-size: 12px !important;
+  }
+  .doers-faq-question {
+        padding: 13px 20px 2px !important;
+        margin-bottom: -6px;
+  }
+  .doers-faq-answer-text {
+    font-size: 12px !important;
+    padding-top: 15px !important; 
+    border-top: none !important; 
+  }
+  .doers-faq-item.active .doers-faq-answer-wrapper {
+    max-height: 180px !important; /* Adjust as needed for your longest answer */
+    padding: 5px 20px 12px !important;
+  }
+}
 
 .doers-faq-section {
     background-color: #000;
@@ -1862,7 +2040,9 @@
 #doers-register-text-2{
     margin-bottom: 50px;
 }
-
+.doers-register-text-3{
+  font-weight: bold;
+}
 .doers-register-text-2,
 .doers-register-text-3 {
     font-size: 15px;
