@@ -19,7 +19,7 @@ import image1 from "../assets/co-founder.png";
 import image2 from "../assets/vice-president.png";
 import image3 from "../assets/designer.png";
 //import image4 from "../assets/product.png";
-import image5 from "../assets/harisha.jpg";
+import image5 from "../assets/harisha-aboutpage.jpg";
 
 
 //import bgImagemobile from '../assets/landing-mobile.png';

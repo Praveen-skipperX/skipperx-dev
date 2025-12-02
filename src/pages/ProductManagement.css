@@ -257,7 +257,26 @@
     .doers-methodology-section {
         padding: 20px 18px;
     }
-}    
+}  
+
+.desktop-img {
+  display: block;
+}
+
+.mobile-img {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+  }
+}
+
 
 
 
@@ -274,7 +293,7 @@
 @media (max-width: 480px) {
     .doers-different-section {
     background-color: #000; 
-    padding: 32px 20px 22px !important;
+    padding: 22px 20px 22px !important;
     color: #fff;
     text-align: center;
 }
@@ -287,6 +306,24 @@
     text-transform: uppercase;
     margin-bottom: 40px !important;
 }
+
+.doers-methodology-cards-container {
+    display: flex;
+    gap: 15px;
+    max-width: 1200px;
+    width: 100%;
+}
+.doers-card-title {
+        font-size: 18px;
+    }
+    .doers-card-title {
+    margin-bottom: 8px;
+}
+
+    .doers-card-description {
+        font-size: 12px;
+        max-width: 250px;
+    }
 .doers-different-title {
     font-size: 20px !important;
     font-weight: 700;
@@ -310,12 +347,7 @@
 }
 
 
-
-
-
-} 
-
-
+}
 
 .doers-different-section {
     background-color: #000; 
@@ -1254,6 +1286,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --- PRICING SECTION (Finalized to match image_d75437.png, image_e1c449.png, image_e1c482.png) --- */
 
 .doers-pricing-section {
@@ -1834,10 +1883,55 @@
         font-size: 20px !important;
     }
     .doers-testimonials-subtext {
-        font-size: 12px !important;
+        font-size: 13px !important;
         color: #9A9A9A;
         margin-top: 15px;
     }
+    .doers-testimonials-overline {
+        font-size: 12px;
+        font-weight: 500;
+        color: #feffff;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .doers-testimonials-header {
+        text-align: center;
+        max-width: 1100px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+    .doers-testimonial-quote {
+        font-size: 12px;
+        color: #BDC5D1;
+        line-height: 1.4;
+        margin: 0;
+        width: 219px;
+        text-align: left;
+    }
+    .doers-testimonial-card {
+        flex: 0 0 240px;
+        padding: 20px 20px 10px;
+    }
+    .doers-testimonials-tag-bar {
+        width: 100%;
+        overflow: hidden;
+        padding: 0px 0 10px;
+        margin-bottom: 30px;
+        background: linear-gradient(to right bottom, #181818, #212121, #383838);
+        border-top: 2px solid #afa8a8;
+        border-bottom: 2px solid #afa8a8;
+        position: relative;
+    }
+    .doers-testimonials-section {
+    background-color: #000;
+    padding: 42px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
 }
 
 
@@ -2767,3 +2861,384 @@
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================== */
+/* 🆕 REVISED CURRICULUM SECTION STYLES (UNIQUE NAMESPACING) */
+/* ============================================== */
+
+/* --- General Section & Header Styles --- */
+
+.doers-new-curriculum-section {
+    background-color: #000000; /* Pure black background */
+    color: #ffffff;
+    padding: 60px 120px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.doers-new-curriculum-header {
+    text-align: center;
+    max-width: 1100px;
+    margin-bottom: 20px;
+}
+
+.doers-new-creator-curriculum-overline {
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-family: poppins;
+    color: #9c9c9c;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
+
+.doers-new-creator-curriculum-main-title {
+    font-family: playfair display;
+    font-size: 37px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.doers-new-creator-curriculum-highlight {
+    background: linear-gradient(to right, #FE8324, #ff4101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    padding-right: 3px;
+}
+
+.doers-new-creator-curriculum-subtext {
+    font-size: 20px;
+    color: #9A9A9A;
+    margin-top: 4px;
+}
+
+/* --- Content Container & Track Separator/Title --- */
+
+.doers-new-curriculum-content {
+    width: 100%;
+    max-width: 1010px;
+}
+
+.doers-new-creator-track-container {
+    margin-bottom: 40px;
+}
+
+.doers-new-creator-track-title {
+    text-align: center;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #ffffff;
+    padding: 6px 25px;
+    border: 1px solid #535050;
+    display: table;
+    margin: 40px auto 40px;
+    border-radius: 50px;
+}
+
+/* --- Module Card (Accordion Item) --- */
+
+.doers-new-creator-module-card {
+    background: linear-gradient(to right bottom,#2C2C2C 10%,#404040);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.doers-new-creator-module-card.is-open {
+    
+    border-color: #333333;
+}
+
+
+/* --- Header (Clickable Area) --- */
+
+.doers-new-creator-module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+.doers-new-creator-title-wrapper {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.doers-new-creator-module-title {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: poppins;
+    letter-spacing: 0.8px;
+    margin: 0;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.doers-new-creator-module-focus {
+    font-size: 15px;
+    color: #9c9c9c;
+    margin: 5px 0 0 0;
+    line-height: 1.4;
+}
+
+.doers-new-creator-focus-label {
+    
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+/* --- Sessions Tag (Black Box) --- */
+
+.doers-new-creator-sessions-tag {
+    background-color: #2C2C2C;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+/* --- Toggle Button (Black Circle) --- */
+
+.doers-new-creator-toggle-btn {
+    background: #000000;
+    border: none;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 0;
+    transition: transform 0.3s;
+}
+
+.doers-new-creator-toggle-btn:hover {
+    background: #111111;
+}
+
+.doers-new-creator-arrow-icon {
+    font-size: 12px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.doers-new-creator-arrow-icon.down {
+    transform: rotate(0deg);
+}
+
+.doers-new-creator-arrow-icon.up {
+    transform: rotate(180deg);
+}
+
+/* --- Body (Collapsed Content - The Dark Area) --- */
+
+.doers-new-creator-module-body {
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    padding: 0 30px;
+    color: #ffffff;
+    font-size: 15px;
+    background: #2C2C2C;
+    border-top: 1px solid #333333;
+}
+
+.doers-new-creator-module-card.is-open .doers-new-creator-module-body {
+    max-height: 400px;
+    padding: 10px 30px 10px;
+}
+
+/* Ensure the body content itself is styled correctly */
+.doers-new-creator-module-card.is-open .doers-new-creator-module-body p {
+    margin: 0;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 768px) {
+    .doers-new-creator-curriculum-main-title {
+        font-size: 30px;
+    }
+
+    .doers-new-creator-module-header {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+
+    .doers-new-creator-title-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .doers-new-creator-sessions-tag {
+        order: 2;
+        margin-right: 10px;
+        padding: 6px 14px;
+    }
+
+    .doers-new-creator-toggle-btn {
+        order: 3;
+    }
+
+    .doers-new-creator-module-body {
+        padding: 0 20px;
+    }
+
+    .doers-new-creator-module-card.is-open .doers-new-creator-module-body {
+        padding: 15px 20px 25px;
+    }
+}
+
+
+@media (max-width: 480px){
+    .doers-new-creator-curriculum-main-title {
+        font-size: 20px;
+    }
+    .doers-curriculum-overline {
+        font-size: 12px;
+        font-weight: 500;
+        font-family: 'Poppins';
+        color: #ffffff;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .doers-new-creator-curriculum-subtext {
+        font-size: 12px;
+        color: #9A9A9A;
+        margin-top: 4px;
+    }
+    .doers-new-creator-track-title {
+        text-align: center;
+        font-size: 10px;
+        font-family: poppins;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: #ffffff;
+        padding: 6px 25px;
+        border: 1px solid #535050;
+        display: table;
+        margin: 15px auto 20px;
+        border-radius: 50px;
+    }
+    .doers-new-creator-module-title {
+        font-size: 12px;
+        font-weight: bold;
+        font-family: poppins;
+        letter-spacing: 0.8px;
+        margin: 0;
+        line-height: 1.4;
+        color: #ffffff;
+    }
+    .doers-new-creator-focus-label {
+        color: #ffffff;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .doers-new-creator-module-focus {
+        font-size: 13px;
+        color: #9c9c9c;
+        margin: 5px 0 0 0;
+        line-height: 1.4;
+    }
+    .doers-new-creator-sessions-tag {
+        background-color: #2C2C2C;
+        color: #ffffff;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
+        height: fit-content;
+    }
+    .doers-new-creator-toggle-btn {
+        background: #000000;
+        border: none;
+        color: #ffffff;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        flex-shrink: 0;
+        padding: 0;
+        transition: transform 0.3s;
+    }
+    .doers-new-creator-arrow-icon {
+        font-size: 11px;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    .doers-new-creator-module-header {
+        flex-wrap: wrap;
+        padding: 15px 20px 10px;
+    }
+        .doers-new-creator-title-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .doers-new-creator-module-body p {
+    margin: 0;
+    line-height: 1.6;
+    color: #ffffff;
+    font-size: 13px ;
+}
+    .doers-new-creator-module-card.is-open .doers-new-creator-module-body {
+        padding: 10px 20px 10px;
+    }
+    .doers-new-curriculum-section {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 30px 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+    }
+}

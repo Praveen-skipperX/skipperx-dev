@@ -406,7 +406,7 @@ const ProductManagement = () => {
 
             <section className="doers-different-section">
                 <div className="doers-different-header">
-                    <p className="doers-different-overline">HOW WE'RE DIFFERENT</p>
+                    
                     <h2 className="doers-different-title">
                         We Teach <span className="doers-highlight">Product Thinking</span> — Not Checklists.
                     </h2>
@@ -428,7 +428,7 @@ const ProductManagement = () => {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section>{/*<p className="doers-curriculum-overline">CURRICULUM</p>*/}
 
 
 

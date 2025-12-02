@@ -7,6 +7,12 @@ import Footer from '../components/Footer';
 import ChallengeBased from '../assets/cre1.png'; 
 import CreatorLed from '../assets/cre2.png'; 
 import BuildCreate from '../assets/cre3.png';
+
+import ChallengeBasedMob from '../assets/doers-1.png'; 
+import CreatorLedMob from '../assets/doers-2.png'; 
+import BuildCreateMob from '../assets/doers-3.png';
+
+
 import brochureImage from "../assets/doers-brochure.png";
 import certificateDisplay from "../assets/new-cer.jpg";
 
@@ -20,19 +26,11 @@ import mockInterviewsImage from '../assets/mock-interviews.png';
 import engagementBg from '../assets/unique-engagement-bg.jpeg';
 import engagementBgform from '../assets/creatorform.png';
 
-import amulLogo from '../assets/amul.png';      // Replace with your actual path
 import credLogo from '../assets/cred.png';      // Replace with your actual path
-import zomatoLogo from '../assets/zomato.png';  // Replace with your actual path
-import mamaearthLogo from '../assets/mamaearth.png'; // Replace with your actual path
-import fevicolLogo from '../assets/fevicol.png'; 
+
 import swiggyLogo from '../assets/swiggy.png';
 import nykaaLogo from '../assets/nykaa.png'; 
-import spotifyLogo from '../assets/spotify.png';
-import tataLogo from '../assets/tata.png'; 
-import boatLogo from '../assets/boat.png';
-import bewaLogo from '../assets/bewa.png'; 
-import liciLogo from '../assets/lici.png';
-import tatLogo from '../assets/tat.png';
+
 
 
 // 🚨 IMPORTANT: Add these new image imports for testimonials
@@ -177,6 +175,7 @@ const methodologies = [
     title: "Challenge-Based Learning",
     description: "Real projects, brand sprints & weekly creative missions.",
     image: ChallengeBased,
+    mobileImage: ChallengeBasedMob, // mobile
     alt: "Founders",
     bgColor: "#313131"
   },
@@ -185,6 +184,7 @@ const methodologies = [
     title: "Creator-Led Approach",
     description: "Fuelled by the stories that built India’s creator revolution.",
     image: CreatorLed,
+    mobileImage: CreatorLedMob,
     alt: "Swiggy Team",
     bgColor: "#424b48"
   },
@@ -193,91 +193,115 @@ const methodologies = [
     title: "Build. Create. Grow.",
     description: "Experience Brand thinking inspired by CRED, and other modern disruptors.",
     image: BuildCreate,
+    mobileImage: BuildCreateMob,
     alt: "Spotify Screens",
     bgColor: "#3e4d41"
   }
 ];
 
-const curriculumModules = [
+
+
+
+
+
+
+
+
+// 🆕 NEW: Data structure matching the image provided
+const curriculumData = [
     {
-        id: 1,
-        title: "FOUNDATIONS OF CREATOR MINDSET",
-        activities: "Self-discovery challenges, confidence-building through content creation, storytelling contests.",
-        bonus: "Learn from Amul's topical content mastery—how to build timely, viral brand commentary",
-        caseStudy: "CRED’s brand storytelling and founder-led narrative—how Kunal Shah built trust with storytelling",
-        logos: [
-            { src: amulLogo, alt: "Amul Logo", className: "amul" },
-            { src: credLogo, alt: "CRED Logo", className: "cred" }
+        track: "TRACK 1 — FOUNDATIONS",
+        modules: [
+            {
+                id: 1,
+                title: "1. WHAT HUMAN PROBLEM ARE WE SOLVING? WHY IT EXISTS",
+                focus: "Clarity on a product's 'why' and the mindset of a problem-solver.",
+                sessions: 2,
+            },
+            {
+                id: 2,
+                title: "2. WHO YOU'RE HERE FOR",
+                focus: "Strong customer understanding and a clear target audience.",
+                sessions: 2,
+            },
+            {
+                id: 3,
+                title: "3. WHY YOU'RE THE ONE",
+                focus: "A sharp, differentiated brand position.",
+                sessions: 2,
+            },
+            {
+                id: 4,
+                title: "4. HOW YOU SHOW UP",
+                focus: "A complete multi-channel marketing strategy.",
+                sessions: 6,
+            },
+            {
+                id: 5,
+                title: "5. WHAT IMPACT YOU'RE CREATING",
+                focus: "Data literacy and confidence to measure real impact.",
+                sessions: 3,
+            },
+            {
+                id: 6,
+                title: "6. WHAT YOU SAY",
+                focus: "Clear brand voice & structured content thinking.",
+                sessions: 3,
+            },
+            {
+                id: 7,
+                title: "7. HOW IT CHANGES",
+                focus: "Adaptability across any marketing environment.",
+                sessions: 2,
+            },
+            {
+                id: 8,
+                title: "8. BECOMING THE MARKETER YOU'RE MEANT TO BE",
+                focus: "A clear identity, confidence, and your own marketing lens.",
+                sessions: 2,
+            },
         ]
     },
     {
-        id: 2,
-        title: "COMMUNITY BUILDING & FANDOM TO BUSINESS",
-        activities: "Build a niche WhatsApp/Instagram community around a passion; design a member onboarding journey.",
-        bonus: "Zomato’s engagement hacks—hyperlocal content and user connect strategies",
-        caseStudy: "Mamaearth’s organic community-led growth; how founder Ghazal Alagh turned moms into brand ambassadors",
-        logos: [
-            { src: zomatoLogo, alt: "Zomato Logo", className: "zomato" },
-            { src: mamaearthLogo, alt: "Mamaearth Logo", className: "mamaearth" }
+        track: "TRACK 2 — LAUNCHPAD",
+        modules: [
+            {
+                id: 9,
+                title: "1. FIND YOUR PLACE IN MARKETING",
+                focus: "Clarity on your ideal marketing path.",
+                sessions: 1,
+            },
+            {
+                id: 10,
+                title: "2. BUILDING PROOF OF WORK",
+                focus: "A portfolio of real, demonstrable skills.",
+                sessions: 1,
+            },
+            {
+                id: 11,
+                title: "3. RESUME, PORTFOLIO & LINKEDIN",
+                focus: "A polished professional brand.",
+                sessions: 1,
+            },
+            {
+                id: 12,
+                title: "4. NETWORKING — ONLINE & OFFLINE",
+                focus: "A system to build opportunities through relationships.",
+                sessions: 1,
+            },
         ]
-    },
-    {
-        id: 3,
-        title: "CONTENT CREATION MASTERY",
-        activities: "The “Viral Challenge”—create reels/posts applying viral hooks/challenges; content peer review rounds.",
-        bonus: "Fevicol’s UGC-driven campaigns and witty content virality",
-        caseStudy: "Swiggy’s Instagram Story campaigns—how creative assets drove app installs and retention",
-        logos: [
-            { src: fevicolLogo, alt: "Fevicol Logo", className: "fevicol" },
-            { src: swiggyLogo, alt: "Swiggy Logo", className: "swiggy" }
-        ]
-    },
-    {
-        id: 4,
-        title: "SOCIAL MEDIA MARKETING & FUNNELS",
-        activities: "Funnel-building workshops using LinkedIn and Instagram for a simulated launch; create A/B test ads.",
-        bonus: "Spotify India’s playlist campaign—creative use of data for personalisation and shareability",
-        caseStudy: "Nykaa’s influencer-driven product launches; lessons on platform-first strategies",
-        logos: [
-            { src: nykaaLogo, alt: "nykaa Logo", className: "nykaa" },
-            { src: spotifyLogo, alt: "spotify Logo", className: "spotify" }
-        ]
-    },
-    {
-        id: 5,
-        title: "REAL-WORLD PROJECTS & BRAND CASE CHALLENGES",
-        activities: "Live Agency Sprints”—work on real or simulated briefs from brands like boAt, Bewakoof, or Licious.",
-        bonus: "Tata Tea’s “Jaago Re” social impact movement—integrating cause with commerce for deeper brand equity.",
-        caseStudy: "BoAt’s rapid multimedia content approach across platforms; striking the balance between scale and relatability.",
-        logos: [
-            { src: tataLogo, alt: "nykaa Logo", className: "nykaa" },
-            { src: boatLogo, alt: "spotify Logo", className: "spotify" }
-        ]
-    },
-    {
-        id: 6,
-        title: "CREATORPRENEURSHIP & AGENCY TOOLS",
-        activities: " Project—brand a personal skill as a service and pitch to mentors; pricing and negotiation simulations.",
-        bonus: "Bewakoof’s affordable youth branding and meme marketing playbook.",
-        caseStudy: "Licious’s journey as a D2C disruptor; leveraging storytelling, assurance, and influencer reviews for rapid scale",
-        logos: [
-            { src: bewaLogo, alt: "bewaLogo", className: "nykaa" },
-            { src: liciLogo, alt: "liciLogo", className: "spotify" }
-        ]
-    },
-    {
-        id: 7,
-        title: "GROWTH MINDSET & PERSONAL BRAND PORTFOLIO",
-        activities: "Build video resumes, case books featuring campaign breakdowns, and portfolio reviews with mentors.",
-        bonus: " Swiggy’s “Voice of Foodies” influencer activation as a model for beginner creators to gain traction.",
-        caseStudy: "Tata Nano’s repositioning campaign—using story, empathy, and inclusion to reshape perceptions.",
-        logos: [
-            { src: swiggyLogo, alt: "bewaLogo", className: "nykaa" },
-            { src: tatLogo, alt: "liciLogo", className: "spotify" }
-        ]
-    },
-    
+    }
 ];
+
+
+
+
+
+
+
+
+
+
 
 const differentHighlights = [
     {
@@ -318,6 +342,13 @@ const differentHighlights = [
     },
 ];
 
+
+
+
+
+
+
+
 const engagementElements = [
   {
     id: 1,
@@ -340,6 +371,20 @@ const CreatorPreneur = () => {
 
     const [activeIndex, setActiveIndex] = useState(null);
 
+
+
+    const [openModules, setOpenModules] = useState([]); // Initialize with module 8 (Becoming the Marketer) and 12 (Networking) open, as suggested by the image's structure.
+
+    const toggleModule = (id) => {
+        setOpenModules(prevOpenModules => 
+            prevOpenModules.includes(id) 
+                ? prevOpenModules.filter(moduleId => moduleId !== id) 
+                : [...prevOpenModules, id]
+        );
+    };
+
+
+
     const toggleAccordion = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
@@ -360,6 +405,19 @@ const CreatorPreneur = () => {
                 </div>
             </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
             <section className="doers-methodology-section">
                 <div className="doers-methodology-cards-container">
                     {methodologies.map((method) => (
@@ -374,11 +432,22 @@ const CreatorPreneur = () => {
                             </div>
                             <div className="doers-card-image-container">
                                 <img src={method.image} alt={method.alt} className="doers-card-image" />
+                                <img src={method.mobileImage} alt={method.alt} className="doers-card-image mobile-img" />
                             </div>
                         </div>
                     ))}
                 </div>
             </section>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -463,6 +532,9 @@ const CreatorPreneur = () => {
 
 
 
+
+
+
             <section className="doers-different-section">
                 <div className="doers-different-header">
                     <p className="doers-different-overline">HOW WE'RE DIFFERENT</p>
@@ -493,58 +565,110 @@ const CreatorPreneur = () => {
 
 
 
-            <section className="doers-curriculum-section">
-                <div className="doers-curriculum-header">
-                    <p className="doers-curriculum-overline">CURRICULUM</p>
-                    <h2 className="doers-curriculum-main-title">
-                        <span className="doers-curriculum-highlight">The Creator's Playbook  — </span> Built Around Real Brands.
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* 🆕 NEW: Curriculum Section (based on the image) - UPDATED WITH UNIQUE CLASS NAMES */}
+            <section className="doers-new-curriculum-section" >
+                <div className="doers-new-curriculum-header">
+                    <p className="doers-curriculum-overline">C U R R I C U L U M</p>
+                    <h2 className="doers-new-creator-curriculum-main-title">
+                        <span className="doers-new-creator-curriculum-highlight">The Creator’s Playbook — </span>Built Around Real Brands.
                     </h2>
-                    <p className="doers-curriculum-subtext">
-                        7 modules. 7 challenges. Infinite creative growth.
+                    <p className="doers-new-creator-curriculum-subtext">
+                        Two tracks. One goal — think like a marketer, grow like a creator.
                     </p>
                 </div>
 
-                <div className="doers-curriculum-modules-container">
-                    {curriculumModules.map((module) => (
-                        <div key={module.id} className="doers-module-card">
-                        <h3 className="doers-module-title">
-                            <span className="doers-module-number">{module.id}.</span> {module.title}
-                        </h3>
-                        
-                        {/* Activities Block - Title and Content are now consecutive paragraphs */}
-                        <div className='doers-case-act'>
-                        <p className="doers-module-detail-title" >Activities:</p>
-                        <p className="doers-module-detail-content" id='doers-activity'>{module.activities}</p>
-                        </div>
-
-                        {/* Bonus Block */}
-                        <div className='doers-case-act1'>
-                        <p className="doers-module-detail-title">Bonus:</p>
-                        <p className="doers-module-detail-content" id='doers-activity'>{module.bonus}</p>
-                        </div>
-                        
-                        {/* 🎯 Case Study Block: Use a single parent div for flex/grid control */}
-                        <div className="doers-module-case-study">
-                            {/* Left Side: Case Study Text */}
-                            <div className="doers-case-study-text-area"> 
-                                <p className="doers-module-detail-title" id='doers-case'>Case Study:</p>
-                                <p className="doers-module-detail-content" id='doers-casestudy'>{module.caseStudy}</p>
-                            </div>
+                <div className="doers-new-curriculum-content">
+                    {curriculumData.map((trackItem, index) => (
+                        <div key={index} className="doers-new-creator-track-container">
+                            <p className="doers-new-creator-track-title">{trackItem.track}</p>
                             
-                            {/* Right Side: Logos */}
-                            <div className="doers-case-study-logos">
-                                {module.logos.map(logo => (
-                                    <div key={logo.alt} className="doers-logo-container">
-                                        <img src={logo.src} alt={logo.alt} className="doers-brand-logo-img" /> 
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+                            {trackItem.modules.map((moduleItem) => {
+                                const isOpen = openModules.includes(moduleItem.id);
+                                return (
+                                    <div 
+                                        key={moduleItem.id} 
+                                        className={`doers-new-creator-module-card ${isOpen ? 'is-open' : ''}`}
+                                    >
+                                        <div 
+                                            className="doers-new-creator-module-header" 
+                                            onClick={() => toggleModule(moduleItem.id)}
+                                            role="button"
+                                            aria-expanded={isOpen}
+                                            aria-controls={`doers-new-creator-module-body-${moduleItem.id}`}
+                                        >
+                                            <div className="doers-new-creator-title-wrapper">
+                                                <h3 className="doers-new-creator-module-title">{moduleItem.title}</h3>
+                                                <p className="doers-new-creator-module-focus">
+                                                    <span className="doers-new-creator-focus-label"><b>Focus :</b></span> {moduleItem.focus}
+                                                </p>
+                                            </div>
+                                            <div className="doers-new-creator-sessions-tag">
+                                                <span>{moduleItem.sessions} SESSIONS</span>
+                                            </div>
+                                            <button className="doers-new-creator-toggle-btn">
+                                                {/* Use a simple arrow icon, rotated by CSS */}
+                                                <span className={`doers-new-creator-arrow-icon ${isOpen ? 'up' : 'down'}`}>
+                                                    &#9660; {/* Down Arrow */}
+                                                </span>
+                                            </button>
+                                        </div>
 
+                                        <div 
+                                            id={`doers-new-creator-module-body-${moduleItem.id}`} 
+                                            className="doers-new-creator-module-body"
+                                            aria-hidden={!isOpen}
+                                        >
+                                            {/* Content shown when module is open */}
+                                            <p>{moduleItem.focus}</p>
+                                            
+                                            {/* The list structure below is hidden in the CSS but kept here 
+                                            for future use if detailed bullet points are added.
+                                            <ul className="module-detail-list">
+                                                <li>- Case Study: Learn from Amul's topical content mastery</li>
+                                                <li>- Activity: Self-discovery challenges, confidence-building.</li>
+                                            </ul> */}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     ))}
                 </div>
             </section>
+            
+            {/* ⬆️ NEW SECTION ENDS HERE ⬆️ */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
