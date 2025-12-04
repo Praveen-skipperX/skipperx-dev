@@ -13,6 +13,8 @@ import CreatorLedMob from '../assets/doers-2.png';
 import BuildCreateMob from '../assets/doers-3.png';
 
 
+import newDifferentImage from '../assets/different-us.png';
+
 import brochureImage from "../assets/doers-brochure.png";
 import certificateDisplay from "../assets/new-cer.jpg";
 
@@ -52,39 +54,38 @@ import ordiamond from '../assets/or-diamond.png'; // Replace with actual path
 import upgradeBg from '../assets/cta-upgrade-bg.jpg';
 
 
-// 🆕 NEW: Data for the Impact Dashboard Section
 const impactStats = [
-    {
-        id: 1,
-        percentage: "87%",
-        description: "Our learners launched their first paid project within <span class='highlight-text'>30 days</span>.",
-    },
-    {
-        id: 2,
-        percentage: "95%",
-        description: "Rated mentor feedback sessions as <span class='highlight-text'>career-changing</span>.",
-    },
-    {
-        id: 3,
-        percentage: "60%",
-        description: "Graduates started a <span class='highlight-text'>creator community or side hustle</span>.",
-    },
-    {
-        id: 4,
-        percentage: "400+",
-        description: "Real brand campaigns created through <span class='highlight-text'>weekly challenges</span>.",
-    },
-    {
-        id: 5,
-        percentage: "230%",
-        description: "Average <span class='highlight-text'>engagement rise</span> after Week 4 content sprint.",
-    },
+  {
+    id: 1,
+    percentage: '87%',
+    description: 'Our learners launched their first paid project within <span class="highlight-text">30 days.</span>',
+  },
+  {
+    id: 2,
+    percentage: '95%',
+    description: 'Rated mentor feedback sessions as <span class="highlight-text">career-changing.</span>',
+  },
+  {
+    id: 3,
+    percentage: '60%',
+    description: 'Graduates started a <span class="highlight-text">creator community or side hustle.</span>',
+  },
+  {
+    id: 4,
+    percentage: '400+',
+    description: 'Real brand campaigns created through <span class="highlight-text">weekly challenges.</span>',
+  },
+  {
+    id: 5,
+    percentage: '230%',
+    description: 'Average <span class="highlight-text">engagement rise</span> after Week 4 content sprint.',
+  },
 ];
 
 const mentorDetails = {
-    name: "PRERANA SAHA",
-    role: "Ex-founder and psychology-marketing strategist",
-    image: mentorPreranaSaha,
+  name: 'PRERANA SAHA',
+  role: 'Ex-founder and psychology-marketing strategist',
+  image: mentorPreranaSaha,
     workedWithBrands: [
         { src: brandPlaceholder, alt: "Placeholder Brand 1" }, // You might have a specific one for the egg-like logo
         { src: brandFortis, alt: "Fortis" },
@@ -93,13 +94,14 @@ const mentorDetails = {
         { src: brandFibr, alt: "Fibr" },
     ],
     expertiseAreas: [
-        "Behaviour-Driven Marketing Mentor",
-        "Built 4 businesses",
-        "Now leading research at a unicorn and helping marketers blend behaviour",
-        "Storytelling & strategy for people-first growth.",
+    // Line 1: Centered block, ending with | before the break
+        'Behaviour-Driven Marketing Mentor | Built <b>4 businesses</b> | Now leading <b>research at a unicorn</b> and helping',
+        // Line 2: Centered block, continuing the thought
+        'marketers blend <b>behaviour</b> | Storytelling & <b>strategy</b> for people-first growth',
     ],
-};
+  };
 
+  
 
 const testimonialsData = [
     {
@@ -536,30 +538,43 @@ const CreatorPreneur = () => {
 
 
             <section className="doers-different-section">
-                <div className="doers-different-header">
-                    <p className="doers-different-overline">HOW WE'RE DIFFERENT</p>
-                    <h2 className="doers-different-title">
-                        We Don’t Teach. <span className="doers-highlight">We Challenge.</span>
-                    </h2>
-                    <p className="doers-different-subtitle">
-                        <span className='doers-different-subtitle-highlight'></span>Because the best creators grow through action, not instruction
-                    </p>
+    <div className="doers-different-header">
+        <p className="doers-different-overline">HOW WE'RE DIFFERENT</p>
+        <h2 className="doers-different-title">
+            We Don’t Teach. <span className="doers-highlight">We Challenge.</span>
+        </h2>
+        <p className="doers-different-subtitle">
+            <span className='doers-different-subtitle-highlight'></span>
+            Because the best creators grow through action, not instruction
+        </p>
+    </div>
+
+    {/* ⭐ MOBILE IMAGE (ONLY for mobile UI) */}
+    <div className="doers-different-mobile-image">
+        <img 
+            src={newDifferentImage} 
+            alt="Different Mobile Visual"
+            className="doers-different-mobile-image-element"
+        />
+    </div>
+
+    {/* ⭐ DESKTOP GRID (unchanged) */}
+    <div className="doers-different-grid-container">
+        {differentHighlights.map((item) => (
+            <div key={item.id} className={`doers-different-card ${item.className}`}>
+                <div className="doers-different-card-text-content">
+                    <h3 className="doers-different-card-main-title">{item.mainTitle}</h3>
+                    <p className="doers-different-card-category" id='diffp1'>{item.category}</p>
+                    <p className="doers-different-card-description" id='diffp2'>{item.description}</p>
                 </div>
-                <div className="doers-different-grid-container">
-                    {differentHighlights.map((item) => (
-                        <div key={item.id} className={`doers-different-card ${item.className}`}>
-                            <div className="doers-different-card-text-content">
-                                <h3 className="doers-different-card-main-title">{item.mainTitle}</h3>
-                                <p className="doers-different-card-category" id='diffp1'>{item.category}</p>
-                                <p className="doers-different-card-description" id='diffp2'>{item.description}</p>
-                            </div>
-                            <div className="doers-different-card-image-container">
-                                <img src={item.image} alt={item.alt} className="doers-different-card-image" />
-                            </div>
-                        </div>
-                    ))}
+                <div className="doers-different-card-image-container">
+                    <img src={item.image} alt={item.alt} className="doers-different-card-image" />
                 </div>
-            </section>
+            </div>
+        ))}
+    </div>
+</section>
+
 
 
 
@@ -938,77 +953,106 @@ const CreatorPreneur = () => {
                 </div>
             </section>
 
-                {/* 🆕 FINAL IMPACT DASHBOARD SECTION */}
-<section className="doers-impact-dashboard-section">
-  <div className="doers-impact-header">
-    <p className="doers-impact-overline">IMPACT DASHBOARD</p>
-    <h2 className="doers-impact-title">
-      Numbers That <span className="doers-impact-highlight">Redefine</span> Learning
-    </h2>
-    <p className="doers-impact-subtitle">
-      Creatorpreneur isn’t theory — it’s traction. See what happens when creators learn by doing
-    </p>
-  </div>
 
-  <div className="doers-impact-content-wrapper">
-    {/* Stat Cards */}
-    {impactStats.map((stat, index) => (
-      <div key={stat.id} className={`doers-impact-stat-card doers-stat-card-${index + 1}`}>
-        <p className="doers-stat-percentage">{stat.percentage}</p>
-        <p
-          className="doers-stat-description"
-          dangerouslySetInnerHTML={{ __html: stat.description }}
-        ></p>
-      </div>
-    ))}
 
-    {/* Mentor Section */}
-    <div className="doers-impact-mentor-section">
-      <p className="doers-mentor-overline">Mentored By :</p>
-      <h3 className="doers-mentor-name">{mentorDetails.name}</h3>
-      <p className="doers-mentor-role">{mentorDetails.role}</p>
-      <div className="doers-mentor-image-wrapper">
-        <img
-          src={mentorDetails.image}
-          alt={mentorDetails.name}
-          className="doers-mentor-image"
-          loading="lazy"
-        />
-      </div>
+
+
+
+
+
+
+
+        <section className="cp-doers-impact-dashboard-section">
+    <div className="cp-doers-impact-header">
+        <p className="cp-doers-impact-overline">IMPACT DASHBOARD</p>
+        <h2 className="cp-doers-impact-title">
+            Numbers That <span className="cp-doers-impact-highlight">Redefine</span> Learning
+        </h2>
+        <p className="cp-doers-impact-subtitle">
+            Creatorpreneur isn’t theory — it’s traction. See what happens when creators learn by doing
+        </p>
     </div>
-  </div>
 
-  {/* Footer Single Block */}
-  <div className="doers-impact-footer-bar">
-    <div className="doers-footer-top">
-      <p className="doers-footer-label">Worked with 10+ brands</p>
-      <div className="doers-brand-logos">
-        {mentorDetails.workedWithBrands.map((brand, index) => (
-          <img
-            key={index}
-            src={brand.src}
-            alt={brand.alt}
-            className="doers-footer-brand-logo"
-            loading="lazy"
-          />
+    <div className="cp-doers-impact-content-wrapper">
+        
+        {impactStats.map((stat, index) => (
+            <div key={stat.id} className={`cp-doers-impact-stat-card cp-doers-stat-card-${index + 1}`}>
+                <p className="cp-doers-stat-percentage">{stat.percentage}</p>
+                <p
+                    className="cp-doers-stat-description"
+                    dangerouslySetInnerHTML={{ __html: stat.description }}
+                ></p>
+            </div>
         ))}
-      </div>
+
+        
+        <div className="cp-doers-impact-mentor-section">
+        <p className="cp-doers-mentor-overline">Mentored By:</p>
+        <h3 className="cp-doers-mentor-name">{mentorDetails.name}</h3>
+        <p className="cp-doers-mentor-role">{mentorDetails.role}</p>
+        <div className="cp-doers-mentor-image-wrapper">
+            <img
+            src={mentorDetails.image}
+            alt={mentorDetails.name}
+            className="cp-doers-mentor-image"
+            loading="lazy"
+            />
+        </div>
+        </div>
     </div>
 
-    <div className="doers-footer-bottom">
-      {mentorDetails.expertiseAreas.map((area, index) => (
-        <React.Fragment key={index}>
-          <span className="doers-expertise-item">{area}</span>
-          {index < mentorDetails.expertiseAreas.length - 1 && (
-            <span className="doers-expertise-divider">|</span>
-          )}
-        </React.Fragment>
-      ))}
+    
+    <div className="cp-doers-impact-footer-bar">
+        <div className="cp-doers-footer-top"> 
+        <p className="cp-doers-footer-label">Worked with 10+ brands</p>
+        
+        {/* New wrapper for the scrolling logos */}
+        <div className="cp-doers-logo-scroll-area">
+            <div className="cp-doers-brand-logos">
+                {mentorDetails.workedWithBrands.map((brand, index) => (
+                    <img
+                        key={index}
+                        src={brand.src}
+                        alt={brand.alt}
+                        className="cp-doers-footer-brand-logo"
+                        loading="lazy"
+                    />
+                ))}
+                {/* CRITICAL FOR LOOPING: Duplicate the logos */}
+                {mentorDetails.workedWithBrands.map((brand, index) => (
+                    <img
+                        key={`duplicate-${index}`}
+                        src={brand.src}
+                        alt={brand.alt}
+                        className="cp-doers-footer-brand-logo"
+                        loading="lazy"
+                        aria-hidden="true" 
+                    />
+                ))}
+            </div>
+        </div>
     </div>
-  </div>
+
+
+
+        <div className="cp-doers-footer-bottom">
+            
+            {/* Render Line 1 */}
+            <span
+                className="cp-expertise-line-1"
+                dangerouslySetInnerHTML={{ __html: mentorDetails.expertiseAreas[0] }}
+            />
+            
+            {/* Render Line 2 */}
+            <span
+                className="cp-expertise-line-2"
+                dangerouslySetInnerHTML={{ __html: mentorDetails.expertiseAreas[1] }}
+            />
+        </div>
+
+        
+    </div>
 </section>
-
-
 
 
             
