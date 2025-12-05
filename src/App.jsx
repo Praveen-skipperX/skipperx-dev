@@ -64,7 +64,7 @@ function App() {
         <Route path="/Dashboard" element={<Dashboard />} />
 
         <Route path="/product" element={<ProductManagement />} />
-        <Route path="/creator" element={<CreatorPreneur />} />
+        <Route path="/creatorpreneur" element={<CreatorPreneur />} />
 
         <Route path="/psychology" element={<Psychology />} />
         
