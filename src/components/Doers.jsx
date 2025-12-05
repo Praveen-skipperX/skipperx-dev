@@ -17,14 +17,14 @@ const stackData = [
     title: "Psychology",
     subtitle: "Duration:2 Months",
     successRate: "90%  begin practicing their skills in real-world settings",
-    tag: "Tech",
+    tag: "Medical",
     bgImage: require("../assets/doers-psyc.png"),
   },
   {
     title: "Creatorpreneur",
     subtitle: "Duration:3 Months",
     successRate: "90% start earning as creators — brand deals or freelance projects",
-    tag: "Medical",
+    tag: "Strategy",
     bgImage: require("../assets/doers-creater.png"),
   },
 ];
