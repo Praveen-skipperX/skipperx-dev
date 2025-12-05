@@ -14,6 +14,9 @@ import BuildCreateMob from '../assets/doers-3.png';
 
 
 import newDifferentImage from '../assets/different-us.png';
+import mobileImpactImage from '../assets/mentor-mobile.png';
+
+
 
 import brochureImage from "../assets/doers-brochure.png";
 import certificateDisplay from "../assets/new-cer.jpg";
@@ -58,27 +61,27 @@ const impactStats = [
   {
     id: 1,
     percentage: '87%',
-    description: 'Our learners launched their first paid project within <span class="highlight-text">30 days.</span>',
+    description: 'Our learners launched their first paid project within <span class="cp-highlight-text">30 days.</span>',
   },
   {
     id: 2,
     percentage: '95%',
-    description: 'Rated mentor feedback sessions as <span class="highlight-text">career-changing.</span>',
+    description: 'Rated mentor feedback sessions as <span class="cp-highlight-text">career-changing.</span>',
   },
   {
     id: 3,
     percentage: '60%',
-    description: 'Graduates started a <span class="highlight-text">creator community or side hustle.</span>',
+    description: 'Graduates started a <span class="cp-highlight-text">creator community or side hustle.</span>',
   },
   {
     id: 4,
     percentage: '400+',
-    description: 'Real brand campaigns created through <span class="highlight-text">weekly challenges.</span>',
+    description: 'Real brand campaigns created through <span class="cp-highlight-text">weekly challenges.</span>',
   },
   {
     id: 5,
     percentage: '230%',
-    description: 'Average <span class="highlight-text">engagement rise</span> after Week 4 content sprint.',
+    description: 'Average <span class="cp-highlight-text">engagement rise</span> after Week 4 content sprint.',
   },
 ];
 
@@ -593,6 +596,110 @@ const CreatorPreneur = () => {
 
 
 
+           <section className="cp-doers-impact-dashboard-section">
+    <div className="cp-doers-impact-header">
+        <p className="cp-doers-impact-overline">IMPACT DASHBOARD</p>
+        <h2 className="cp-doers-impact-title">
+            Numbers That <span className="cp-doers-impact-highlight">Redefine</span> Learning
+        </h2>
+        <p className="cp-doers-impact-subtitle">
+            Creatorpreneur isn’t theory — it’s traction. See what happens when creators learn by doing
+        </p>
+    </div>
+
+    {/* ⭐ MOBILE ONLY IMAGE */}
+    <div className="cp-mobile-impact-image">
+        <img src={mobileImpactImage} alt="Impact Mobile Visual" />
+    </div>
+
+    <div className="cp-doers-impact-content-wrapper">
+        
+        {impactStats.map((stat, index) => (
+            <div key={stat.id} className={`cp-doers-impact-stat-card cp-doers-stat-card-${index + 1}`}>
+                <p className="cp-doers-stat-percentage">{stat.percentage}</p>
+                <p
+                    className="cp-doers-stat-description"
+                    dangerouslySetInnerHTML={{ __html: stat.description }}
+                ></p>
+            </div>
+        ))}
+
+        
+        <div className="cp-doers-impact-mentor-section">
+        <p className="cp-doers-mentor-overline">Mentored By:</p>
+        <h3 className="cp-doers-mentor-name">{mentorDetails.name}</h3>
+        <p className="cp-doers-mentor-role">{mentorDetails.role}</p>
+        <div className="cp-doers-mentor-image-wrapper">
+            <img
+            src={mentorDetails.image}
+            alt={mentorDetails.name}
+            className="cp-doers-mentor-image"
+            loading="lazy"
+            />
+        </div>
+        </div>
+    </div>
+
+    
+    <div className="cp-doers-impact-footer-bar">
+        <div className="cp-doers-footer-top"> 
+        <p className="cp-doers-footer-label">Worked with 10+ brands</p>
+        
+        {/* New wrapper for the scrolling logos */}
+        <div className="cp-doers-logo-scroll-area">
+            <div className="cp-doers-brand-logos">
+                {mentorDetails.workedWithBrands.map((brand, index) => (
+                    <img
+                        key={index}
+                        src={brand.src}
+                        alt={brand.alt}
+                        className="cp-doers-footer-brand-logo"
+                        loading="lazy"
+                    />
+                ))}
+                {/* CRITICAL FOR LOOPING: Duplicate the logos */}
+                {mentorDetails.workedWithBrands.map((brand, index) => (
+                    <img
+                        key={`duplicate-${index}`}
+                        src={brand.src}
+                        alt={brand.alt}
+                        className="cp-doers-footer-brand-logo"
+                        loading="lazy"
+                        aria-hidden="true" 
+                    />
+                ))}
+            </div>
+        </div>
+    </div>
+
+
+
+        <div className="cp-doers-footer-bottom">
+            
+            {/* Render Line 1 */}
+            <span
+                className="cp-expertise-line-1"
+                dangerouslySetInnerHTML={{ __html: mentorDetails.expertiseAreas[0] }}
+            />
+            
+            {/* Render Line 2 */}
+            <span
+                className="cp-expertise-line-2"
+                dangerouslySetInnerHTML={{ __html: mentorDetails.expertiseAreas[1] }}
+            />
+        </div>
+
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+
 
 
 
@@ -872,7 +979,9 @@ const CreatorPreneur = () => {
                                 <div>
                                     <p className="doers-price-label">PRICE</p>
                                     <p className="doers-original-price">₹10,000</p>
+                                    
                                 </div>
+                                
                                 {/* 🎯 NEW CLASS FOR THE BUTTON EFFECT */}
                                 <p className="doers-offer-text doers-offer-button-wrapper">
                                     Avail student offer and get it for <span className="doers-offer-price"> ₹8,000</span>
@@ -962,97 +1071,7 @@ const CreatorPreneur = () => {
 
 
 
-        <section className="cp-doers-impact-dashboard-section">
-    <div className="cp-doers-impact-header">
-        <p className="cp-doers-impact-overline">IMPACT DASHBOARD</p>
-        <h2 className="cp-doers-impact-title">
-            Numbers That <span className="cp-doers-impact-highlight">Redefine</span> Learning
-        </h2>
-        <p className="cp-doers-impact-subtitle">
-            Creatorpreneur isn’t theory — it’s traction. See what happens when creators learn by doing
-        </p>
-    </div>
-
-    <div className="cp-doers-impact-content-wrapper">
-        
-        {impactStats.map((stat, index) => (
-            <div key={stat.id} className={`cp-doers-impact-stat-card cp-doers-stat-card-${index + 1}`}>
-                <p className="cp-doers-stat-percentage">{stat.percentage}</p>
-                <p
-                    className="cp-doers-stat-description"
-                    dangerouslySetInnerHTML={{ __html: stat.description }}
-                ></p>
-            </div>
-        ))}
-
-        
-        <div className="cp-doers-impact-mentor-section">
-        <p className="cp-doers-mentor-overline">Mentored By:</p>
-        <h3 className="cp-doers-mentor-name">{mentorDetails.name}</h3>
-        <p className="cp-doers-mentor-role">{mentorDetails.role}</p>
-        <div className="cp-doers-mentor-image-wrapper">
-            <img
-            src={mentorDetails.image}
-            alt={mentorDetails.name}
-            className="cp-doers-mentor-image"
-            loading="lazy"
-            />
-        </div>
-        </div>
-    </div>
-
-    
-    <div className="cp-doers-impact-footer-bar">
-        <div className="cp-doers-footer-top"> 
-        <p className="cp-doers-footer-label">Worked with 10+ brands</p>
-        
-        {/* New wrapper for the scrolling logos */}
-        <div className="cp-doers-logo-scroll-area">
-            <div className="cp-doers-brand-logos">
-                {mentorDetails.workedWithBrands.map((brand, index) => (
-                    <img
-                        key={index}
-                        src={brand.src}
-                        alt={brand.alt}
-                        className="cp-doers-footer-brand-logo"
-                        loading="lazy"
-                    />
-                ))}
-                {/* CRITICAL FOR LOOPING: Duplicate the logos */}
-                {mentorDetails.workedWithBrands.map((brand, index) => (
-                    <img
-                        key={`duplicate-${index}`}
-                        src={brand.src}
-                        alt={brand.alt}
-                        className="cp-doers-footer-brand-logo"
-                        loading="lazy"
-                        aria-hidden="true" 
-                    />
-                ))}
-            </div>
-        </div>
-    </div>
-
-
-
-        <div className="cp-doers-footer-bottom">
-            
-            {/* Render Line 1 */}
-            <span
-                className="cp-expertise-line-1"
-                dangerouslySetInnerHTML={{ __html: mentorDetails.expertiseAreas[0] }}
-            />
-            
-            {/* Render Line 2 */}
-            <span
-                className="cp-expertise-line-2"
-                dangerouslySetInnerHTML={{ __html: mentorDetails.expertiseAreas[1] }}
-            />
-        </div>
-
-        
-    </div>
-</section>
+       
 
 
             
