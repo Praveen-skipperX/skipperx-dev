@@ -1,15 +1,15 @@
 // src/pages/ProductManagement.js
 
 import React, { useState } from 'react';
-import './ProductManagement.css'; // Import the updated CSS file
-import Navbar from '../components/Navbar'; 
-import Footer from '../components/Footer';
-import ChallengeBased from '../assets/cre1.png'; 
-import CreatorLed from '../assets/cre2.png'; 
+import ChallengeBased from '../assets/cre1.png';
+import CreatorLed from '../assets/cre2.png';
 import BuildCreate from '../assets/cre3.png';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import './ProductManagement.css'; // Import the updated CSS file
 
-import ChallengeBasedMob from '../assets/doers-1.png'; 
-import CreatorLedMob from '../assets/doers-2.png'; 
+import ChallengeBasedMob from '../assets/doers-1.png';
+import CreatorLedMob from '../assets/doers-2.png';
 import BuildCreateMob from '../assets/doers-3.png';
 
 
@@ -23,38 +23,37 @@ import certificateDisplay from "../assets/new-cer.jpg";
 
 // ⚠️ IMPORTANT: Image Imports for NEW How We're Different Section
 // Replace these with your actual image paths
-import founderNotesImage from '../assets/vibe-coding.png'; 
-import aiWorkflowsImage from '../assets/ai-workflows.png';   
-import vibeCodingImage from '../assets/founder-notes.png';     
-import mockInterviewsImage from '../assets/mock-interviews.png'; 
+import aiWorkflowsImage from '../assets/ai-workflows.png';
+import vibeCodingImage from '../assets/founder-notes.png';
+import mockInterviewsImage from '../assets/mock-interviews.png';
+import founderNotesImage from '../assets/vibe-coding.png';
 
-import engagementBg from '../assets/unique-engagement-bg.jpeg';
 import engagementBgform from '../assets/creatorform.png';
+import engagementBg from '../assets/unique-engagement-bg.jpeg';
 
-import credLogo from '../assets/cred.png';      // Replace with your actual path
+import credLogo from '../assets/cred.png'; // Replace with your actual path
 
+import nykaaLogo from '../assets/nykaa.png';
 import swiggyLogo from '../assets/swiggy.png';
-import nykaaLogo from '../assets/nykaa.png'; 
 
 
 
 // 🚨 IMPORTANT: Add these new image imports for testimonials
-import riyaSharmaImg from '../assets/riya_sharma.jpeg'; // Replace with actual path
-import anantShaImg from '../assets/anant_sha.jpeg';   // Replace with actual path
+import anantShaImg from '../assets/anant_sha.jpeg'; // Replace with actual path
 import piyushNamdevImg from '../assets/piyush_namdev.jpeg'; // Replace with actual path
+import { default as riyaSharmaImg, default as soheliSharmaImg } from '../assets/riya_sharma.jpeg'; // Replace with actual path
 import shantanuSinghImg from '../assets/shantanu_singh.jpeg'; // Replace with actual path
-import soheliSharmaImg from '../assets/riya_sharma.jpeg'; // Replace with actual path
 
 // 🆕 NEW: Imports for the Impact Dashboard Section
-import mentorPreranaSaha from '../assets/prerana-saha.png'; // Replace with actual path to Prerana Saha's image
-import brandFortis from '../assets/fortis.png';          // Replace with actual path to Fortis logo
-import brandCafoco from '../assets/cafoco.png';          // Replace with actual path to Cafoco logo
-import brandTcAcademy from '../assets/tc-academy.png';   // Replace with actual path to TC Academy logo
-import brandFibr from '../assets/fibr.png';              // Replace with actual path to Fibr logo
+import brandCafoco from '../assets/cafoco.png'; // Replace with actual path to Cafoco logo
+import brandFibr from '../assets/fibr.png'; // Replace with actual path to Fibr logo
+import brandFortis from '../assets/fortis.png'; // Replace with actual path to Fortis logo
 import brandPlaceholder from '../assets/placeholder-brand.png';
+import mentorPreranaSaha from '../assets/prerana-saha.png'; // Replace with actual path to Prerana Saha's image
+import brandTcAcademy from '../assets/tc-academy.png'; // Replace with actual path to TC Academy logo
 
 import ordiamond from '../assets/or-diamond.png'; // Replace with actual path
-import upgradeBg from '../assets/cta-upgrade-bg.jpg';
+import GoogleSheetRegisterForm from '../components/GoogleSheetRegisterForm.jsx';
 
 
 const impactStats = [
@@ -507,27 +506,7 @@ const CreatorPreneur = () => {
                     </div>
 
                     {/* Right Form */}
-                    <form className="doers-register-form">
-                        <div className="doers-form-group-row">
-                            <input type="text" placeholder="First Name*" required className="doers-form-input" />
-                            <select className="doers-form-input doers-form-select">
-                                <option value="" disabled selected>Interest*</option>
-                                <option>Product Management</option>
-                                {/*<option>UX/UI Design</option>*/}
-                            </select>
-                        </div>
-                        <div className="doers-form-group-row">
-                            <input type="tel" placeholder="+91 XXXXXXXXXX" required className="doers-form-input" />
-                            <input type="email" placeholder="E-mail*" required className="doers-form-input" />
-                        </div>
-                        <div className="doers-form-group-single">
-                            <input type="text" placeholder="College name*" required className="doers-form-input" />
-                        </div>
-                        
-                        <button type="submit" className="doers-form-submit-button">
-                            Submit enquiry
-                        </button>
-                    </form>
+                    <GoogleSheetRegisterForm formName="CreatorpreneurForm" />
 
                 </div>
             </section>

@@ -1,21 +1,15 @@
 import { useEffect, useRef, useState } from "react";
-import eightseven from "../assets/psy89.png";
-import nineseven from "../assets/psy98.png";
-import nineeight from "../assets/psy89.png";
-import bgImage from '../assets/psycobg.png';
-import arvrreviewlogo from "../assets/PsychologyStudent.png";
-import certificateDisplay from "../assets/new-cer.jpg";
 import brochureImage from "../assets/doers-brochure.png";
 import faqarrow from "../assets/faqarrow.png";
 import hari from '../assets/harih.jpg';
-import harish from '../assets/vinod.jpg';
 import bulbIcon from '../assets/holding-bulb.png';
-import sai from '../assets/sai.jpg';
+import certificateDisplay from "../assets/new-cer.jpg";
+import { default as eightseven, default as nineeight } from "../assets/psy89.png";
+import nineseven from "../assets/psy98.png";
+import bgImage from '../assets/psycobg.png';
 import sakshi from '../assets/roshan.png';
-import soumya from "../assets/soumya.png";
-import arvrskippertopmobile from "../assets/top3-skipperx-mobile.png";
-import suresh from "../assets/suresh.png";
-import vishal from "../assets/vishal.png";
+import sai from '../assets/sai.jpg';
+import harish from '../assets/vinod.jpg';
 import Footer from '../components/Footer';
 import GoogleSheetForm from '../components/GoogleSheetForm';
 import Navbar from '../components/Navbar';
@@ -565,7 +559,7 @@ const Psychology = () => {
                     }}
                   >
                     <h3 className="drone-form-title">Master Psychology Program</h3>
-                    <GoogleSheetForm formName="AR VR" />
+                    <GoogleSheetForm formName="Psychology" />
                   </div>
                 </div>
               </div>
