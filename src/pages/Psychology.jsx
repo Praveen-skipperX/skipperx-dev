@@ -532,8 +532,8 @@ const Psychology = () => {
                 </ul>
                 <div className="price">Price</div>
                 <div className="drone-price-section">
-                  <div className="drone-original-price">₹24,999</div>
-                  <div className="drone-current-price">₹20,000</div>
+                  {/*<div className="drone-original-price">₹24,999</div>*/}
+                  <div className="drone-current-price">₹10,000</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
@@ -581,8 +581,8 @@ const Psychology = () => {
                 </ul>
                 <div className="price">Price</div>
                 <div className="drone-price-section">
-                  <div className="drone-original-price">₹24,999</div>
-                  <div className="drone-current-price">₹20,000</div>
+            {/*<div className="drone-original-price">₹24,999</div>*/}
+                  <div className="drone-current-price">₹10,000</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
@@ -796,7 +796,7 @@ const Psychology = () => {
                                 </div>
                                 {/* 🎯 NEW CLASS FOR THE BUTTON EFFECT */}
                                 <p className="doers-offer-text doers-offer-button-wrapper">
-                                    Avail student offer and get it for <span className="doers-offer-price"> ₹8,000</span>
+                                    Avail student offer and get it for <span className="doers-offer-price"> ₹9,000</span>
                                 </p>
                             </div>
                         </div>
