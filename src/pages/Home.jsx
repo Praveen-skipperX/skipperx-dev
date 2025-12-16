@@ -9,6 +9,7 @@ import TestimonialCarousel from '../components/TestimonialCarousel';
 import EngineeringPrograms from '../components/EngineeringPrograms';
 import SuperStack from '../components/SuperStack';
 import Doers from '../components/Doers';
+import Entrapreneur from '../components/Entrapreneur';
 import CareerFormSection from '../components/CareerFormSection';
 import SkippersAdvantage from '../components/SkippersAdvantage';
 import Circle from '../components/Circle';
@@ -27,6 +28,7 @@ const Home = () => {
       <EngineeringPrograms />
       <SuperStack />
       <Doers />
+      <Entrapreneur />
       <CareerFormSection />
       <SkippersAdvantage />
       <Circle />

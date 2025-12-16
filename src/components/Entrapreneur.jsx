@@ -1,6 +1,6 @@
 import React from "react";
 import "./SuperStack.css";
-import "./Doers.css";
+import "./Entrapreneur.css";
 import { Link } from "react-router-dom";
 
 
@@ -12,21 +12,21 @@ const stackData = [
     tag: "Business",
     footer: "Business Analytics · Human Resource · Finance · Fashion Design",
     bgImage: require("../assets/1sttt.png"),
-  },*/
+  },
   {
     title: "Psychology",
     subtitle: "Duration: 2 Months",
     successRate: "90%  begin practicing their skills in real-world settings",
     tag: "Medical",
     bgImage: require("../assets/doers-psyc.png"),
-  },
-  /*{
+  },*/
+  {
     title: "Creatorpreneur",
     subtitle: "Duration: 3 Months",
     successRate: "90% start earning as creators — brand deals or freelance projects",
     tag: "Strategy",
     bgImage: require("../assets/doers-creater.png"),
-  },*/
+  },
 ];
 
 const Doers = () => {
@@ -35,7 +35,7 @@ const Doers = () => {
       <div className="best-heading-section">
         <hr className="lefst" id="lefstack" />
         <h1>
-          For <span className="proo">Doers </span>
+          For <span className="proo" id="proo1">Entrepreneur </span>
         </h1>
         <hr className="rig" id="lefstack" />
       </div>
