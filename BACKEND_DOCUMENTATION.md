@@ -121,7 +121,7 @@ For email:
 For phone:
 ```json
 {
-  "phone": "9456916070",
+  "phone": "9876543210",
   "phoneCode": "+91"
 }
 ```
@@ -206,7 +206,7 @@ For email:
 For phone:
 ```json
 {
-  "phone": "+919456916070",
+  "phone": "+919876543210",
   "otp": "1234"
 }
 ```
@@ -229,7 +229,7 @@ For phone:
       "id": "60f7b3b3b3b3b3b3b3b3b3b3",
       "fullname": "John Doe",
       "email": "user@example.com",
-      "phone": "+919456916070",
+      "phone": "+919876543210",
       "isVerified": true,
       "profileCompleted": true
     },
@@ -271,7 +271,7 @@ Authorization: Bearer <jwt_token>
     "id": "60f7b3b3b3b3b3b3b3b3b3b3",
     "fullname": "John Doe",
     "email": "user@example.com",
-    "phone": "+919456916070",
+    "phone": "+919876543210",
     "profileCompleted": true,
     "isVerified": true,
     "profile": {
