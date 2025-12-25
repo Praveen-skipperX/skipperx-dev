@@ -30,6 +30,8 @@ import CreatorPreneur from './pages/Creatorpreneur';
 
 import Dashboard from './components/dashboard/Dashboard';
 import ScrollToTop from './components/ScrollToTop';
+import ProtectedRoute from './components/ProtectedRoute';
+import GoogleCallback from './pages/GoogleCallback';
 
 
 
@@ -61,7 +63,12 @@ function App() {
         <Route path="/email" element={<Email />} />
         <Route path="/otp" element={<Otp />} />
         <Route path="/cooking" element={<Cooking />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/auth/callback" element={<GoogleCallback />} />
+        <Route path="/Dashboard" element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        } />
 
         <Route path="/product" element={<ProductManagement />} />
         <Route path="/creatorpreneur" element={<CreatorPreneur />} />

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import promoImage from "../../assets/dashboard-promo.png";
 import logo from '../../assets/skipper-black.png';
@@ -10,11 +11,120 @@ import arrow from '../../assets/arrows.png';
 import dlink from '../../assets/dlink.png';
 import dface from '../../assets/dface.png';
 import dinsta from '../../assets/dinsta.png';
+import { authAPI, removeAuthToken } from '../../services/api';
 
 // Assuming you have an icon for the program, like a briefcase or AI icon.
 // For now, let's use a placeholder or assume it's part of the CSS.
 
 function Dashboard() {
+  const navigate = useNavigate();
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [editing, setEditing] = useState(false);
+  const [formData, setFormData] = useState({
+    fullname: '',
+    email: '',
+    phone: ''
+  });
+  const [updateLoading, setUpdateLoading] = useState(false);
+  const [updateError, setUpdateError] = useState('');
+  const [updateSuccess, setUpdateSuccess] = useState('');
+
+  useEffect(() => {
+    fetchUserData();
+  }, []);
+
+  const fetchUserData = async () => {
+    try {
+      const response = await authAPI.getCurrentUser();
+      setUser(response.data);
+      setFormData({
+        fullname: response.data.fullname || '',
+        email: response.data.email || '',
+        phone: response.data.phone || ''
+      });
+    } catch (error) {
+      console.error('Failed to fetch user data:', error);
+      // If unauthorized, logout
+      if (error.message.includes('401') || error.message.includes('Authentication')) {
+        handleLogout();
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleLogout = async () => {
+    try {
+      await authAPI.logout();
+    } catch (error) {
+      console.error('Logout error:', error);
+    } finally {
+      removeAuthToken();
+      navigate('/login');
+    }
+  };
+
+  const handleEditToggle = () => {
+    setEditing(!editing);
+    setUpdateError('');
+    setUpdateSuccess('');
+  };
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleProfileUpdate = async () => {
+    setUpdateLoading(true);
+    setUpdateError('');
+    setUpdateSuccess('');
+
+    try {
+      const updateData = {};
+      
+      // Only send fields that have changed
+      if (formData.fullname !== user.fullname) {
+        updateData.fullname = formData.fullname;
+      }
+      if (formData.email !== user.email) {
+        updateData.email = formData.email;
+      }
+      if (formData.phone !== user.phone) {
+        updateData.phone = formData.phone;
+      }
+
+      const response = await authAPI.updateProfile(updateData);
+      
+      setUser(response.data);
+      setFormData({
+        fullname: response.data.fullname || '',
+        email: response.data.email || '',
+        phone: response.data.phone || ''
+      });
+      setUpdateSuccess('Profile updated successfully!');
+      setEditing(false);
+      
+      setTimeout(() => setUpdateSuccess(''), 3000);
+    } catch (error) {
+      setUpdateError(error.message || 'Failed to update profile');
+    } finally {
+      setUpdateLoading(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="dashboard-container">
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
+          <p>Loading...</p>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="dashboard-container">
       <aside className="sidebar">
@@ -30,12 +140,12 @@ function Dashboard() {
         <div className="top-dash">
           <header className="topbar">
             <h1>Dashboard</h1>
-            <button className="logout-btn">Logout</button>
+            <button className="logout-btn" onClick={handleLogout}>Logout</button>
           </header>
         </div>
 
         <section className="welcome-section">
-          <h2>Welcome,</h2>
+          <h2>Welcome, {user?.fullname || 'User'}</h2>
           <p>Have a Productive day!</p>
         </section>
         
@@ -139,22 +249,65 @@ function Dashboard() {
           <section className="profile-details-section">
             <div className="profile-details-header">
               <h2 className="profile-details-title">Profile Details</h2>
-              <button className="profile-edit-btn">Edit</button>
+              <button className="profile-edit-btn" onClick={handleEditToggle}>
+                {editing ? 'Cancel' : 'Edit'}
+              </button>
             </div>
+            
+            {updateError && <div style={{color: 'red', marginBottom: '10px'}}>{updateError}</div>}
+            {updateSuccess && <div style={{color: 'green', marginBottom: '10px'}}>{updateSuccess}</div>}
+            
             <div className="profile-fields-container">
               <div className="profile-field">
                 <label htmlFor="fullName">Full Name</label>
-                <input type="text" id="fullName" className="profile-input" placeholder="" disabled />
-              </div>
-              <div className="profile-field">
-                <label htmlFor="contactNumber">Contact Number</label>
-                <input type="text" id="contactNumber" className="profile-input" placeholder="" disabled />
+                <input 
+                  type="text" 
+                  id="fullName" 
+                  name="fullname"
+                  className="profile-input" 
+                  value={formData.fullname}
+                  onChange={handleInputChange}
+                  disabled={!editing} 
+                />
               </div>
               <div className="profile-field">
                 <label htmlFor="email">E-Mail</label>
-                <input type="email" id="email" className="profile-input" placeholder="" disabled />
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email"
+                  className="profile-input" 
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  disabled={!editing} 
+                />
               </div>
-            </div>
+              <div className="profile-field">
+                <label htmlFor="contactNumber">Contact Number</label>
+                <input 
+                  type="tel" 
+                  id="contactNumber" 
+                  name="phone"
+                  className="profile-input" 
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  disabled={!editing} 
+                />
+              </div>
+              </div>
+            
+            {editing && (
+              <div style={{display: 'flex', justifyContent: 'flex-end', marginTop: '20px'}}>
+                <button 
+                  className="profile-edit-btn"
+                  onClick={handleProfileUpdate}
+                  disabled={updateLoading}
+                  style={{backgroundColor: '#4CAF50', color: 'white'}}
+                >
+                  {updateLoading ? 'Updating...' : 'Update Profile'}
+                </button>
+              </div>
+            )}
           </section>
              
 

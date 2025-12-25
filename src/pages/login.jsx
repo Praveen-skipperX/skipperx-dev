@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
 import loginImage from "../assets/login-bg1.png"; 
@@ -8,16 +8,45 @@ import sai from '../assets/saisai.png'
 import hari from '../assets/harih.jpg'
 import sakshi from '../assets/saksh.png'
 import logo from '../assets/skipper-black.png';
+import { authAPI } from '../services/api';
 
 
 
 
 const Login = () => {
     const navigate = useNavigate();
+    const [countryCode, setCountryCode] = useState('+91');
+    const [phone, setPhone] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
 
-    const handleSubmit = (e) => {
-      e.preventDefault(); // prevent refresh
-      navigate("/otp");   // go to OTP page
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setLoading(true);
+      setError('');
+      
+      try {
+        const response = await authAPI.sendOTP({ 
+          phone: phone,
+          phoneCode: countryCode 
+        });
+        
+        // Store phone with country code in sessionStorage
+        const fullPhone = `${countryCode}${phone}`;
+        sessionStorage.setItem('authIdentifier', fullPhone);
+        sessionStorage.setItem('authType', 'phone');
+        
+        navigate("/otp");
+      } catch (err) {
+        setError(err.message || 'Failed to send OTP');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const handleGoogleLogin = () => {
+      const googleAuthUrl = process.env.REACT_APP_GOOGLE_AUTH_URL || 'http://localhost:5000/api/auth/google';
+      window.location.href = googleAuthUrl;
     };
 
 
@@ -63,8 +92,14 @@ const Login = () => {
           
           <img src={logo} alt="Skipper Logo" className="login-title"/>
           
+          {error && <div style={{color: 'red', marginBottom: '10px', textAlign: 'center'}}>{error}</div>}
+          
           <div className="login-input">
-              <select className="login-country-code">
+              <select 
+                className="login-country-code"
+                value={countryCode}
+                onChange={(e) => setCountryCode(e.target.value)}
+              >
               <option value="+91">+91</option>
               <option value="+1">+1</option>
               <option value="+44">+44</option>
@@ -75,7 +110,10 @@ const Login = () => {
                 className="phone-inputs"
                 placeholder="XXXXXXXXXX"
                 name="phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 required
+                disabled={loading}
               />
 
               
@@ -83,9 +121,11 @@ const Login = () => {
           <div className="login-options">
             <a href="/email" className="navlink" >Use<span className="login-forgot" > E-mail</span>instead</a>
           </div>
-          <button type="submit" className="login-submit-btn">Continue</button>
+          <button type="submit" className="login-submit-btn" disabled={loading}>
+            {loading ? 'Sending...' : 'Continue'}
+          </button>
           <div className="login-divider"><span>or</span></div>
-          <button type="button" className="login-google-btn">
+          <button type="button" className="login-google-btn" onClick={handleGoogleLogin}>
             <img src={googleLogo} alt="Google" />
             Login with Google
           </button>
