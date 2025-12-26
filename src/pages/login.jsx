@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./login.css";
-import loginImage from "../assets/login-bg1.png"; 
+import hari from '../assets/harih.jpg';
+import harish from '../assets/harisha.jpg';
+import loginImage from "../assets/login-bg1.png";
 import googleLogo from "../assets/login-google.png";
-import harish from '../assets/harisha.jpg'
-import sai from '../assets/saisai.png'
-import hari from '../assets/harih.jpg'
-import sakshi from '../assets/saksh.png'
+import sai from '../assets/saisai.png';
+import sakshi from '../assets/saksh.png';
 import logo from '../assets/skipper-black.png';
-import { authAPI } from '../services/api';
+import { authAPI, GOOGLE_AUTH_URL } from '../services/api';
+import "./login.css";
 
 
 
@@ -45,8 +45,7 @@ const Login = () => {
     };
 
     const handleGoogleLogin = () => {
-      const googleAuthUrl = process.env.REACT_APP_GOOGLE_AUTH_URL || 'http://localhost:5000/api/auth/google';
-      window.location.href = googleAuthUrl;
+      window.location.href = GOOGLE_AUTH_URL;
     };
 
 

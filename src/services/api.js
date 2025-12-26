@@ -1,7 +1,10 @@
 // API configuration and service
-// Use environment variable or fallback to localhost
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
-const GOOGLE_AUTH_URL = process.env.REACT_APP_GOOGLE_AUTH_URL || 'http://localhost:5000/api/auth/google';
+// Use environment variable or fallback to production API
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://api.skipperx.io/api';
+const GOOGLE_AUTH_URL = process.env.REACT_APP_GOOGLE_AUTH_URL || 'https://api.skipperx.io/api/auth/google';
+
+// Export GOOGLE_AUTH_URL for use in components
+export { GOOGLE_AUTH_URL };
 
 // Helper function to get auth token
 const getAuthToken = () => {
