@@ -105,7 +105,7 @@ const Navbar = () => {
                   <img src={creatorsImg} alt="Creators Hub" />
                   <div className="card-text">
                     <h4>Startup-Stack</h4>
-                    <span>2 Program</span>
+                    <span>7 Program</span>
                   </div>
                 </Link>
               </div>
