@@ -28,6 +28,14 @@ const stackData = [
     footer: "Nanotechnology · Biotech · psychology · Nanotechnology · Biotech · psychology  ",
     bgImage: require("../assets/3rdd.png"),
   },
+  {
+    title: "Startup-Stack",
+    subtitle: "7 Diverse Program",
+    successRate: "91% gain  confidence to lead market trends.",
+    tag: "Trending",
+    footer: "Nanotechnology · Biotech · psychology · Nanotechnology · Biotech · psychology  ",
+    bgImage: require("../assets/3rdd.png"),
+  },
 ];
 
 const SuperStack = () => {
