@@ -9,7 +9,7 @@ const stackData = [
     subtitle: "5 Diverse Program",
     successRate: "93% land biz roles or launch ventures",
     tag: "Business",
-    footer: "Business Analytics · Human Resource · Finance · Fashion Design",
+    footer: "Graphic Design · UI/UX · Photography · Content creation · UI/UX",
     bgImage: require("../assets/1sttt.png"),
   },
   {
@@ -33,7 +33,7 @@ const stackData = [
     subtitle: "7 Diverse Program",
     successRate: "91% gain  confidence to lead market trends.",
     tag: "Trending",
-    footer: "Nanotechnology · Biotech · psychology · Nanotechnology · Biotech · psychology  ",
+    footer: "Business Analytics · Human Resource · Stock market · Finance · Digital Marketing ",
     bgImage: require("../assets/3rdd.png"),
   },
 ];
