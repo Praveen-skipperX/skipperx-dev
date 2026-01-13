@@ -533,7 +533,7 @@ const Psychology = () => {
                 <div className="price">Price</div>
                 <div className="drone-price-section">
                   {/*<div className="drone-original-price">₹24,999</div>*/}
-                  <div className="drone-current-price">₹10,000</div>
+                  <div className="drone-current-price">₹9,999</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
@@ -582,7 +582,7 @@ const Psychology = () => {
                 <div className="price">Price</div>
                 <div className="drone-price-section">
             {/*<div className="drone-original-price">₹24,999</div>*/}
-                  <div className="drone-current-price">₹10,000</div>
+                  <div className="drone-current-price">₹9,999</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
@@ -792,7 +792,7 @@ const Psychology = () => {
                             <div className="doers-card-footer">
                                 <div>
                                     <p className="doers-price-label">PRICE</p>
-                                    <p className="doers-original-price">₹10,000</p>
+                                    <p className="doers-original-price">₹9,999</p>
                                 </div>
                                 {/* 🎯 NEW CLASS FOR THE BUTTON EFFECT */}
                                 <p className="doers-offer-text doers-offer-button-wrapper">
@@ -821,7 +821,7 @@ const Psychology = () => {
                             <div className="doers-card-footer">
                                 <div>
                                     <p className="doers-price-label">PRICE</p>
-                                    <p className="doers-original-price">₹20,000</p>
+                                    <p className="doers-original-price">₹19,999</p>
                                 </div>
                                 {/* 🎯 NEW CLASS FOR THE BUTTON EFFECT */}
                                 <p className="doers-offer-text doers-offer-button-wrapper">

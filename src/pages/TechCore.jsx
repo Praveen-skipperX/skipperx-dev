@@ -355,7 +355,7 @@ const TechCore = () => {
                 <div className="price">Price</div>
                 <div className="drone-price-section">
                   {/*<div className="drone-original-price">₹24,999</div>*/}
-                  <div className="drone-current-price">₹12,000</div>
+                  <div className="drone-current-price">₹11,999</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
@@ -403,7 +403,7 @@ const TechCore = () => {
                 <div className="price">Price</div>
                 <div className="drone-price-section">
                   {/*<div className="drone-original-price">₹24,999</div>*/}
-                  <div className="drone-current-price">₹12,000</div>
+                  <div className="drone-current-price">₹11,999</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
