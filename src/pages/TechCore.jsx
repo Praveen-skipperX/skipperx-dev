@@ -380,7 +380,7 @@ const TechCore = () => {
                       zIndex: 10,
                     }}
                   >
-                    <h3 className="drone-form-title">Master Tech Core</h3>
+                    <h3 className="drone-form-title">Master Tech Core Program</h3>
                     <GoogleSheetForm formName="Master Tech Core" />
                   </div>
                 </div>
