@@ -9,7 +9,7 @@ const stackData = [
     subtitle: "5 Diverse Program",
     successRate: "93% land biz roles or launch ventures",
     tag: "Business",
-    footer: "Graphic Design · UI/UX · Photography · Content creation · UI/UX",
+    footer: "Graphic Design · UI/UX · Psychology · Content creation · UI/UX",
     bgImage: require("../assets/1sttt.png"),
   },
   {
@@ -17,15 +17,15 @@ const stackData = [
     subtitle: "5 Diverse Program",
     successRate: "90% land tech roles or launch products",
     tag: "Tech",
-    footer: "Artificial Intelligence · Data Science · Digital Marketing · Machine Learning · Web Development",
+    footer: "Artificial Intelligence · Data Science · Cloud Computing  · Machine Learning · Web Development",
     bgImage: require("../assets/2nd.png"),
   },
   {
     title: "Medical Edition",
-    subtitle: "2 Diverse Program",
+    subtitle: "3 Diverse Program",
     successRate: "84% gain  confidence to pursue future careers in medical.",
     tag: "Medical",
-    footer: "Nanotechnology · Biotech · psychology · Nanotechnology · Biotech · psychology  ",
+    footer: "Medical coding · Gentic engineering  · psychology · Medical coding · Gentic engineering · psychology  ",
     bgImage: require("../assets/3rdd.png"),
   },
   {
@@ -33,7 +33,7 @@ const stackData = [
     subtitle: "7 Diverse Program",
     successRate: "91% gain  confidence to lead market trends.",
     tag: "Trending",
-    footer: "Business Analytics · Human Resource · Stock market · Finance · Digital Marketing ",
+    footer: "Business Analytics · Human Resource · Stock market · Finance · Psychology · Digital Marketing ",
     bgImage: require("../assets/3rdd.png"),
   },
 ];
