@@ -533,7 +533,7 @@ const Psychology = () => {
                 <div className="price">Price</div>
                 <div className="drone-price-section">
                   {/*<div className="drone-original-price">₹24,999</div>*/}
-                  <div className="drone-current-price">₹9,999</div>
+                  <div className="drone-current-price">₹19,999</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
@@ -582,7 +582,7 @@ const Psychology = () => {
                 <div className="price">Price</div>
                 <div className="drone-price-section">
             {/*<div className="drone-original-price">₹24,999</div>*/}
-                  <div className="drone-current-price">₹9,999</div>
+                  <div className="drone-current-price">₹19,999</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">

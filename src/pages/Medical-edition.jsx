@@ -361,7 +361,7 @@ const Medical = () => {
                 <div className="startup-price">Price</div>
                 <div className="startup-price-section">
                   {/*<div className="startup-original-price">₹24,999</div>*/}
-                  <div className="startup-current-price">₹11,999</div>
+                  <div className="startup-current-price">₹21,999</div>
                 </div>
                 <div className="startup-trust-footer-drone">
                   <div className="startup-avatarsdrone">
@@ -409,7 +409,7 @@ const Medical = () => {
                 <div className="startup-price">Price</div>
                 <div className="startup-price-section">
                   {/*<div className="startup-original-price">₹24,999</div>*/}
-                  <div className="startup-current-price">₹11,999</div>
+                  <div className="startup-current-price">₹21,999</div>
                 </div>
                 <div className="startup-trust-footer-drone">
                   <div className="startup-avatarsdrone">
