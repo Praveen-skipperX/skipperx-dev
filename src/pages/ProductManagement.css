@@ -1518,8 +1518,8 @@
 .doers-card-footer {
     background: #2B2A2A;
     padding: 10px 30px 15px; /* Only top padding for the footer */
-    margin-top: 0px;
-    border-radius: 0 0 12px 12px;
+    margin-top: 30px;
+    border-radius: 12px;
     margin-right: -20px;
     margin-left: -20px;
     display: flex;
@@ -1554,6 +1554,7 @@
     letter-spacing: 2px;
     margin-top: -5px;
     margin-bottom: 0px;
+    margin-right: 5px;
     line-height: 1;
 }
 
@@ -1654,14 +1655,14 @@
     line-height: 1.33;
 }
 .doers-offer-button-wrapper {
-        display: none;
+        
     }
 
     .doers-card-footer {
     background: #2B2A2A;
     padding: 10px 30px 15px;
-    margin-top: 0px;
-    border-radius: 0 0 12px 12px;
+    margin-top: 20px;
+    border-radius: 12px;
     margin-right: -15px !important;
     margin-left: -15px !important;
     display: flex;
