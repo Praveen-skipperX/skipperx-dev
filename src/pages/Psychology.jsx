@@ -789,16 +789,16 @@ const Psychology = () => {
                             </div>
 
                             
-                            <div className="doers-card-footer">
+                             {/*<div className="doers-card-footer">
                                 <div>
                                     <p className="doers-price-label">PRICE</p>
                                     <p className="doers-original-price">₹9,999</p>
                                 </div>
-                                {/* 🎯 NEW CLASS FOR THE BUTTON EFFECT */}
+                                
                                 <p className="doers-offer-text doers-offer-button-wrapper">
                                     Avail student offer and get it for <span className="doers-offer-price"> ₹9,000</span>
                                 </p>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* --- Card 2: Build Mode --- */}
@@ -818,18 +818,29 @@ const Psychology = () => {
                                 </ul>
                             </div>
 
-                            <div className="doers-card-footer">
+                            {/* <div className="doers-card-footer">
                                 <div>
                                     <p className="doers-price-label">PRICE</p>
                                     <p className="doers-original-price">₹19,999</p>
                                 </div>
-                                {/* 🎯 NEW CLASS FOR THE BUTTON EFFECT */}
+                                
                                 <p className="doers-offer-text doers-offer-button-wrapper">
                                     Avail student offer and get it for <span className="doers-offer-price">₹18,000</span>
                                 </p>
-                            </div>
+                            </div>  */}
                         </div>
                     </div>
+
+                    <div className="doers-card-footer">
+                                <div>
+                                    <p className="doers-price-label">PRICE</p>
+                                    <p className="doers-original-price">₹19,999</p>
+                                </div>
+                                
+                                <p className="doers-offer-text doers-offer-button-wrapper">
+                                    Avail student offer and get it for <span className="doers-offer-price">₹17,999</span>
+                                </p>
+                            </div>
                 </section>
 
 
