@@ -520,7 +520,7 @@ const CreatorPreneur = () => {
                     </div>
 
                     {/* Right Form */}
-                    <GoogleSheetRegisterForm formName="CreatorpreneurForm" />
+                    <GoogleSheetRegisterForm formName="DigitalpreneurForm" />
 
                 </div>
             </section>
