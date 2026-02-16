@@ -1,6 +1,6 @@
 // src/pages/ProductManagement.js
 
-import React, { useState } from 'react';
+import React, {useRef, useState } from 'react';
 import ChallengeBased from '../assets/cre1.png';
 import CreatorLed from '../assets/cre2.png';
 import BuildCreate from '../assets/cre3.png';
@@ -154,7 +154,7 @@ const faqData = [
     {
         id: 3,
         question: "Are there any prerequisites for joining the program?",
-        answer: "No prior experience in product management is required. We welcome individuals from diverse backgrounds eager to learn and grow.",
+        answer: "No prior experience in Digitalpreneur is required. We welcome individuals from diverse backgrounds eager to learn and grow.",
     },
     {
         id: 4,
@@ -374,8 +374,9 @@ const engagementElements = [
 const CreatorPreneur = () => {
 
     const [activeIndex, setActiveIndex] = useState(null);
-
-
+    const desktopFormRef = useRef(null);
+    const mobileFormRef = useRef(null);//navigation
+    
 
     const [openModules, setOpenModules] = useState([]); // Initialize with module 8 (Becoming the Marketer) and 12 (Networking) open, as suggested by the image's structure.
 
@@ -387,11 +388,24 @@ const CreatorPreneur = () => {
         );
     };
 
+    //navigation
+  const scrollToForm = () => {
+    const isMobile = window.innerWidth <= 480;
+
+    const targetRef = isMobile ? mobileFormRef : desktopFormRef;
+
+    if (targetRef.current) {
+      targetRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+
 
 
     const toggleAccordion = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
+    
 
     return (
         <div className="doers-page-wrapper"> 
@@ -405,7 +419,7 @@ const CreatorPreneur = () => {
                     <p className="doers-hero-subtitle">
                         Where you don’t study marketing, you live it through challenges, brand sprints, and creator-led growth.
                     </p>
-                    <button className="doers-hero-button">Start Learning</button>
+                    <button className="doers-hero-button" onClick={scrollToForm}>Start Learning</button>
                 </div>
             </div>
 
@@ -473,15 +487,15 @@ const CreatorPreneur = () => {
                     <p className="doers-register-text-1">
                         Digitalpreneur is where Creators become Entrepreneurs —
                     </p>
-                    <p className="doers-register-text-2" id='doers-register-text-2'>
+                    <p className="doers-register-text-2" id='doers-register-text-2' ref={desktopFormRef}>
                         Learning storytelling, Marketing, and Growth through Real projects, Brand sprints, and Creative challenges.
                     </p>
-                    <p className="doers-register-text-2">
+                    <p className="doers-register-text-2" ref={mobileFormRef}>
                         Forget recorded lectures and static PDFs. Every week, you'll face a real challenge inspired by brands like
-                    </p>
+                    </p >
                     
                     {/* Brand Logos Placeholder - You'll replace the SVG/Images here */}
-                    <div className="doers-register-logos">
+                    <div className="doers-register-logos" >
                         {/* Example structure, replace with actual logos */}
                         <img src={credLogo} alt="CRED" className="doers-logo" />
                         <img src={swiggyLogo} alt="SWIGGY" className="doers-logo" />
@@ -494,10 +508,10 @@ const CreatorPreneur = () => {
                 </div>
 
                 {/* Registration/CTA Form Layout */}
-                <div className="doers-register-form-container">
+                <div className="doers-register-form-container"  >
                     
                     {/* Left CTA Card */}
-                    <div className="doers-register-cta-card">
+                    <div className="doers-register-cta-card" >
                         <div className="doers-register-cta-content" style={{backgroundImage: `url(${engagementBgform})`}}>
                             <p className="doers-register-cta-overline">WORK WITH US TODAY</p>
                             <h3 className="doers-register-cta-title">Ready-to <span id='doers-register-cta-title'>Upgrade?</span></h3>

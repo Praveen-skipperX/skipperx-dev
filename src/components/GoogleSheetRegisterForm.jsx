@@ -77,7 +77,7 @@ const GoogleSheetRegisterForm = ({ formName }) => {
             <option value="" disabled>
               Interest*
             </option>
-            <option value="Product Management">Product Management</option>
+            <option value="Product Management">Digitalpreneur</option>
           </select>
         </div>
 
