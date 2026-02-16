@@ -8,7 +8,7 @@ import TrustSection from '../components/TrustSection';
 import TestimonialCarousel from '../components/TestimonialCarousel';
 import EngineeringPrograms from '../components/EngineeringPrograms';
 import SuperStack from '../components/SuperStack';
-import Doers from '../components/Doers';
+// import Doers from '../components/Doers';
 import Entrapreneur from '../components/Entrapreneur';
 import CareerFormSection from '../components/CareerFormSection';
 import SkippersAdvantage from '../components/SkippersAdvantage';
@@ -25,10 +25,10 @@ const Home = () => {
       <Hero />
       <TrustSection />
       <TestimonialCarousel />
+      <Entrapreneur />
       <EngineeringPrograms />
       <SuperStack />
-      <Doers />
-      <Entrapreneur />
+      {/*<Doers /> */}
       <CareerFormSection />
       <SkippersAdvantage />
       <Circle />

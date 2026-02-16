@@ -31,6 +31,44 @@ const Navbar = () => {
           <span className="arrow">▾</span>
 
           <div className={`dropdown-menu mega-dropdown ${dropdownOpen === 'learn' ? 'show' : ''}`}>
+            
+            <div className="mega-column">
+              <h3>Entrepreneur</h3>
+              <p>Upgrade your life — one course at a time.</p>
+
+              <div className="mega-card">
+                <Link to="/Digitalpreneur" className="card-link">
+                  <img src={startupImg} alt="Startup Stack" />
+                  <div className="card-text">
+                    <h4>Digitalpreneur</h4>
+                    <span>For Creators</span>
+                  </div>
+                </Link>
+              </div>
+
+
+
+               
+              {/*<div className="mega-column" id='mega-column-psy'>
+              <h3>Doers</h3>
+              <p className="mega-card-psy-span">Your Growth Journey Starts Here.</p>
+
+              <div className="mega-card">
+                <Link to="/psychology" className="card-link">
+                  <img src={startupImg} alt="Startup Stack" />
+                  <div className="card-text">
+                    <h4>Psychology</h4>
+                    <span >Mind Strategy Experts</span>
+                  </div>
+                </Link>
+              </div>
+              
+
+            </div>*/}
+
+            </div>
+            
+            
             <div className="mega-column">
               <h3>Innovators</h3>
               <p>Dive into today’s Trendiest Innovations</p>
@@ -110,6 +148,9 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
+
+
+            
             
           </div>
         </div>

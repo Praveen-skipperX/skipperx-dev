@@ -27,7 +27,7 @@ import Psychology from './pages/Psychology';
 
 
 import ProductManagement from './pages/ProductManagement';
-import CreatorPreneur from './pages/Creatorpreneur';
+import CreatorPreneur from './pages/Digitalpreneur';
 
 import Dashboard from './components/dashboard/Dashboard';
 import ScrollToTop from './components/ScrollToTop';
@@ -72,7 +72,7 @@ function App() {
         } />
 
         <Route path="/product" element={<ProductManagement />} />
-        <Route path="/creatorpreneur" element={<CreatorPreneur />} />
+        <Route path="/Digitalpreneur" element={<CreatorPreneur />} />
 
         <Route path="/psychology" element={<Psychology />} />
         

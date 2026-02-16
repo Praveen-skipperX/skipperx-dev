@@ -21,7 +21,7 @@ const stackData = [
     bgImage: require("../assets/doers-psyc.png"),
   },*/
   {
-    title: "Creatorpreneur",
+    title: "Digitalpreneur",
     subtitle: "Duration: 3 Months",
     successRate: "90% start earning as creators — brand deals or freelance projects",
     tag: "Strategy",
@@ -31,7 +31,7 @@ const stackData = [
 
 const Doers = () => {
   return (
-    <section className="stack-wrapper" id="stack-navigate">
+    <section className="stack-wrapper" id="launch-navigate">
       <div className="best-heading-section">
         <hr className="lefst" id="lefstack" />
         <h1>

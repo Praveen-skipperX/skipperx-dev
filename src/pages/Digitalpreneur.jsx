@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import ChallengeBased from '../assets/cre1.png';
 import CreatorLed from '../assets/cre2.png';
 import BuildCreate from '../assets/cre3.png';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Footer from '../components/Footer.jsx';
+import Navbar from '../components/Navbar.jsx';
 import './ProductManagement.css'; // Import the updated CSS file
 
 import ChallengeBasedMob from '../assets/doers-1.png';
@@ -400,7 +400,7 @@ const CreatorPreneur = () => {
             <div className="doers-hero-container">
                 <div className="doers-hero-content">
                     <h1 className="doers-hero-title">
-                        Old Lessons Don’t Build New-Age Creators - <span className="doers-highlight">Welcome to Creatorpreneur</span> 
+                        Old Lessons Don’t Build New-Age Creators - <span className="doers-highlight">Welcome to Digitalpreneur</span> 
                     </h1>
                     <p className="doers-hero-subtitle">
                         Where you don’t study marketing, you live it through challenges, brand sprints, and creator-led growth.
@@ -460,7 +460,7 @@ const CreatorPreneur = () => {
             {/* 🆕 NEW: Registration/Upgrade Form Section - Based on image_14f8be.png */}
             <section className="doers-register-section">
                 <div className="doers-register-header">
-                    <p className="doers-register-overline">WHAT CREATORPRENEUR IS ABOUT</p>
+                    <p className="doers-register-overline">WHAT DIGITALPRENEUR IS ABOUT</p>
                     <h2 className="doers-register-main-title">
                         From  <span className="doers-register-highlight">Content Makers </span>to <span className="doers-register-highlight">Business Builders.</span>
                     </h2>
@@ -471,7 +471,7 @@ const CreatorPreneur = () => {
                 
                 <div className="doers-register-body">
                     <p className="doers-register-text-1">
-                        Creatorpreneur is where Creators become Entrepreneurs —
+                        Digitalpreneur is where Creators become Entrepreneurs —
                     </p>
                     <p className="doers-register-text-2" id='doers-register-text-2'>
                         Learning storytelling, Marketing, and Growth through Real projects, Brand sprints, and Creative challenges.
@@ -582,7 +582,7 @@ const CreatorPreneur = () => {
             Numbers That <span className="cp-doers-impact-highlight">Redefine</span> Learning
         </h2>
         <p className="cp-doers-impact-subtitle">
-            Creatorpreneur isn’t theory — it’s traction. See what happens when creators learn by doing
+            Digitalpreneur isn’t theory — it’s traction. See what happens when creators learn by doing
         </p>
     </div>
 
