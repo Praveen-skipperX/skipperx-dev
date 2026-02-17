@@ -41,8 +41,9 @@ import swiggyLogo from '../assets/swiggy.png';
 // 🚨 IMPORTANT: Add these new image imports for testimonials
 import anantShaImg from '../assets/anant_sha.jpeg'; // Replace with actual path
 import piyushNamdevImg from '../assets/piyush_namdev.jpeg'; // Replace with actual path
-import { default as riyaSharmaImg, default as soheliSharmaImg } from '../assets/riya_sharma.jpeg'; // Replace with actual path
+import soheliSharmaImg  from '../assets/sohelisharma.jpg'; // Replace with actual path
 import shantanuSinghImg from '../assets/shantanu_singh.jpeg'; // Replace with actual path
+import riyaSharmaImg from '../assets/riya_sharma.jpeg'; // Replace with actual path
 
 // 🆕 NEW: Imports for the Impact Dashboard Section
 import brandCafoco from '../assets/cafoco.png'; // Replace with actual path to Cafoco logo
