@@ -35,6 +35,8 @@ import ProtectedRoute from './components/ProtectedRoute';
 import GoogleCallback from './pages/GoogleCallback';
 
 
+import Checkout from './pages/Checkout';
+import Success from './pages/Success';
 
 
 
@@ -55,7 +57,12 @@ function App() {
         <Route path="/ar-vr" element={<ArVr />} />
         <Route path="/Startup-Stack" element={<StartupStack />} />
         <Route path="/creator-hub" element={<CreatorHub />} />
+  
+        
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/success" element={<Success />} />
 
+        
 
         <Route path="/Core-Tech" element={<TechCore />} />
         <Route path="/Medical-edition" element={<Medical />} />

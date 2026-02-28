@@ -1015,13 +1015,13 @@ const CreatorPreneur = () => {
                      <div className="doers-card-footer">
                                 <div>
                                     <p className="doers-price-label">PRICE</p>
-                                    <p className="doers-original-price">₹50,000</p>
+                                    <p className="doers-original-price">₹80,000</p>
                                     
                                 </div>
                                 
                                 {/* 🎯 NEW CLASS FOR THE BUTTON EFFECT */}
                                 <p className="doers-offer-text doers-offer-button-wrapper">
-                                    Avail student offer and get it for <span className="doers-offer-price"> ₹40,000</span>
+                                    Avail student offer and get it for <span className="doers-offer-price"> ₹60,000</span>
                                 </p>
                             </div>
                 </section>

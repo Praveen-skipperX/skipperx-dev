@@ -1,0 +1,250 @@
+.checkout-page {
+  min-height: auto;
+  background: linear-gradient(to bottom, #111, #000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.checkout-navbar {
+  width: 100%;
+  padding: 15px 70px 8px;
+  background-color: #000;
+}
+
+.checkout-logo {
+  height: 36px;
+}
+
+/* Checkout Card */
+.checkout-card {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 560px;
+  background: #1a1a1a;
+  border: 1.5px solid #535353;
+  border-radius: 12px;
+  padding: 17px 24px 7px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/* Title */
+.checkout-title {
+  font-size: 26px;
+  margin-top: 1px !important;
+  font-family: poppins;
+  margin-bottom: 8px;
+}
+
+/* Program Header */
+.checkout-program {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: poppins;
+  color: #f9f9f9;
+  margin-bottom: 12px;
+}
+
+.program-name {
+  font-weight: 500;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* Sections */
+.checkout-section {
+  margin-bottom: 20px;
+}
+
+.checkout-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  margin-top: 4px;
+  color: #ffffff;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding:16px 10px;
+  border-radius: 6px;
+  border: 1px solid #A5A3A3;
+  background-color: #1a1a1a;
+  color: #fff;
+  max-width: 440px !important;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+}
+
+.apply-btn {
+  background-color: #2c2c2c;
+  color: #aaa;
+  border: none;
+  max-width: 100px !important;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 18px !important;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.disc-3000{
+  font-size: 15px;
+}
+/* Saving Banner */
+.saving-banner {
+  background: #000;
+  padding: 15px 31px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  text-align: center !important;
+}
+
+/* Price Section */
+.price-section h4 {
+  font-size: 16px;
+  font-weight: DM sans;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 13px;
+}
+
+.price-row.total {
+  font-weight: 400;
+  font-size: 15px;
+  font-weight: DM sans;
+}
+
+.checkout-card hr {
+  border: none;
+  border-top: 1.2px solid #9a9898;
+  margin: 10px 0;
+}
+.price-section hr {
+  border: none;
+  border-top: 1.2px solid #9a9898;
+  margin: 10px 0;
+}
+
+/* Pay Button */
+.pay-btn {
+  width: 100%;
+  background: linear-gradient(to right, #ff7a00, #ff3c00);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.pay-btn:hover {
+  opacity: 0.9;
+}
+
+.redirect-text {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 8px;
+  margin-bottom: 103px;
+}
+
+/* Referral Section */
+.referral {
+  margin-top: 0px;
+}
+.referral label{
+  font-size: 14px;
+}
+.referral input{
+  font-size: 14px;
+  padding: 17px 20px;
+}
+#apply-btnn{
+  max-width: 100px;
+  width: 100%;
+  padding: 10px 20px;
+}
+#apply-btnnn{
+  max-width: 510px !important;
+  width: 100%;
+}
+
+
+
+@media (max-width: 480px){
+  .checkout-card {
+    margin-top: 3px !important;
+    width: 100%;
+    max-width: 560px;
+    background: #1a1a1a;
+    border: none !important;
+    border-radius: 12px;
+    padding: 17px 24px 7px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  .checkout-page {
+    min-height: auto;
+    background: #1a1a1a !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  .checkout-navbar {
+    width: 100%;
+    padding: 15px 20px 8px !important;
+    background-color: #000;
+  }
+   
+}
+/* Responsive */
+@media (max-width: 600px) {
+  .checkout-card {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .checkout-program {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media(min-width: 1440px){
+  .pay-btn {
+  width: 100%;
+  background: linear-gradient(to right, #ff7a00, #ff3c00);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 20px !important;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+}
