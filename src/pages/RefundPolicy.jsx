@@ -21,8 +21,10 @@ const RefundPolicy = () => {
         <p>
           We do not offer refunds for courses. Please carefully consider your schedule and commitment before enrolling. You may transfer your enrollment to a subsequent cohort. A nominal administrative fee will apply for such transfers.
         </p>
+        <h2></h2>
         <p>
-          Should a refund be granted, please allow 5–7 business days for the transaction to be processed by our payment partners (Razorpay and Stripe). The refunded amount will be credited to your original method of payment.
+          If we fail to provide service
+          we provide a refund, please allow 5–7 business days for the transaction to be processed by our payment partners (Razorpay and Stripe). The refunded amount will be credited to your original method of payment.
         </p>
 
         <h2>Contact Us</h2>
