@@ -160,7 +160,7 @@ function Dashboard() {
         <section className="dashboard-cards">
           <div className="progress-card">
             <div className="card-label"> <img src={topcal} className="topcal" /> <span className="topcalt">Recently watching</span></div>
-            <h3>Module 3 - Linkedin workshop</h3> {/* Text updated to match image */}
+            <h3>Module 4 - Linkedin workshop</h3> {/* Text updated to match image */}
             <p className="module-label">Modules</p>
             <div className="progress-bar">
               {/* Note: The image shows ~5% filled, so I'm adjusting width here */}
