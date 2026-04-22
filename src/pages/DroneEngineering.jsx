@@ -543,8 +543,8 @@ const DroneEngineering = () => {
                       avatar: harish,
                     },
                     {
-                      heading:"BOE aP Monitor",
-                      name: "Sakshi",
+                      heading:"BOE at Zone Monitor",
+                      name: "Roshan",
                       role: "AI Research",
                       review:
                         "Exceptional mentorship and hands-on sessions! I now understand drone dynamics and automation better.",
@@ -558,14 +558,14 @@ const DroneEngineering = () => {
                         "Fantastic journey. Loved the combination of theory and lab work. My project now flies!",
                       avatar: hari,
                     },
-                    {
+                    /*{
                       heading:"BOE at EMP Monitor",
                       name: "Aditi Rao",
                       role: "Embedded Systems",
                       review:
                         "Comprehensive curriculum and well-guided support made the learning smooth and impactful.",
                       avatar: sakshi,
-                    },
+                    },*/
                   ].map((review, i) => (
                     <div className="arvr-review-slide" key={i}>
                       <h4>{review.heading}</h4>
