@@ -609,7 +609,7 @@ const DroneEngineering = () => {
                 <div className="price">Price</div>
                 <div className="drone-price-section">
                   {/*<div className="drone-original-price">₹24,999</div>*/}
-                  <div className="drone-current-price">₹80,000</div>
+                  <div className="drone-current-price">₹54,999</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
@@ -658,7 +658,7 @@ const DroneEngineering = () => {
                 <div className="price">Price</div>
                 <div className="drone-price-section">
                   {/* <div className="drone-original-price">₹24,999</div> */}
-                  <div className="drone-current-price">₹80,000</div>
+                  <div className="drone-current-price">₹54,999</div>
                 </div>
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
@@ -692,8 +692,8 @@ const DroneEngineering = () => {
         
           <div className="arvr-offer-price-box" >
             <span className="arvr-offer-icon">⚡</span>
-            <span className="arvr-offer-old-price">₹80,000/-</span>
-            <span className="arvr-offer-new-price">₹64,999/-</span>
+            <span className="arvr-offer-old-price">₹54,999/-</span>
+            <span className="arvr-offer-new-price">₹32,000/-</span>
           </div>
 
           <p className="arvr-offer-subtext">The Clock’s Ticking — Ends In</p>
