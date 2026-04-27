@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import hari from '../assets/harih.jpg';
 import harish from '../assets/harisha.jpg';
-import loginImage from "../assets/login-bg1.png";
+import loginImage from "../assets/login-bg1.webp";
 import googleLogo from "../assets/login-google.png";
 import sai from '../assets/saisai.png';
 import sakshi from '../assets/saksh.png';

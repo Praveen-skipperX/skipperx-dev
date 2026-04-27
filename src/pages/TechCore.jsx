@@ -28,7 +28,7 @@ import sai from '../assets/sai.jpg';
 import sakshi from '../assets/roshan.png';
 import sea from '../assets/sea.png';
 import sl from '../assets/sl.png';
-import techroadmap from '../assets/Tech.png';
+import techroadmap from '../assets/Tech.webp';
 import techroadmapmobile from '../assets/tech-core-mobile.png';
 import tf from '../assets/tf.png';
 import up from '../assets/up.png';

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import eightseven from "../assets/88.png";
 import nineseven from "../assets/91.png";
 import nineeight from "../assets/97.png";
-import hubroadmap from '../assets/medicalnew1.png';
+import hubroadmap from '../assets/medicalnew1.webp';
 import hubroadmapmobile from '../assets/medical-mobile.png';
 import css from '../assets/css.png';
 import brochureImage from "../assets/drone-brochure.png";

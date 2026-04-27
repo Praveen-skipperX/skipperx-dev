@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import heroBg from "../assets/about-hero.png";
+import heroBg from "../assets/about-hero.webp";
 //import bgImage from "../assets/about-x.png";
 //import founder1 from "../assets/scf.png";
 import founder2 from "../assets/hcf.png";

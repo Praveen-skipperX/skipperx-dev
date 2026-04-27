@@ -3,7 +3,7 @@ import eigth from "../assets/88.png";
 import nineone from "../assets/91.png";
 import nineseven from "../assets/97.png";
 import certificateDisplay from "../assets/new-cer.jpg";
-import droneBg from "../assets/drone-bg-image.png";
+import droneBg from "../assets/drone-bg-image.webp";
 import brochureImage from "../assets/drone-brochure.png";
 import bgImage from '../assets/dronebg.png';
 import faqarrow from "../assets/faqarrow.png";

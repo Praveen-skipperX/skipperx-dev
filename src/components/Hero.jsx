@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
-import bgImage from '../assets/hero-landing-hd.png';
-import bgImagemobile from '../assets/landing-mobile.png';
+import bgImage from '../assets/hero-landing-hd.webp';
+import bgImagemobile from '../assets/landing-mobile.webp';
 
 
 

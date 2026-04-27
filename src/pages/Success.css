@@ -99,12 +99,12 @@
   margin-bottom: 10px;
 }
 
-/* Grid */
+/*
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px 20px;
-}
+}*/
 
 .grid-card {
   background: #1c1c1c;
@@ -214,9 +214,9 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .grid {
+  /*.grid {
     grid-template-columns: 1fr;
-  }
+  }*/
 
   .top-bar {
     width: 100%;
