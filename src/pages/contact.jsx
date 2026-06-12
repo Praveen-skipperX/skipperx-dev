@@ -59,7 +59,7 @@ const Contact = () => {
                             <img src={call} className="contact-call" alt="contact-call" />
                         </div> 
                         <div>  
-                            <p>Call us - +916366953507  </p>
+                            <p>Call us - +918147454218  </p>
                             <p className="contact-p">Get instant response</p>
                         </div>     
                 </div>
