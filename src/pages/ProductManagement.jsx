@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import './ProductManagement.css'; // Import the updated CSS file
 import Navbar from '../components/Navbar'; 
 import Footer from '../components/Footer';
+import EmiOptionBanner from '../components/EmiOptionBanner';
 import founderImage from '../assets/pro1.png'; 
 import swiggyTeamImage from '../assets/pro2.png'; 
 import spotifyScreensImage from '../assets/pro3.png';
@@ -390,6 +391,8 @@ const ProductManagement = () => {
                         <div className="doers-form-group-single">
                             <input type="text" placeholder="College name*" required className="doers-form-input" />
                         </div>
+
+                        <EmiOptionBanner />
                         
                         <button type="submit" className="doers-form-submit-button">
                             Submit enquiry

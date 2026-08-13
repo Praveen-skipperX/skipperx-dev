@@ -1185,7 +1185,8 @@
   padding: 5px 20px 5px 20px;
   width: 408px;
   border: 12px solid #aeadad;
-  height: 590px;
+  height: auto;
+  min-height: 600px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   font-family: 'Poppins', sans-serif;
   color: #111;

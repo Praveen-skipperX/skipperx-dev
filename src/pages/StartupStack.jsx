@@ -34,6 +34,7 @@ import up from '../assets/up.png';
 import vs from '../assets/vs.png';
 import Footer from '../components/Footer';
 import GoogleSheetForm from '../components/GoogleSheetForm';
+import EmiOptionBanner from '../components/EmiOptionBanner';
 import Navbar from '../components/Navbar';
 import '../components/responsiveUtils.css';
 import "./StartupStack.css";
@@ -348,11 +349,14 @@ const StartupStack = () => {
                   <li><span className="tickmark">&#10004;</span> Industry relevant skills</li>
                   <li><span className="tickmark">&#10004;</span> Hands on learning</li>
                 </ul>
+                <div className="pricing-price-row">
                 <div className="price">Price</div>
                 <div className="drone-price-section">
                   {/*<div className="drone-original-price">₹24,999</div>*/}
                   <div className="drone-current-price">₹21,999</div>
                 </div>
+                </div>
+                <EmiOptionBanner />
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
                     <img src={harish} alt="avatar" />
@@ -396,11 +400,14 @@ const StartupStack = () => {
                   <li><span className="tickmark">&#10004;</span> Industry relevant skills</li>
                   <li><span className="tickmark">&#10004;</span> Hands on learning</li>
                 </ul>
+                <div className="pricing-price-row">
                 <div className="price">Price</div>
                 <div className="drone-price-section">
                   {/*<div className="drone-original-price">₹24,999</div>*/}
                   <div className="drone-current-price">₹21,999</div>
                 </div>
+                </div>
+                <EmiOptionBanner />
                 <div className="trust-footer-drone">
                   <div className="avatarsdrone">
                     <img src={harish} alt="avatar" />

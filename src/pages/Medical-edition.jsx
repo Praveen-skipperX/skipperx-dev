@@ -35,6 +35,7 @@ import up from '../assets/up.png';
 import vs from '../assets/vs.png';
 import Footer from '../components/Footer';
 import GoogleSheetForm from '../components/GoogleSheetForm';
+import EmiOptionBanner from '../components/EmiOptionBanner';
 import Navbar from '../components/Navbar';
 import '../components/responsiveUtils.css';
 import "./Medical.css";
@@ -358,11 +359,14 @@ const Medical = () => {
                   <li><span className="startup-tickmark">&#10004;</span> Industry relevant skills</li>
                   <li><span className="startup-tickmark">&#10004;</span> Hands on learning</li>
                 </ul>
+                <div className="pricing-price-row">
                 <div className="startup-price">Price</div>
                 <div className="startup-price-section">
                   {/*<div className="startup-original-price">₹24,999</div>*/}
                   <div className="startup-current-price">₹21,999</div>
                 </div>
+                </div>
+                <EmiOptionBanner />
                 <div className="startup-trust-footer-drone">
                   <div className="startup-avatarsdrone">
                     <img src={harish} alt="avatar" />
@@ -406,11 +410,14 @@ const Medical = () => {
                   <li><span className="startup-tickmark">&#10004;</span> Industry relevant skills</li>
                   <li><span className="startup-tickmark">&#10004;</span> Hands on learning</li>
                 </ul>
+                <div className="pricing-price-row">
                 <div className="startup-price">Price</div>
                 <div className="startup-price-section">
                   {/*<div className="startup-original-price">₹24,999</div>*/}
                   <div className="startup-current-price">₹21,999</div>
                 </div>
+                </div>
+                <EmiOptionBanner />
                 <div className="startup-trust-footer-drone">
                   <div className="startup-avatarsdrone">
                     <img src={harish} alt="avatar" />

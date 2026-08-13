@@ -1,4 +1,5 @@
 import { useState } from "react";
+import EmiOptionBanner from "./EmiOptionBanner";
 
 const GoogleSheetRegisterForm = ({ formName }) => {
   const [submitting, setSubmitting] = useState(false);
@@ -108,6 +109,8 @@ const GoogleSheetRegisterForm = ({ formName }) => {
             className="doers-form-input"
           />
         </div>
+
+        <EmiOptionBanner />
 
         <button
           type="submit"

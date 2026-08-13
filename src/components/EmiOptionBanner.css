@@ -1,0 +1,144 @@
+.emi-option-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1.5px solid #f5a623;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 6px 0 10px;
+  background-color: #fff9f0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.emi-option-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #f5a623;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.emi-option-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 0 0 4px;
+  color: #1a1a1a;
+}
+
+.emi-option-subtitle {
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0;
+  color: #333;
+  line-height: 1.4;
+}
+
+.drone-pricing-card,
+.startup-pricing-card {
+  height: auto !important;
+  min-height: unset !important;
+  padding: 18px 20px 22px !important;
+  display: flex !important;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.drone-pricing-card h2,
+.startup-pricing-card h2 {
+  margin-bottom: 18px !important;
+  line-height: 1.25 !important;
+}
+
+.drone-pricing-card .drone-features-list,
+.startup-pricing-card .startup-features-list {
+  margin: 0 0 14px 0 !important;
+}
+
+.drone-pricing-card .drone-features-list li,
+.startup-pricing-card .startup-features-list li {
+  margin-bottom: 12px !important;
+}
+
+.drone-pricing-card .drone-features-list li:last-child,
+.startup-pricing-card .startup-features-list li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.drone-pricing-card .pricing-price-row,
+.startup-pricing-card .pricing-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 14px 0 12px;
+  flex-wrap: wrap;
+}
+
+.drone-pricing-card .price,
+.startup-pricing-card .startup-price {
+  display: inline-block !important;
+  margin: 0 !important;
+  margin-left: 0 !important;
+  vertical-align: baseline;
+  font-size: 20px;
+  color: #9a9a9a;
+  flex-shrink: 0;
+}
+
+.drone-pricing-card .drone-price-section,
+.startup-pricing-card .startup-price-section {
+  display: inline-flex !important;
+  align-items: baseline !important;
+  gap: 10px !important;
+  margin: 0 !important;
+  vertical-align: baseline;
+}
+
+.drone-pricing-card .drone-current-price,
+.startup-pricing-card .startup-current-price {
+  line-height: 1;
+}
+
+.drone-pricing-card .trust-footer-drone,
+.startup-pricing-card .startup-trust-footer-drone {
+  margin-top: 4px !important;
+  margin-bottom: 12px !important;
+}
+
+.drone-pricing-card .avatarsdrone,
+.startup-pricing-card .startup-avatarsdrone {
+  margin-top: 10px !important;
+}
+
+.drone-pricing-card .emi-option-banner,
+.startup-pricing-card .emi-option-banner {
+  margin: 10px 0 14px;
+}
+
+.drone-pricing-card .drone-pricing-btn,
+.startup-pricing-card .startup-pricing-btn {
+  width: 100% !important;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 14px;
+}
+
+@media (max-width: 480px) {
+  .drone-pricing-card,
+  .startup-pricing-card {
+    min-height: unset;
+    height: auto !important;
+    width: 100%;
+    max-width: 371px;
+  }
+}
