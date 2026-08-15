@@ -1,12 +1,9 @@
 
 import React from 'react';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import './Footer.css';
-import { FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 import logo from '../assets/skipper-black.png';
-import { HashLink } from 'react-router-hash-link';
-
-<img src={logo} alt="Skipper Logo" className="footer-logo" />
+import './Footer.css';
 
 const Footer = () => { 
     
@@ -43,8 +40,8 @@ const Footer = () => {
 
           <p><strong>1st floor, 19th Main Rd, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102</strong></p>
               
-          <p><a href="#" >support@skipperx.io</a></p>
-          <p><a href="#">+91 8147454218</a></p>
+          <p><a href="mailto:support@skipperx.io">support@skipperx.io</a></p>
+          <p><a href="tel:+918147454218">+91 8147454218</a></p>
           
          
 
@@ -65,9 +62,9 @@ const Footer = () => {
             <h4>Company</h4>
             <ul>
               <li><Link to="/about">About Us</Link></li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="/contact">Careers</a></li>
               <li><Link to="/contact">Contact Us</Link></li>
-              <li><a href="#">Apply as Mentor</a></li>
+              <li><a href="/contact">Apply as Mentor</a></li>
               <li><a href="/blog">Blog</a></li>
             </ul>
           </div>
@@ -77,14 +74,14 @@ const Footer = () => {
             <ul>
               <li ><a href="#launch-navigate">For Innovators</a></li>
               <li><a href="#stack-navigate">For Doers</a></li>
-              <li><a href="#">For Enterpreneurs</a></li>
+              <li><a href="/Digitalpreneur">For Enterpreneurs</a></li>
             </ul>
           </div>
 
           <div className="footer-column" id="c">
             <h4>Legal</h4>
             <ul>
-              <li>< Link to="/privacy-policy" >Privacy Policy</Link></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
 
               <li><Link to="/t & c">Terms & Condition</Link></li>
             </ul>
@@ -93,12 +90,19 @@ const Footer = () => {
           <div className="footer-column" id="d">
             <h4>Support</h4>
             <ul>
-              <li ><a href="#">FAQ</a></li>
-              <li><Link to="/refund-policy">
-          Payment and <br/>Refund Policy
-        </Link></li>
+              <li><a href="/contact">FAQ</a></li>
+              <li>
+                <Link to="/refund-policy">Payment and Refund Policy</Link>
+              </li>
+            </ul>
+            <h4 className="footer-subheading">EMI Partners</h4>
+            <ul className="footer-sublist">
+              <li><Link to="/">Akshar Fees</Link></li>
+              <li><Link to="/">Auxilo Finserve Pvt. Ltd.</Link></li>
             </ul>
           </div>
+
+          
           
 
           <div className="exclusive">

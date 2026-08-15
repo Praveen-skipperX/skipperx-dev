@@ -124,6 +124,23 @@
   color: #fff;
 }
 
+.footer-column .footer-subheading {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.footer-column .footer-sublist {
+  margin-bottom: 0;
+}
+
+#d > ul:first-of-type {
+  margin-bottom: 0;
+}
+
+#d .footer-sublist {
+  margin-bottom: -62px;
+}
+
 .footer-column ul {
   list-style: none;
   font-size: 14px;
@@ -357,6 +374,12 @@
   }
   #d{
     margin-top: 20px;
+  }
+  #d .footer-subheading {
+    margin-top: 10px;
+  }
+  #d .footer-sublist {
+    margin-bottom: 0;
   }
   #c{
     margin-top: 1px;

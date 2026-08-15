@@ -23,7 +23,7 @@
   justify-content: center;
   font-size: 13px;
   font-weight: 700;
-  font-style: italic;
+  /* font-style: italic; */
   margin-top: 2px;
 }
 
@@ -131,6 +131,19 @@
   max-width: 100%;
   box-sizing: border-box;
   margin-top: 14px;
+}
+
+.drone-form-card,
+.startup-form-card {
+  height: auto !important;
+  min-height: unset !important;
+  padding-bottom: 22px !important;
+  overflow: visible;
+}
+
+.drone-form-card .form-submit-btn,
+.startup-form-card .form-submit-btn {
+  margin-top: 8px;
 }
 
 @media (max-width: 480px) {

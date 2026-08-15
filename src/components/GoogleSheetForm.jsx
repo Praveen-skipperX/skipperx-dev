@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import EmiOptionBanner from './EmiOptionBanner';
+import './EmiOptionBanner.css';
 
 const GoogleSheetForm = ({ formName }) => {
   const [submitting, setSubmitting] = useState(false);
@@ -46,7 +46,6 @@ const GoogleSheetForm = ({ formName }) => {
         <span className="country--code">+91</span>
         <input type="tel" placeholder="XXXXXXXXXX" required />
       </div>
-      <EmiOptionBanner />
       <button
         type="submit"
         className="form-submit-btn"
