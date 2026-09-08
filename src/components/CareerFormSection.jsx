@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./CareerFormSection.css";
-import EmiOptionBanner from "./EmiOptionBanner";
 
 const CareerFormSection = () => {
   const [submitting, setSubmitting] = useState(false);
@@ -60,7 +59,7 @@ const CareerFormSection = () => {
           <input type="email" placeholder="E-mail*" required />
         </div>
 
-        <EmiOptionBanner />
+        {/* <EmiOptionBanner /> */}
 
         <button type="submit" className="submit-btn" disabled={submitting} style={{ opacity: submitting ? 0.7 : 1, cursor: submitting ? 'not-allowed' : 'pointer' }}>
           {submitting ? 'Submitting...' : 'Submit'}

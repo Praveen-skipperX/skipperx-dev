@@ -1,22 +1,21 @@
 // src/pages/Home.jsx
-import React from 'react';
 
 // Components for the home sections
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import TrustSection from '../components/TrustSection';
-import TestimonialCarousel from '../components/TestimonialCarousel';
 import EngineeringPrograms from '../components/EngineeringPrograms';
+import Hero from '../components/Hero';
+import Navbar from '../components/Navbar';
 import SuperStack from '../components/SuperStack';
+import TestimonialCarousel from '../components/TestimonialCarousel';
+import TrustSection from '../components/TrustSection';
 // import Doers from '../components/Doers';
-import Entrapreneur from '../components/Entrapreneur';
-import CareerFormSection from '../components/CareerFormSection';
-import SkippersAdvantage from '../components/SkippersAdvantage';
-import Circle from '../components/Circle';
-import LaunchSection from '../components/LaunchSection';
 import BackedByBest from '../components/BackedByBest';
-import WhyTrustUs from '../components/WhyTrustUs';
+import CareerFormSection from '../components/CareerFormSection';
+import Circle from '../components/Circle';
+import Entrapreneur from '../components/Entrapreneur';
 import Footer from '../components/Footer';
+import LaunchSection from '../components/LaunchSection';
+import SkippersAdvantage from '../components/SkippersAdvantage';
+import WhyTrustUs from '../components/WhyTrustUs';
 
 const Home = () => {
   return (

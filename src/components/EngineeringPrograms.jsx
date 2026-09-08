@@ -1,13 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import "./EngineeringPrograms.css";
-import arrowIcon from "../assets/arrows.png";
 import avatar1 from "../assets/A1.png";
 import avatar2 from "../assets/A2.png";
 import avatar3 from "../assets/A3.png";
-import bg1 from "../assets/dro1.png";
-import bg2 from "../assets/robo1.png";
 import bg3 from "../assets/ar1.png";
+import arrowIcon from "../assets/arrows.png";
+import bg1 from "../assets/dro1.png";
+import bg4 from "../assets/home-innovators-uiux.png";
+import bg2 from "../assets/robo1.png";
+import "./EngineeringPrograms.css";
 
 const programs = [
   {
@@ -33,6 +33,14 @@ const programs = [
     avatar: avatar3,
     success: "92% land AR/VR roles or launch their own apps.",
     bg: bg3,
+  },
+  {
+    title: "UI UX Design Pro",
+    tag: "⚡Bestseller",
+    quote: "“Learning to structure user experiences and design modern, accessible interfaces from scratch was incredibly empowering!“",
+    avatar: avatar3,
+    success: "92% land UI/UX roles start their own agencies.",
+    bg: bg4,
   },
 ];
 
@@ -69,9 +77,6 @@ const EngineeringPrograms = () => {
               <p className="eng-success-label">Success rate:</p>
               <p className="eng-success-value">{item.success}</p>
             </div>
-
-            
-            
             <div className="eng-arrow-btn"> 
               <img src={arrowIcon} alt="arrow" className="eng-arrow-img" />
             </div>   
