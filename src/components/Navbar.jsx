@@ -102,6 +102,16 @@ const Navbar = () => {
                   </div>
                 </Link>
               </div>
+
+              <div className="mega-card">
+                <Link to="/uiux-design-pro" className="card-link">
+                  <img src={coretechImg} alt="UI UX Design Pro" />
+                  <div className="card-text">
+                    <h4>UI UX Design Pro</h4>
+                    <span>12 Weeks</span>
+                  </div>
+                </Link>
+              </div>
             </div>
 
             <div className="mega-column">

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './EmiOptionBanner.css';
 
-const GoogleSheetForm = ({ formName }) => {
+const GoogleSheetForm = ({ formName, submitLabel = 'Start Learning' }) => {
   const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState({ show: false, message: '', type: '' });
 
@@ -52,7 +52,7 @@ const GoogleSheetForm = ({ formName }) => {
         disabled={submitting}
         style={{ opacity: submitting ? 0.7 : 1, cursor: submitting ? 'not-allowed' : 'pointer' }}
       >
-        {submitting ? 'Submitting...' : 'Start Learning'}
+        {submitting ? 'Submitting...' : submitLabel}
       </button>
       {/* Toast notification */}
       {toast.show && (

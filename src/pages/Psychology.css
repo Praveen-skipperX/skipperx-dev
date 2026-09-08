@@ -1,9 +1,9 @@
 
 @media (max-width: 1024px) {
-  .arvr-dronebody {
+  .psychology-page .arvr-dronebody {
     padding: 30px 0px 40px 0px;
   }
-  .arvr-drone-engineering-section{
+  .psychology-page .arvr-drone-engineering-section{
     padding: 64px 40px;
   }
   
@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 480px) {
 
-  .arvr-drone-engineering-section {
+  .psychology-page .arvr-drone-engineering-section {
     background-image: url('../assets/psybg-mobile.png')!important;
     background-size: cover;
     background-position: center;
@@ -60,7 +60,7 @@
     height: 600px !important;
   }
 
-  .arvr-dronebody {
+  .psychology-page .arvr-dronebody {
     padding: 0px 22px 6px;
     margin-top: -79px;
     
@@ -173,7 +173,7 @@
 
 
 
-.arvr-dronebody {
+.psychology-page .arvr-dronebody {
   background: linear-gradient(to bottom , #0d0d0d , #000 100%);
   padding: 44px 120px 64px 120px;
   align-items: center;
@@ -187,7 +187,7 @@
 .arvr-accredit{
   background-color: #1C1C1C;
 }
-.arvr-drone-engineering-section {
+.psychology-page .arvr-drone-engineering-section {
   color: white;
   text-align: center;
   border-radius: 20px;

@@ -1,42 +1,36 @@
 
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-
-import Home from './pages/Home';
-import TermsAndConditions from './pages/t & c'
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import RefundPolicy from './pages/RefundPolicy';
-import About from './pages/About';
-import Blog from './pages/blog';
-import DroneEngineering from './pages/DroneEngineering';
-import RobotEngineering from './pages/RobotEngineering';
-import ArVr from './pages/Ar-Vr';
-
-import StartupStack from './pages/StartupStack';
-import CreatorHub from './pages/creator-hub';
-import TechCore from './pages/TechCore';
-import Medical from './pages/Medical-edition';
-import Login from './pages/login';
-import Email from './pages/email';
-import Contact from './pages/contact';
-import Otp from './pages/otp';
-import Cooking from './pages/cooking';
-//import Forget from './pages/forget';
-import Psychology from './pages/Psychology';
-
-
-import ProductManagement from './pages/ProductManagement';
-import CreatorPreneur from './pages/Digitalpreneur';
+import { lazy, Suspense } from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 import Dashboard from './components/dashboard/Dashboard';
-import ScrollToTop from './components/ScrollToTop';
 import ProtectedRoute from './components/ProtectedRoute';
-import GoogleCallback from './pages/GoogleCallback';
-
-
+import ScrollToTop from './components/ScrollToTop';
+import About from './pages/About';
+import ArVr from './pages/Ar-Vr';
+import Blog from './pages/blog';
 import Checkout from './pages/Checkout';
+import Contact from './pages/contact';
+import Cooking from './pages/cooking';
+import CreatorHub from './pages/creator-hub';
+import CreatorPreneur from './pages/Digitalpreneur';
+import DroneEngineering from './pages/DroneEngineering';
+import Email from './pages/email';
+import GoogleCallback from './pages/GoogleCallback';
+import Home from './pages/Home';
+import Login from './pages/login';
+import Medical from './pages/Medical-edition';
+import Otp from './pages/otp';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import ProductManagement from './pages/ProductManagement';
+import RefundPolicy from './pages/RefundPolicy';
+import RobotEngineering from './pages/RobotEngineering';
+import StartupStack from './pages/StartupStack';
 import Success from './pages/Success';
+import TermsAndConditions from './pages/t & c';
+import TechCore from './pages/TechCore';
+import UIUXDesignPro from './pages/UIUX-Design-Pro';
+
+const Psychology = lazy(() => import('./pages/Psychology'));
 
 
 
@@ -44,7 +38,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-
+      <Suspense fallback={null}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -55,6 +49,7 @@ function App() {
         <Route path="/Drone-Engineering" element={<DroneEngineering />} />
         <Route path="/Robot-Engineering" element={<RobotEngineering />} />
         <Route path="/ar-vr" element={<ArVr />} />
+        <Route path="/uiux-design-pro" element={<UIUXDesignPro />} />
         <Route path="/Startup-Stack" element={<StartupStack />} />
         <Route path="/creator-hub" element={<CreatorHub />} />
   
@@ -85,6 +80,7 @@ function App() {
         
 
       </Routes>
+      </Suspense>
 
       
     </Router>

@@ -253,6 +253,7 @@ const Psychology = () => {
   return (
     <>
       <Navbar />
+      <div className="psychology-page">
 
 
 
@@ -902,6 +903,7 @@ const Psychology = () => {
 
        
 
+      </div>
       </div>
       <Footer />
     </>
