@@ -1,14 +1,15 @@
 // Navbar.jsx
-import React, { useState } from 'react';
-import './Navbar.css';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/skipper-black.png';
-import droneImg from '../assets/drone-navbar.png';
-import robotImg from '../assets/robot-navbar.png';
 import arvrImg from '../assets/arvr-navbar.png';
-import startupImg from '../assets/startup-navbar.png';
 import coretechImg from '../assets/core-navbar.png';
 import creatorsImg from '../assets/creator-navbar.png';
+import droneImg from '../assets/drone-navbar.png';
+import robotImg from '../assets/robot-navbar.png';
+import logo from '../assets/skipper-black.png';
+import startupImg from '../assets/startup-navbar.png';
+import uiuxImg from '../assets/uiux-navbar.png';
+import './Navbar.css';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -105,7 +106,7 @@ const Navbar = () => {
 
               <div className="mega-card">
                 <Link to="/uiux-design-pro" className="card-link">
-                  <img src={coretechImg} alt="UI UX Design Pro" />
+                  <img src={uiuxImg} alt="UI UX Design Pro" />
                   <div className="card-text">
                     <h4>UI UX Design Pro</h4>
                     <span>12 Weeks</span>
