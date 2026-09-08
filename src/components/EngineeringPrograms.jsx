@@ -5,7 +5,6 @@ import avatar3 from "../assets/A3.png";
 import bg3 from "../assets/ar1.png";
 import arrowIcon from "../assets/arrows.png";
 import bg1 from "../assets/dro1.png";
-import bg4 from "../assets/home-innovators-uiux.png";
 import bg2 from "../assets/robo1.png";
 import "./EngineeringPrograms.css";
 
@@ -34,14 +33,14 @@ const programs = [
     success: "92% land AR/VR roles or launch their own apps.",
     bg: bg3,
   },
-  {
-    title: "UI UX Design Pro",
-    tag: "⚡Bestseller",
-    quote: "“Learning to structure user experiences and design modern, accessible interfaces from scratch was incredibly empowering!“",
-    avatar: avatar3,
-    success: "92% land UI/UX roles start their own agencies.",
-    bg: bg4,
-  },
+  // {
+  //   title: "UI UX Design Pro",
+  //   tag: "⚡Bestseller",
+  //   quote: "“Learning to structure user experiences and design modern, accessible interfaces from scratch was incredibly empowering!“",
+  //   avatar: avatar3,
+  //   success: "92% land UI/UX roles start their own agencies.",
+  //   bg: bg4,
+  // },
 ];
 
 const EngineeringPrograms = () => {
