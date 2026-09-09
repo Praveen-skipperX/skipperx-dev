@@ -77,17 +77,26 @@
     display: none;
   }
 
-  .home-page .eng-card,
+  .home-page .eng-container {
+    margin-left: 8px;
+    margin-right: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .home-page .eng-card {
+    width: auto;
+    max-width: none;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 300px;
+    min-height: 0;
+  }
+
   .home-page .eng-testimonial,
   .home-page .eng-success-value {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-  }
-
-  .home-page .eng-card {
-    height: auto;
-    min-height: 380px;
   }
 
   .home-page .stack-wrapper {
@@ -270,6 +279,16 @@
   .home-page .launch-right {
     position: relative;
     min-height: 280px;
+  }
+
+  .home-page .eng-card {
+    height: 260px;
+    padding: 8px 6px;
+  }
+
+  .home-page .eng-title {
+    font-size: 11px;
+    margin-top: 52px;
   }
 
   .home-page .best-quote,
