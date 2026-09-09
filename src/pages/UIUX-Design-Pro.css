@@ -3765,3 +3765,363 @@
     padding-bottom: 0;
   }
 }
+
+/* =========================================================
+   UIUX PAGE RESPONSIVE — scoped, desktop (≥1025px) unchanged
+   ========================================================= */
+
+@media (min-width: 1025px) {
+  .uiux-eclipse-wrapper .arvr1-stat-section {
+    padding: 56px 0 48px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr1-stat-card {
+    width: auto !important;
+    max-width: none !important;
+    flex: 1 1 0;
+    background: transparent !important;
+  }
+
+  .uiux-eclipse-wrapper .drone-info-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .uiux-eclipse-wrapper {
+    overflow-x: hidden;
+  }
+
+  .uiux-eclipse-wrapper .arvr-dronebody {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    margin-top: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .uiux-eclipse-wrapper .uiux-hero-col,
+  .uiux-eclipse-wrapper .drone-info-section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-engineering-section {
+    height: auto !important;
+    min-height: 520px;
+    padding: 36px 28px 56px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background-image: url("../assets/uiux-hero-bg.svg") !important;
+    background-size: cover !important;
+    background-position: center right !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-arvr-title1 {
+    max-width: 100%;
+    padding: 0 !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-arvr-title1 h1 {
+    width: auto !important;
+    max-width: 100%;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    font-size: 34px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-cta-buttons {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-outline-btn {
+    width: auto !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-start-btn {
+    width: 216px;
+    max-width: 100%;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-scroll-wrapper1 {
+    width: 100% !important;
+    max-width: none;
+    margin-left: 0 !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-info-para,
+  .uiux-eclipse-wrapper .arvr-info-para1 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .uiux-eclipse-wrapper .drone-pricing-card,
+  .uiux-eclipse-wrapper .drone-form-card {
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1024px) {
+  .uiux-eclipse-wrapper .arvr1-stat-section {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr1-stat-card {
+    flex: 1 1 280px !important;
+    max-width: none !important;
+    background: transparent !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr1-stat-card img {
+    display: block !important;
+  }
+
+  .uiux-eclipse-wrapper .drone-info-section {
+    flex-direction: column;
+    gap: 28px;
+    padding: 20px 0 24px !important;
+  }
+
+  .uiux-eclipse-wrapper .drone-info-left,
+  .uiux-eclipse-wrapper .drone-info-right {
+    min-width: 0;
+    width: 100%;
+    flex: none;
+  }
+
+  .uiux-eclipse-wrapper .arvr-module-box {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .uiux-eclipse-wrapper .arvr-dronebody {
+    padding: 16px 16px 8px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-engineering-section {
+    min-height: 0;
+    padding: 24px 16px 52px !important;
+    border-radius: 16px;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-tag {
+    width: auto !important;
+    max-width: 90%;
+    height: auto;
+    padding: 8px 16px 8px 44px !important;
+    margin: 8px auto 16px !important;
+    font-size: 13px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-arvr-title1 h1 {
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-description {
+    font-size: 14px !important;
+    padding: 0 4px;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-cta-buttons {
+    gap: 6px;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 8px 0 16px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-outline-btn {
+    padding: 8px 12px !important;
+    font-size: 13px;
+    width: auto !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-start-btn {
+    width: 100%;
+    max-width: 220px;
+    height: 48px;
+    margin: 8px auto 12px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-scroll-wrapper1 {
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .uiux-eclipse-wrapper .arvr1-stat-section {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 28px 0 24px !important;
+    gap: 12px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr1-stat-card {
+    width: 100% !important;
+    max-width: none !important;
+    flex: none !important;
+    background: transparent !important;
+    padding: 16px 18px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr1-stat-card h2,
+  .uiux-eclipse-wrapper .arvr1-stat-card span {
+    font-size: 32px;
+    margin-top: 0 !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr1-stat-card p {
+    font-size: 13px !important;
+    margin-top: 6px !important;
+    padding-bottom: 0 !important;
+    max-width: 70%;
+  }
+
+  .uiux-eclipse-wrapper .arvr-info-heading {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .uiux-eclipse-wrapper .arvr-info-para,
+  .uiux-eclipse-wrapper .arvr-info-para1 {
+    text-align: left;
+    font-size: 14px !important;
+    padding-bottom: 20px;
+  }
+
+  .uiux-eclipse-wrapper .arvr-learners-badge {
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .uiux-eclipse-wrapper .arvr-skills-tags {
+    justify-content: flex-start;
+  }
+
+  .uiux-eclipse-wrapper .arvr-module-section {
+    padding: 32px 0;
+  }
+
+  .uiux-eclipse-wrapper .arvr-module-box {
+    width: 100% !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-faq-question h4,
+  .uiux-eclipse-wrapper .arvr-faq-answer {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .uiux-eclipse-wrapper .drone-pricing-card,
+  .uiux-eclipse-wrapper .drone-form-card {
+    width: 100% !important;
+    max-width: 100%;
+    min-height: 0 !important;
+    height: auto !important;
+    box-sizing: border-box;
+  }
+
+  .uiux-eclipse-wrapper .drone-pricing-btn,
+  .uiux-eclipse-wrapper .form-submit-btn {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .uiux-eclipse-wrapper .uiux-drone-offer-section {
+    padding: 40px 16px 36px;
+    min-height: 0;
+  }
+
+  .uiux-eclipse-wrapper .arvr-brochure {
+    padding: 24px 16px;
+  }
+
+  .uiux-eclipse-wrapper .arvr-download-brochure-btn {
+    margin-left: 0;
+    width: 100%;
+    max-width: 232px;
+  }
+
+  .uiux-eclipse-wrapper .mobile-only {
+    margin: 16px 0 !important;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .uiux-eclipse-wrapper .arvr1-stat-card img {
+    display: block !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-certificate-title,
+  .uiux-eclipse-wrapper .arvr-faq-question,
+  .uiux-eclipse-wrapper .arvr-skills-heading,
+  .uiux-eclipse-wrapper .arvr-skipper-card,
+  .uiux-eclipse-wrapper .drone-accredit-section,
+  .uiux-eclipse-wrapper .arvr-module-heading-wrapper {
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .uiux-eclipse-wrapper .arvr-skill-section,
+  .uiux-eclipse-wrapper .arvr-faq-section,
+  .uiux-eclipse-wrapper .arvr-module-section,
+  .uiux-eclipse-wrapper .arvr-skippers-section,
+  .uiux-eclipse-wrapper .arvr-cert-drone {
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  .uiux-eclipse-wrapper img:not(.uiux-eclipse-bg) {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .uiux-eclipse-wrapper .arvr-dronebody {
+    padding: 12px 12px 4px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-engineering-section {
+    background-image: url("../assets/uiux-hero-bg.svg") !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 480px;
+    padding: 20px 12px 48px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-arvr-title1 h1 {
+    font-size: 22px !important;
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-drone-tag {
+    padding: 8px 14px 8px 40px !important;
+  }
+
+  .uiux-eclipse-wrapper .drone-pricing-card {
+    width: 100% !important;
+    border-width: 8px;
+    padding: 16px !important;
+  }
+
+  .uiux-eclipse-wrapper .arvr-module-section {
+    padding: 28px 0;
+  }
+}

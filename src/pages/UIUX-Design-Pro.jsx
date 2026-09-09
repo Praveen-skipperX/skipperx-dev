@@ -799,12 +799,12 @@ const UiuxDesignPro = () => {
           <div className="drone-info-right" style={{ position: 'static' }}>
             {!showForm ? (
               <div className="drone-pricing-card" >
-                <h2>Master Augmented & Virtual Reality</h2>
+                <h2>Master UI UX Design Pro Program</h2>
                 <ul className="drone-features-list" >
-                  <li><span className="tickmark">&#10004;</span> Innovation for professional growth</li>
-                  <li><span className="tickmark">&#10004;</span> Certification included</li>
-                  <li><span className="tickmark">&#10004;</span> Industry relevant skills</li>
-                  <li><span className="tickmark">&#10004;</span> Hands on learning</li>
+                  <li><span className="tickmark">&#10004;</span>  Hands-on product design in Figma</li>
+                  <li><span className="tickmark">&#10004;</span> NSDC-recognized certification</li>
+                  <li><span className="tickmark">&#10004;</span> Industry-relevant tools & workflow</li>
+                  <li><span className="tickmark">&#10004;</span> Mentor-led critiques</li>
                 </ul>
                 <div className="pricing-price-row">
                   <div className="price">Price</div>
@@ -829,8 +829,9 @@ const UiuxDesignPro = () => {
               <div className={`drone-form-wrapper visible`}>
                 <div className="drone-form">
                   <div className="drone-pricing-card">
-                    <h3 className="drone-form-title">Master Augmented & Virtual Reality</h3>
-                    <GoogleSheetForm formName="AR VR" />
+                    <h3 className="drone-form-title">UI UX Design Pro
+                      Program</h3>
+                    <GoogleSheetForm formName="UI UX Design Pro" />
                   </div>
                 </div>
               </div>

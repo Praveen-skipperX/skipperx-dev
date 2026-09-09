@@ -49,7 +49,7 @@ function App() {
         <Route path="/Drone-Engineering" element={<DroneEngineering />} />
         <Route path="/Robot-Engineering" element={<RobotEngineering />} />
         <Route path="/ar-vr" element={<ArVr />} />
-        <Route path="/uiux-design-pro" element={<UIUXDesignPro />} />
+        <Route path="/ui-ux-design-pro" element={<UIUXDesignPro />} />
         <Route path="/Startup-Stack" element={<StartupStack />} />
         <Route path="/creator-hub" element={<CreatorHub />} />
   

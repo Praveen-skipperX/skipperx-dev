@@ -105,7 +105,7 @@ const Navbar = () => {
               </div>
 
               <div className="mega-card">
-                <Link to="/uiux-design-pro" className="card-link">
+                <Link to="/ui-ux-design-pro" className="card-link">
                   <img src={uiuxImg} alt="UI UX Design Pro" />
                   <div className="card-text">
                     <h4>UI UX Design Pro</h4>
