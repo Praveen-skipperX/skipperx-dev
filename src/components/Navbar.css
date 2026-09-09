@@ -664,9 +664,16 @@
   }
 
   .nav-uiux-featured-mobile {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding-top: 14px;
-    margin: 8px 0;
+    margin: 0 auto 8px;
+  }
+
+  .nav-buttons.show {
+    align-items: center;
   }
 
   .dropdown:hover .dropdown-menu.mega-dropdown:not(.show) {
