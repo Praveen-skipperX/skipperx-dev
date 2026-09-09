@@ -182,6 +182,8 @@
   .nav-buttons {
     display: none;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 15px;
     background: #0e0d0d;
     position: absolute;
@@ -190,11 +192,13 @@
     right: 0;
     padding: 20px;
     z-index: 10;
+    text-align: center;
   }
 
   .nav-linkss.show,
   .nav-buttons.show {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -450,6 +454,8 @@
   .nav-linkss, .nav-buttons {
     display: none;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 15px;
     background: #0e0d0d;
     position: absolute;
@@ -458,11 +464,13 @@
     right: 0;
     padding: 20px;
     z-index: 10;
+    text-align: center;
   }
 
   .nav-linkss.show,
   .nav-buttons.show {
     display: flex;
+    align-items: center;
   }
 
   .hamburger {
@@ -663,6 +671,20 @@
     display: none;
   }
 
+  .nav-buttons,
+  .nav-buttons.show {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-buttons .navlink {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   .nav-uiux-featured-mobile {
     display: flex;
     justify-content: center;
@@ -670,10 +692,16 @@
     width: 100%;
     padding-top: 14px;
     margin: 0 auto 8px;
+    text-align: center;
   }
 
-  .nav-buttons.show {
-    align-items: center;
+  .nav-uiux-featured-mobile .nav-uiux-label {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .nav-uiux-featured-mobile .nav-uiux-pro {
+    min-width: 0;
   }
 
   .dropdown:hover .dropdown-menu.mega-dropdown:not(.show) {
