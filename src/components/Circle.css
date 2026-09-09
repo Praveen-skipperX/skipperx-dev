@@ -242,13 +242,12 @@
 
 
 @media (max-width: 1024px) {
-
-  .circlebody1{
-    padding: 40px 120px 100px 120px;
+  .circlebody1 {
+    padding: 40px 24px 64px;
+  }
 
   .circlebody {
-    padding: 40px 60px
-
+    padding: 40px 24px;
   }
 
   .circle-section {
@@ -455,5 +454,4 @@
     top: 200px;
     left: 100px;
   }
-}
 }

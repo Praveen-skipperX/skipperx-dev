@@ -37,7 +37,7 @@ const programs = [
   {
     title: "UI UX Design Pro",
     tag: "⚡Bestseller",
-    quote: "“Learning to structure user experiences and design modern, accessible interfaces from scratch was incredibly empowering!“",
+    quote: "“Turning ideas into great designs felt amazing!“",
     avatar: avatar3,
     success: "92% land UI/UX roles start their own agencies.",
     bg: bg4,

@@ -166,6 +166,16 @@ const Navbar = () => {
           </div>
         </div>
 
+        <Link to="/ui-ux-design-pro" className="nav-uiux-featured">
+          <span className="nav-uiux-label">
+            UI UX Design{' '}
+            <span className="nav-uiux-pro">
+              <span className="nav-uiux-tag">BESTSELLER 🔥</span>
+              Pro
+            </span>
+          </span>
+        </Link>
+
         {/* Hamburger-only links */}
         <div className={`nav-linkss ${open ? 'show' : ''}`}>
           <span className="nav-item">

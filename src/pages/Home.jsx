@@ -16,10 +16,11 @@ import Footer from '../components/Footer';
 import LaunchSection from '../components/LaunchSection';
 import SkippersAdvantage from '../components/SkippersAdvantage';
 import WhyTrustUs from '../components/WhyTrustUs';
+import './Home.css';
 
 const Home = () => {
   return (
-    <>
+    <div className="home-page">
       <Navbar/>
       <Hero />
       <TrustSection />
@@ -35,7 +36,7 @@ const Home = () => {
       <BackedByBest />
       <WhyTrustUs />
       <Footer />
-    </>
+    </div>
   );
 };
 
