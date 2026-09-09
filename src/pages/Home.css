@@ -78,17 +78,16 @@
   }
 
   .home-page .eng-container {
-    margin-left: 8px;
-    margin-right: 8px;
-    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
   }
 
   .home-page .eng-card {
-    width: auto;
-    max-width: none;
-    flex: 1 1 0;
-    min-width: 0;
-    height: 300px;
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    height: 380px;
     min-height: 0;
   }
 
@@ -279,16 +278,6 @@
   .home-page .launch-right {
     position: relative;
     min-height: 280px;
-  }
-
-  .home-page .eng-card {
-    height: 260px;
-    padding: 8px 6px;
-  }
-
-  .home-page .eng-title {
-    font-size: 11px;
-    margin-top: 52px;
   }
 
   .home-page .best-quote,
