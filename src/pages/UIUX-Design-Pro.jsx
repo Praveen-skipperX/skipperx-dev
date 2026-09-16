@@ -846,8 +846,8 @@ const UiuxDesignPro = () => {
 
   <p className="uiux-offer-subtext">
     The Clock’s Ticking — Enroll for{" "}
-    <span className="uiux-offer-old-price">₹24,999</span>{" "}
-    <strong className="uiux-offer-new-price">₹23,000</strong>
+    <span className="uiux-offer-old-price">₹60,000</span>{" "}
+    <strong className="uiux-offer-new-price">₹40,000</strong>
   </p>
 
   <div className="uiux-offer-content">
