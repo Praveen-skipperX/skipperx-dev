@@ -756,8 +756,8 @@ const UiuxDesignPro = () => {
                 <div className="pricing-price-row">
                   <div className="price">Price</div>
                   <div className="drone-price-section">
-                    <div className="drone-original-price">₹24,999</div>
-                    <div className="drone-current-price">₹20,000</div>
+                    <div className="drone-original-price">₹60,000</div>
+                    <div className="drone-current-price">₹40,000</div>
                   </div>
                 </div>
                 <EmiOptionBanner />
@@ -809,8 +809,8 @@ const UiuxDesignPro = () => {
                 <div className="pricing-price-row">
                   <div className="price">Price</div>
                   <div className="drone-price-section">
-                    <div className="drone-original-price">₹24,999</div>
-                    <div className="drone-current-price">₹20,000</div>
+                    <div className="drone-original-price">₹60,000</div>
+                    <div className="drone-current-price">₹40,000</div>
                   </div>
                 </div>
                 <EmiOptionBanner />
