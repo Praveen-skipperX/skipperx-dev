@@ -3512,9 +3512,8 @@
 }
 
 /* =========================================================
-   UIUX ECLIPSE BACKGROUND — continuous Hero → Stats → Growth
-   Asset is 1440×1639 with glow centered vertically.
-   Fixed-height cover keeps the peak behind the stats on all widths.
+   UIUX ECLIPSE BACKGROUND — red glow behind Stats + Growth
+   Figma: hotspot sits under the 3 stat cards and continues down
    ========================================================= */
 
 .uiux-eclipse-wrapper {
@@ -3525,19 +3524,43 @@
   background: #000;
 }
 
+/* Burgundy glow — visible at stats, soft fade into growth (Figma balance) */
+.uiux-eclipse-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 400px;
+  transform: translateX(-50%);
+  width: 1600px;
+  max-width: 160%;
+  height: 1400px;
+  background: radial-gradient(
+    ellipse 75% 52% at 50% 22%,
+    #6b3424 0%,
+    #4a2018 16%,
+    #2e1410 36%,
+    #160c0a 55%,
+    transparent 72%
+  );
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
+}
+
 .uiux-eclipse-wrapper .uiux-eclipse-bg {
   position: absolute;
-  top: 70px;
+  top: 400px;
   left: 50%;
   transform: translateX(-50%);
-  width: 110%;
-  height: 1680px;
+  width: 120%;
+  height: 1400px;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center 20%;
   display: block;
   pointer-events: none;
   user-select: none;
   z-index: 0;
+  opacity: 0.65;
 }
 
 .uiux-eclipse-wrapper > *:not(.uiux-eclipse-bg) {
@@ -3612,33 +3635,17 @@
   max-width: none;
   height: 565px;
   flex: none;
-  border: 1px solid rgba(168, 52, 3, 0.22);
-  border-radius: 20px;
+  background-color: #322825 !important;
+  background-image: url("../assets/uiux-hero-bg.svg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border: 0.5px solid #a83403;
+  border-radius: 12px;
 }
 
 .uiux-eclipse-wrapper .arvr-drone-engineering-section::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2px;
-  border-radius: 0 0 20px 20px;
-  background: linear-gradient(
-    90deg,
-    transparent 4%,
-    rgba(168, 52, 3, 0.45) 18%,
-    #FF6A3A 42%,
-    #FF8A4A 50%,
-    #FF6A3A 58%,
-    rgba(168, 52, 3, 0.45) 82%,
-    transparent 96%
-  );
-  box-shadow:
-    0 0 8px 1px rgba(255, 90, 40, 0.55),
-    0 0 22px 4px rgba(255, 70, 20, 0.35);
-  pointer-events: none;
-  z-index: 4;
+  content: none;
 }
 
 .uiux-eclipse-wrapper .arvr-drone-scroll-wrapper1 {
@@ -3717,11 +3724,17 @@
 }
 
 @media (max-width: 1024px) {
+  .uiux-eclipse-wrapper::before {
+    top: 360px;
+    height: 1200px;
+    width: 1200px;
+  }
+
   .uiux-eclipse-wrapper .uiux-eclipse-bg {
-    top: 40px;
-    width: 125%;
-    height: 1500px;
-    object-position: center 38%;
+    top: 360px;
+    width: 130%;
+    height: 1200px;
+    object-position: center 22%;
   }
 
   .uiux-eclipse-wrapper .uiux-hero-col,
@@ -3742,11 +3755,17 @@
     overflow-x: hidden;
   }
 
+  .uiux-eclipse-wrapper::before {
+    top: 300px;
+    height: 1100px;
+    width: 1000px;
+  }
+
   .uiux-eclipse-wrapper .uiux-eclipse-bg {
-    top: 20px;
+    top: 300px;
     width: 150%;
-    height: 1400px;
-    object-position: center 36%;
+    height: 1100px;
+    object-position: center 22%;
   }
 
   .uiux-eclipse-wrapper .arvr1-stat-section {
@@ -3813,6 +3832,7 @@
     padding: 36px 28px 56px !important;
     width: 100% !important;
     max-width: 100% !important;
+    background-color: #322825 !important;
     background-image: url("../assets/uiux-hero-bg.svg") !important;
     background-size: cover !important;
     background-position: center right !important;
@@ -4097,6 +4117,7 @@
   }
 
   .uiux-eclipse-wrapper .arvr-drone-engineering-section {
+    background-color: #322825 !important;
     background-image: url("../assets/uiux-hero-bg.svg") !important;
     width: 100% !important;
     max-width: 100% !important;

@@ -434,11 +434,11 @@ const UiuxDesignPro = () => {
         <div
           className="arvr-drone-engineering-section"
           style={{
-            backgroundImage: `linear-gradient(to right,rgba(35, 33, 33, -0.6),rgba(51, 28, 90, -0.6)), url(${heroBg})`,
+            backgroundColor: '#322825',
+            backgroundImage: `url(${heroBg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-
           }}
         >
           <div className="arvr-drone-tag">
