@@ -1,16 +1,15 @@
 .eng-section {
   background-color: #000;
-  padding: 64px 20px 64px 20px;
+  padding: 64px 20px;
   font-family: 'Poppins', sans-serif;
 }
-
 
 .eng-container {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: stretch;
-  gap: 10px;
+  gap: 12px;
   margin-left: 30px;
   margin-right: 30px;
   padding-top: 56px;
@@ -18,47 +17,56 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.navlink {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 .eng-card {
   flex: 1 1 0;
   min-width: 0;
   width: auto;
   max-width: none;
-  height: 401px;
+  height: 420px;
   background-size: cover;
   background-position: center;
-  border-radius: 8px;
-  padding: 24px 18px ;
+  border-radius: 20px;
+  padding: 16px 21px 21px;
   position: relative;
   color: #fff;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  cursor: pointer;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.proo{
+.proo {
   background: linear-gradient(to right, #FE8324, #ff4101);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-style: italic;
   padding-right: 2px;
 }
+
 .eng-badge {
-  background-color: #353434;
-  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  font-size: 13px;
   font-weight: 500;
   width: fit-content;
-  padding: 8px 8px 8px 5px;
+  padding: 8px 18px 8px 12px;
   border-radius: 8px;
-  display: inline-block;
-  
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  z-index: 2;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.eng-badge-icon {
+  font-size: 12px;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 .eng-title {
@@ -66,74 +74,61 @@
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   margin-top: auto;
-  margin-bottom: 8px;
-  padding-right: 56px;
+  margin-bottom: 12px;
+  padding: 0;
+  line-height: 1.15;
   white-space: nowrap;
+  color: #fff;
 }
 
-.eng-testimonial {
-  background: #000;
-  padding: 12px 10px 12px 10px;
-  border-radius: 8px;
+/* Figma footer bar specs */
+.eng-footer {
   display: flex;
-  margin-top: -7px;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
   width: 100%;
-  max-width: 100%;
+  max-width: 346px;
+  height: 79px;
+  background: #00000099;
+  border-radius: 4px;
+  padding: 12px;
+  opacity: 1;
   box-sizing: border-box;
-  min-height: 61px;
-  margin-bottom: auto;
-}
-
-.eng-avatar {
-  width: 43px;
-  height: 28px;
-  margin-top: 5px;
-  border-radius: 25px;
-}
-
-.eng-quote{
-  font-family: poppins;
-  font-size: 14px;
-  line-height: 1.4;
- 
+  flex-shrink: 0;
 }
 
 .eng-success {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-right: 56px;
-  padding-bottom: 4px;
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .eng-success-label {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 5px;
+  margin: 0 0 4px;
+  padding: 0;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .eng-success-value {
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: poppins;
-  line-height: 1.2;
-  width: 100%;
-  max-width: 100%;
-  color: #e2e2e2;
+  font-size: 13px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.3;
+  color: #e8e8e8;
+  font-weight: 400;
 }
 
 .eng-arrow-btn {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-  width: 52px;
-  height: 52px;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: white;
+  background: #fff;
   border: none;
   cursor: pointer;
   display: flex;
@@ -143,8 +138,8 @@
 }
 
 .eng-arrow-img {
-  width: 18px;
-  height: 15px;
+  width: 16px;
+  height: 14px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -152,7 +147,7 @@
 .r {
   flex: 1 1;
   height: 1.5px;
-  background: linear-gradient(to right,  #fffdfd 20%,#ede7e7 20%, #313030 70%);
+  background: linear-gradient(to right, #fffdfd 20%, #ede7e7 20%, #313030 70%);
   border: none;
   opacity: 0.4;
   max-width: 405px;
@@ -162,45 +157,59 @@
 .l {
   flex: 1 1;
   height: 1.5px;
-  background: linear-gradient(to left,  #fffdfd 20%,#ede7e7 20%, #313030 70%);
+  background: linear-gradient(to left, #fffdfd 20%, #ede7e7 20%, #313030 70%);
   border: none;
   opacity: 0.4;
   max-width: 405px;
   margin-top: 10px;
 }
 
-.eng-arrow-btn:hover .eng-arrow-img {
+.eng-card:hover .eng-arrow-img {
   transform: rotate(45deg);
-  
 }
 
-
-/* Responsive — keep all four cards in one row */
 @media (max-width: 1200px) {
   .eng-container {
     margin-left: 16px;
     margin-right: 16px;
+    gap: 10px;
+  }
+
+  .eng-card {
+    height: 380px;
+    padding: 14px 16px 16px;
+    border-radius: 16px;
   }
 
   .eng-title {
     font-size: 22px;
-    margin-top: auto;
-    margin-bottom: 6px;
-    padding-right: 52px;
+    margin-bottom: 10px;
   }
 
-  .eng-success {
-    padding-right: 52px;
+  .eng-footer {
+    max-width: 100%;
+    height: 72px;
+    padding: 12px;
+    border-radius: 4px;
+    gap: 24px;
   }
 
-  .eng-card {
-    height: 360px;
-    padding: 16px 12px;
+  .eng-success-label {
+    font-size: 13px;
+  }
+
+  .eng-success-value {
+    font-size: 12px;
+  }
+
+  .eng-arrow-btn {
+    width: 40px;
+    height: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .eng-section{
+  .eng-section {
     padding: 36px 16px;
   }
 
@@ -218,71 +227,52 @@
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    height: 380px;
-    margin-bottom: 0;
-    padding: 24px 18px;
+    height: 400px;
+    padding: 16px 21px 21px;
+    border-radius: 20px;
   }
 
   .eng-title {
-    font-size: 26px;
-    margin-top: auto;
-    margin-bottom: 8px;
-    padding-right: 56px;
+    font-size: 28px;
+    margin-bottom: 12px;
   }
 
   .eng-badge {
-    font-size: 14px;
-    padding: 8px 8px 8px 5px;
+    font-size: 13px;
+    padding: 8px 18px 8px 12px;
+    gap: 6px;
   }
 
-  .r{
+  .r {
     margin-top: 5px;
   }
-  .l{
+
+  .l {
     margin-top: 5px;
   }
-  .best-subheading{
+
+  .best-subheading {
     font-size: 12px;
+  }
+
+  .eng-footer {
+    max-width: 346px;
+    height: 79px;
+    padding: 12px;
+    border-radius: 4px;
+    gap: 40px;
   }
 
   .eng-arrow-btn {
     width: 44px;
     height: 44px;
-    bottom: 24px;
-    right: 24px;
-  }
-
-  .eng-quote {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-
-  .eng-testimonial{
-    width: 100%;
-    padding: 12px 10px;
-    gap: 10px;
-    min-height: 61px;
-  }
-
-  .eng-avatar {
-    width: 43px;
-    height: 28px;
-    margin-top: 5px;
-  }
-
-  .eng-success {
-    margin-top: 0;
-    padding-right: 56px;
   }
 
   .eng-success-label {
     font-size: 14px;
-    margin-top: 0;
   }
 
-  .eng-success-value{
-    font-size: 14px;
-    margin-bottom: 0;
-    margin-top: 0;
+  .eng-success-value {
+    font-size: 13px;
   }
 }
