@@ -47,20 +47,31 @@
 }
 
 .eng-badge {
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  font-size: 13px;
-  font-weight: 500;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  height: 32px;
   width: fit-content;
-  padding: 8px 18px 8px 12px;
+  min-width: 110.625px;
+  box-sizing: border-box;
+  padding: 8px 10px;
   border-radius: 8px;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#000000, #000000) padding-box,
+    linear-gradient(98.2deg, #8B8585 5.58%, #1C1C1C 95.38%) border-box;
+  box-shadow: 0px 0px 2px 0px #00000040;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
+  opacity: 1;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
+  line-height: 1;
   z-index: 2;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .eng-badge-icon {
@@ -238,9 +249,12 @@
   }
 
   .eng-badge {
-    font-size: 13px;
-    padding: 8px 18px 8px 12px;
-    gap: 6px;
+    top: 20px;
+    left: 20px;
+    height: 32px;
+    padding: 8px 10px;
+    gap: 10px;
+    border-radius: 8px;
   }
 
   .r {
