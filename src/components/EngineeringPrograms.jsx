@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import avatar1 from "../assets/A1.png";
 import avatar2 from "../assets/A2.png";
 import avatar3 from "../assets/A3.png";
-import bg3 from "../assets/ar1.png";
 import arrowIcon from "../assets/arrows.png";
-import bg1 from "../assets/dro1.png";
-import bg2 from "../assets/robo1.png";
-import bg4 from "../assets/uiux-home-bg.svg";
 import "./EngineeringPrograms.css";
+
+import Card1 from "../assets/card-ar-vr.jpg";
+import Card2 from "../assets/card-drone-eng.jpg";
+import Card3 from "../assets/card-robot.jpg";
+import Card4 from "../assets/card-uiux.jpg";
 
 const programs = [
   {
@@ -16,7 +17,7 @@ const programs = [
     quote: "“The free drone kit and hands-on projects made learning super fun”",
     avatar: avatar1,
     success: "90% land tech roles or launch products",
-    bg: bg1,
+    bg: Card2,
   },
   {
     title: "Robot Engineering",
@@ -24,7 +25,7 @@ const programs = [
     quote: "“Learning to build and code robots made everything feel exciting!”",
     avatar: avatar2,
     success: "89% build robots or step into core tech roles.",
-    bg: bg2,
+    bg: Card3,
   },
   {
     title: "AR VR",
@@ -32,7 +33,7 @@ const programs = [
     quote: "“Creating AR VR projects helped me learn by doing—felt futuristic and fun!”",
     avatar: avatar3,
     success: "92% land AR/VR roles or launch their own apps.",
-    bg: bg3,
+    bg: Card1,
   },
   {
     title: "UI UX Design Pro",
@@ -40,7 +41,7 @@ const programs = [
     quote: "“Turning ideas into great designs felt amazing!“",
     avatar: avatar3,
     success: "92% land UI/UX roles start their own agencies.",
-    bg: bg4,
+    bg: Card4,
   },
 ];
 
@@ -67,11 +68,6 @@ const EngineeringPrograms = () => {
             >
             {item.tag && <div className="eng-badge">{item.tag}</div>}
             <h3 className="eng-title">{item.title}</h3>
-
-            <div className="eng-testimonial">
-              <img src={item.avatar} alt="student" className="eng-avatar" />
-              <p className="eng-quote">{item.quote}</p>
-            </div>
             
             <div className="eng-success">
               <p className="eng-success-label">Success rate:</p>

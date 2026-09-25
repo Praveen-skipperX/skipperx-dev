@@ -62,11 +62,13 @@
 }
 
 .eng-title {
-  font-size: 32px;
+  font-size: 26px;
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  margin-top: 145px;
-  margin-bottom: 11px;
+  margin-top: auto;
+  margin-bottom: 8px;
+  padding-right: 56px;
+  white-space: nowrap;
 }
 
 .eng-testimonial {
@@ -99,19 +101,24 @@
 }
 
 .eng-success {
-  margin-top: 54px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 56px;
+  padding-bottom: 4px;
 }
 
 .eng-success-label {
   font-weight: bold;
   font-size: 14px;
-  margin-top: -53px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-bottom: 5px;
 }
 
 .eng-success-value {
   font-size: 14px;
-  margin-top: 9px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: poppins;
   line-height: 1.2;
   width: 100%;
@@ -176,8 +183,14 @@
   }
 
   .eng-title {
-    font-size: 22px;
-    margin-top: 100px;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: 6px;
+    padding-right: 52px;
+  }
+
+  .eng-success {
+    padding-right: 52px;
   }
 
   .eng-card {
@@ -211,9 +224,10 @@
   }
 
   .eng-title {
-    font-size: 24px;
-    margin-top: 140px;
-    margin-bottom: 11px;
+    font-size: 22px;
+    margin-top: auto;
+    margin-bottom: 8px;
+    padding-right: 56px;
   }
 
   .eng-badge {
@@ -257,17 +271,18 @@
   }
 
   .eng-success {
-    margin-top: 54px;
+    margin-top: 0;
+    padding-right: 56px;
   }
 
   .eng-success-label {
     font-size: 14px;
-    margin-top: -53px;
+    margin-top: 0;
   }
 
   .eng-success-value{
     font-size: 14px;
-    margin-bottom: 5px;
-    margin-top: 9px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
