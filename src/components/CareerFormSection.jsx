@@ -27,7 +27,7 @@ const CareerFormSection = () => {
         formData.append('phoneNumber', form[2].value);
         formData.append('email', form[3].value);
         try {
-          await fetch('https://script.google.com/macros/s/AKfycbyk1LWW9RMXuExhh-vTac4DGRLtttdCYxbUG6-TKP2W0iB51mHlDxew3yx-oOCIvcCQ/exec', {
+          await fetch('https://script.google.com/macros/s/AKfycbxIn1J4p9yjt_XPLy_JpmuBvX-FvRdoZrhTYJYAxAGhnHMXQX8zuAfsKmtWV4x6joMJ/exec', {
             method: 'POST',
             mode: 'no-cors',
             body: formData,

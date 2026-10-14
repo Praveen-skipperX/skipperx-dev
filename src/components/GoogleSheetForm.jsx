@@ -19,7 +19,7 @@ const GoogleSheetForm = ({ formName, submitLabel = 'Start Learning' }) => {
       formData.append('areaOfInterest', form[3].value);
       formData.append('phoneNumber', form[4].value);
       try {
-        await fetch('https://script.google.com/macros/s/AKfycbyk1LWW9RMXuExhh-vTac4DGRLtttdCYxbUG6-TKP2W0iB51mHlDxew3yx-oOCIvcCQ/exec', {
+        await fetch('https://script.google.com/macros/s/AKfycbxIn1J4p9yjt_XPLy_JpmuBvX-FvRdoZrhTYJYAxAGhnHMXQX8zuAfsKmtWV4x6joMJ/exec', {
           method: 'POST',
           mode: 'no-cors',
           body: formData,

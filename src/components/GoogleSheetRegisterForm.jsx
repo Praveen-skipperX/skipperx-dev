@@ -6,7 +6,7 @@ const GoogleSheetRegisterForm = ({ formName }) => {
   const [toast, setToast] = useState({ show: false, message: "", type: "" });
 
   const SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbyk1LWW9RMXuExhh-vTac4DGRLtttdCYxbUG6-TKP2W0iB51mHlDxew3yx-oOCIvcCQ/exec";
+    "https://script.google.com/macros/s/AKfycbxIn1J4p9yjt_XPLy_JpmuBvX-FvRdoZrhTYJYAxAGhnHMXQX8zuAfsKmtWV4x6joMJ/exec";
 
   const showToast = (message, type) => {
     setToast({ show: true, message, type });
